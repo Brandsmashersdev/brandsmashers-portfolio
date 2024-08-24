@@ -1,5 +1,7 @@
 import React from 'react';
-import Hero from '../../components/Hero/HeroSection'
+import Hero from '../../components/Hero/HeroSection';
+import Footer from '../../components/Footer/Footer';
+import VettingProcess from '../../components/VettingProcess/VettingProcess';
 import Navbar from '../../components/Navbar/Navbar';
 import SuperSourcingSolve from '../../components/Hero/supersourcingSolve';
 import TopDev from '../../components/Hero/TopDev';
@@ -10,10 +12,11 @@ const Home = () => {
     <>
       <Navbar/>
       <Hero/>
+      <VettingProcess/>
       <SuperSourcingSolve />
-    <TopDev/>
-    <FeatureSection />
-    
+      <TopDev/>
+      <FeatureSection />
+      <Footer/>
     </>
   )
 }
