@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import styles from '../../src/styles/VettingProcess.module.css'; 
 
