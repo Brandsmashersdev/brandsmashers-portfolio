@@ -1,0 +1,200 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem;
+  background-color: #f7f8fa;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.heroContainer {
+  max-width: 600px;
+}
+
+.heading {
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: black;
+}
+
+.highlight {
+  color: rgb(86, 157, 211);
+}
+
+.highlight1 {
+  color: #e199d7;
+}
+
+.heroContainer p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.hireButton,
+.contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 200px; /* Set consistent width for both buttons */
+  height: 50px; /* Set consistent height for both buttons */
+  max-width: 200px; /* Ensure it doesn't get too wide */
+}
+
+.hireButton {
+  background-color: #0070f3;
+  color: white;
+}
+
+.contactButton {
+  border: 1px solid #0070f3;
+  color: #0070f3;
+  background: none;
+}
+
+.arrowIcon {
+  margin-left: 0.5rem;
+}
+
+.google {
+  mix-blend-mode: multiply;
+}
+
+.clutch {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  mix-blend-mode: multiply;
+}
+
+.g {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+}
+
+.AnimatedButton {
+  display: flex;
+  align-items: center;
+}
+
+.imageb {
+  mix-blend-mode: multiply;
+}
+
+.imageContainer {
+ 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.heroImage {
+  width: 400px;
+  height: 300px;
+  mix-blend-mode: multiply;
+  background-image: url("../../public/Hero/download.png");
+  mix-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0%;
+  margin-left: 30px;
+}
+
+.paragraph {
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .heroSection {
+    padding: 4rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .heroContainer {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hireButton,
+  .contactButton {
+    margin: 0.5rem 0;
+    width: 200px; /* Consistent width for both buttons */
+    height: 50px; /* Consistent height for both buttons */
+    max-width: none; /* Remove max-width restriction */
+  }
+
+  .starContainer {
+    font-size: 1.5rem; /* Adjust size as needed */
+  }
+
+  .imageContainer {
+    margin-top: 2rem;
+  }
+
+  .heroImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+
+  .heroContainer p {
+    font-size: 0.9rem;
+  }
+
+  .heroImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hireButton,
+  .contactButton {
+    width: 180px; /* Slightly smaller for very small screens */
+    height: 45px; /* Slightly smaller for very small screens */
+  }
+}

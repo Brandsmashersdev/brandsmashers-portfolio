@@ -1,0 +1,119 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: start;
+  position: relative; /* Allows overlapping of the button */
+  box-shadow: 0px 4px 10px 0px white;
+  border-radius: 5px;
+  padding: 10px; /* Consistent shadow */
+}
+
+.sliderWrapper {
+  /* overflow: hidden;  */
+  width: 20%;
+
+}
+
+.sliderInner {
+  display: flex;
+  transition: transform 0.5s linear; /* Smooth sliding without delay */
+}
+
+.profileSlide {
+  min-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  background-color:white; /* Adjust color as needed */
+  box-shadow: 0px 4px 10px 0px white;
+  /* Consistent shadow */
+}
+.imagess{
+  border-radius: 50%;
+  background-color: red;
+  border: 3px solid;
+ }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.9);
+  }
+  5%,
+  20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%,
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%,
+  60% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+  65%,
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+}
+.buttoss{
+  background-color: aqua;
+  margin-bottom: 50px;
+}
+
+.nextButton {
+  position: absolute;
+  right: 10px; /* Positioning the button */
+  background: hwb(213 75% 10%);
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem ;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+.nextButton:hover {
+ 
+}
+
+.nextButton svg {
+  font-size: 1.2rem;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.nextButton .searchIcon {
+  animation: moveLeftToRight 2s linear infinite;
+}
+.image{
+  background-color: aqua;
+}

@@ -1,0 +1,31 @@
+/* StarRating.module.css */
+.starContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fullStar {
+  font-size: 2rem; /* Adjust size as needed */
+  color: gold; /* Full star color */
+}
+
+.halfStar {
+  font-size: 2rem; /* Adjust size as needed */
+  color: gold; /* Half star color */
+  position: relative;
+}
+
+.halfStar::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%; /* Half the width of the star */
+  overflow: hidden;
+  color: #ccc; /* Background color for the other half */
+}
+.reviews{
+  color: gray;
+  padding-left: 15px;
+  padding-top: 5px;
+}

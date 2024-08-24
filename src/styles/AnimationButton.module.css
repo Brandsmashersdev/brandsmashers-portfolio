@@ -1,0 +1,86 @@
+.animatedButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem; /* Adjust padding for better spacing */
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 30px;
+  background: linear-gradient(45deg, #0070f3, hsl(308, 67%, 48%)); /* Blue and purple mix */
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s ease infinite;
+  transition: transform 0.3s ease;
+  
+  /* Ensure button is at the top of the screen */
+ /* Center horizontally */
+}
+
+/* Hover effect */
+.animatedButton:hover {
+  transform: scale(1.05) translateX(-50%); /* Slightly increase size on hover */
+}
+
+/* Icon style */
+.icon {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.5rem;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .animatedButton {
+    padding: 0.5rem 1rem; /* Adjust padding for medium screens */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    margin-left: 0; /* Adjust margin */
+    top: 10px; /* Keep button at the top */
+  }
+
+  .icon {
+    font-size: 1.4rem; /* Slightly smaller icon */
+  }
+}
+
+@media (max-width: 768px) {
+  .animatedButton {
+    padding: 0.4rem 0.8rem; /* Further reduce padding for small screens */
+    font-size: 0.8rem; /* Reduce font size */
+    top: 10px; /* Keep button at the top */
+  }
+
+  .icon {
+    font-size: 1.2rem; /* Further reduce icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .animatedButton {
+    padding: 0.4rem 0.6rem; /* Minimal padding for extra small screens */
+    font-size: 0.7rem; /* Smaller font size */
+    top: 10px;
+    position: fixed; /* Or absolute if preferred */
+    top: 10px; /* Adjust to control vertical distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    margin-bottom: 400px; /* Keep button at the top */
+  }
+
+  .icon {
+    font-size: 1rem; /* Minimal icon size */
+  }
+}
