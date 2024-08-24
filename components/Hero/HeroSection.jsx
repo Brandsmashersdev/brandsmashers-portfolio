@@ -12,7 +12,7 @@ import ProfileSlider from './ProfileSlider';
 
 const HeroSection = () => {
   return (
-    <section className={styles.heroSection}>
+    <div className={styles.heroSection}>
       <div className={styles.heroContainer}>
         <h1 className={styles.heading}>
           Hire Software Developers Perfectly Matched
@@ -75,7 +75,7 @@ const HeroSection = () => {
         </div>
         <CardSlider/>
       </div>
-    </section>
+    </div>
   );
 };
 
