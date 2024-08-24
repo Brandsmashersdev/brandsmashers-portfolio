@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from '../../src/styles/ProfileSlider.module.css';
+import styles from '../../src/styles/Hero/ProfileSlider.module.css';
 import img1 from '../../public/Hero/img1.png'; 
 import img2 from '../../public/Hero/download.png'; 
-// import { FiAlignJustify, FiSearch } from 'react-icons/fi';
+import { FiAlignJustify, FiSearch } from 'react-icons/fi';
 
 const profiles = [
   { id: 1, image: img1 },
@@ -44,8 +44,8 @@ const ProfileSlider = () => {
 
         <div className={styles.buttoss}>
         <button className={styles.nextButton} onClick={nextSlide}>
-          +100k {/*<FiAlignJustify />*/}
-          {/*<FiSearch className={styles.searchIcon} />*/}
+          +100k <FiAlignJustify />
+          <FiSearch className={styles.searchIcon} />
         </button>
         </div>
       </div>
