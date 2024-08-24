@@ -1,0 +1,104 @@
+/* Main Navbar Container */
+.navContainer {
+  width: 100%;
+  background-color: #ffffff; /* White background for the navbar */
+  border-bottom: 1px solid #ddd; /* Light border at the bottom */
+  position: relative;
+  z-index: 100; /* Ensure navbar stays on top of other content */
+}
+
+/* Navbar Row */
+.navRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px; /* Adjusted padding for better alignment */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+/* Logo Container */
+.logo {
+  margin-left: 100px; /* Adjust margin for alignment */
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  flex-grow: 1; /* Allow nav links to grow */
+  justify-content: center; /* Center links */
+}
+
+.navLinks a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #000000; /* Black color for nav links */
+  font-size: 1rem; /* Relative font size */
+  font-weight: 600;
+  transition: color 0.3s; /* Smooth transition effect for hover */
+}
+
+.navLinks a:hover {
+  color: hsl(290, 100%, 61%); /* Change link color on hover */
+}
+
+/* Action Buttons Container */
+.navButtons {
+  display: flex;
+  align-items: center; /* Align buttons vertically */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .navRow {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin-left: 50px; /* Reduce margin on medium screens */
+  }
+
+  .navLinks {
+    justify-content: flex-start; /* Align links to the start */
+  }
+}
+
+@media (max-width: 768px) {
+  .navRow {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 15px;
+  }
+
+  .logo {
+    margin-left: 0; /* Center the logo on smaller screens */
+  }
+
+  .navLinks {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center align links */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .navLinks a {
+    margin: 5px 0; /* Adjust link margins for smaller screens */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  .navButtons {
+    margin-top: 10px; /* Add spacing between nav links and buttons */
+    flex-direction: column; /* Stack buttons vertically */
+  }
+}
+
+@media (max-width: 480px) {
+  .navRow {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    margin-left: 0; /* Center the logo */
+  }
+
+  .navLinks a {
+    font-size: 0.8rem; /* Smaller font size for very small screens */
+  }
+}

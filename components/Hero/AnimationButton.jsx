@@ -1,11 +1,9 @@
-// import { FaLinkedin } from 'react-icons/fa'; // Importing LinkedIn icon from react-icons
-import styles from '../../src/styles/AnimationButton.module.css'; // Importing the CSS module for styling
+import styles from '../../src/styles/Hero/AnimationButton.module.css';
 
 const AnimatedButton = () => {
   return (
     <button className={styles.animatedButton}>
-
-      Top 20 Indian Startups of 2023
+      Contact Us
     </button>
   );
 };

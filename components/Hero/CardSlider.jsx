@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import img1 from "../../public/Hero/img1.png";
-import styles from "../../src/styles/CardSlider.module.css";
+import styles from "../../src/styles/Hero/CardSlider.module.css";
 import righttick from "../../public/Hero/right.png";
 import Star from "./Star";
 

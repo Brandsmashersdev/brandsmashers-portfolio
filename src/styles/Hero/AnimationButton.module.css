@@ -1,0 +1,75 @@
+/* Base Styles for Animated Button */
+.animatedButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem; /* Base padding */
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin: 0 30px; /* Margin left and right */
+  background: linear-gradient(45deg, #46316b, hsl(310, 87%, 54%)); /* Blue and purple mix */
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s ease infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.animatedButton:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+/* Icon style */
+.icon {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.5rem;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive Styles */
+
+/* For medium-sized devices */
+@media (max-width: 1200px) {
+  .animatedButton {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 0.9rem; /* Slightly smaller font size */
+   
+    width: auto; /* Allow button to resize */
+  }
+}
+
+/* For small-sized devices */
+@media (max-width: 768px) {
+  .animatedButton {
+    padding: 0.4rem 0.8rem; /* Reduce padding for smaller screens */
+    font-size: 0.8rem; /* Smaller font size */
+    /* Margin for spacing and center alignment */
+    width: auto; /* Allow button to resize */
+  }
+}
+
+/* For extra small-sized devices */
+@media (max-width: 480px) {
+  .animatedButton {
+    padding: 0.4rem 0.6rem; /* Minimal padding for very small screens */
+    font-size: 0.7rem; /* Smaller font size */
+    /* Center and space out */
+    position: static; /* Use static to keep the button in the flow */
+    transform: translateX(0); /* Remove horizontal transform */
+    width: auto; /* Adjust width */
+  }
+}
