@@ -1,0 +1,91 @@
+.topdevSection {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f9fc;
+  }
+  
+  .topdevSection h2 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #2c3e50;
+  }
+  
+  .topdevTitleHighlight {
+    color: #7b61ff;
+    background: linear-gradient(to right, #7b61ff, #ff61a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .topdevTitle{
+    color:#000;
+  }
+  .topdevSubtitle {
+    margin: 24px;
+    font-size: 16px;
+    color: #5f5f6c;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .topdevSectionBox {
+    align-items: center;
+    padding: 0px 200px;
+    width:95%;
+  }
+  
+  .topdevCompanyLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .topdevCompanyLogo {
+    margin: 10px;
+    width: 180px;   
+    height: 56px;  
+    padding: 20px;  
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #e0e0e0; 
+  }
+  
+  .topdevCompanyLogo img {
+    max-width: 100%;
+    max-height: 56px;
+    object-fit: contain; 
+  }
+
+
+  /* .topdevBlueLine {
+    height: 4px;
+    width: 100%;
+    background-color: #7b61ff;
+    margin-top: 15px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+  } */
+  
+  @media (max-width: 768px) {
+    .topdevSection h2 {
+      font-size: 28px;
+    }
+  
+    .topdevSubtitle {
+      font-size: 16px;
+    }
+  
+    .topdevCompanyLogo {
+      width: 120px; 
+      height: 80px;  
+    }
+  
+    .topdevCompanyLogo img {
+      max-height: 40px;
+    }
+  }
