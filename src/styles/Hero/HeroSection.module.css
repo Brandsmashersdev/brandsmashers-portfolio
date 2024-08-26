@@ -2,9 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6rem;
-  background-color: #f7f8fa;
+  padding: 3rem 5rem;
+  /* background-color: #f7f8fa; */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  
+  background: linear-gradient(to right, rgb(110, 22, 110), #bd2571, hsl(235, 55%, 42%), rgb(110, 22, 110), #702f50); 
 }
 
 .heroContainer {
@@ -18,17 +20,23 @@
 }
 
 .highlight {
-  color: rgb(86, 157, 211);
+  color: hsl(280, 9%, 87%);
 }
 
 .highlight1 {
-  color: #e199d7;
+  color: #d7f024;
 }
 
 .heroContainer p {
   margin-top: 1rem;
   font-size: 1rem;
-  color: #555;
+  color:white;
+  /* color: #1D2434B8 !important; */
+}
+
+.hours {
+  color: black;
+  font-weight: 800;
 }
 
 .buttons {
@@ -49,7 +57,7 @@
   cursor: pointer;
   width: 200px; /* Set consistent width for both buttons */
   height: 50px; /* Set consistent height for both buttons */
-  max-width: 200px; /* Ensure it doesn't get too wide */
+  max-width: 500px; /* Ensure it doesn't get too wide */
 }
 
 .hireButton {
@@ -58,8 +66,8 @@
 }
 
 .contactButton {
-  border: 1px solid #0070f3;
-  color: #0070f3;
+  border: 1px solid #171a1d;
+  color: white;
   background: none;
 }
 
@@ -71,13 +79,7 @@
   mix-blend-mode: multiply;
 }
 
-.clutch {
-  margin-bottom: 10px;
-  margin-left: 20px;
-  mix-blend-mode: multiply;
-}
-
-.g {
+.clutch, .g {
   margin-bottom: 10px;
   margin-left: 20px;
   mix-blend-mode: multiply;
@@ -94,7 +96,6 @@
 }
 
 .imageContainer {
- 
   flex: 1;
   display: flex;
   align-items: center;
@@ -105,9 +106,7 @@
 .heroImage {
   width: 400px;
   height: 300px;
-  mix-blend-mode: multiply;
-  background-image: url("../../public/Hero/download.png");
-  mix-blend-mode: multiply;
+  background-image: url("../../../public/Hero/download.png");
   background-size: cover;
   background-position: center;
   border-radius: 0%;
@@ -121,7 +120,21 @@
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .heroSection {
-    padding: 4rem;
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .heroContainer {
+    max-width: 100%;
   }
 
   .heading {
@@ -133,7 +146,6 @@
   .heroSection {
     flex-direction: column;
     text-align: center;
-    padding: 3rem 1.5rem;
   }
 
   .heroContainer {
@@ -153,14 +165,8 @@
 
   .hireButton,
   .contactButton {
-    margin: 0.5rem 0;
-    width: 200px; /* Consistent width for both buttons */
-    height: 50px; /* Consistent height for both buttons */
-    max-width: none; /* Remove max-width restriction */
-  }
-
-  .starContainer {
-    font-size: 1.5rem; /* Adjust size as needed */
+    width: 180px; /* Slightly smaller for better fit */
+    height: 45px; /* Slightly smaller for better fit */
   }
 
   .imageContainer {
@@ -173,14 +179,14 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .heroSection {
-    padding: 2rem 1rem;
+    padding: 1.5rem;
   }
 
   .heading {
     font-size: 1.5rem;
-    padding-top: 30px;
+    padding-top: 1rem;
   }
 
   .heroContainer p {
@@ -194,7 +200,24 @@
 
   .hireButton,
   .contactButton {
-    width: 180px; /* Slightly smaller for very small screens */
-    height: 45px; /* Slightly smaller for very small screens */
+    width: 150px; /* Smaller width for very small screens */
+    height: 40px; /* Smaller height for very small screens */
+  }
+}
+
+@media (max-width: 360px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .heroImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hireButton,
+  .contactButton {
+    width: 120px; /* Adjust for extra-small screens */
+    height: 35px; /* Adjust for extra-small screens */
   }
 }

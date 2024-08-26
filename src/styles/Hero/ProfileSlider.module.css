@@ -1,19 +1,23 @@
 .mainWrapper {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   padding: 0;
-  margin: 0;
+  margin-right: 80;
+  margin-bottom: 200px;
+  margin-left: 50px;
+  border-radius: 5px;
+  /* Adjust values as needed */
 }
 
 .sliderContainer {
   display: flex;
   align-items: start;
   position: relative; /* Allows overlapping of the button */
-  box-shadow: 0px 4px 10px 0px white;
   border-radius: 5px;
-  padding: 10px; /* Consistent shadow */
+  padding: 5px; /* Consistent shadow */
 }
 
 .sliderWrapper {
@@ -24,7 +28,7 @@
 
 .sliderInner {
   display: flex;
-  transition: transform 0.5s linear; /* Smooth sliding without delay */
+  transition: transform 0.3s linear; /* Smooth sliding without delay */
 }
 
 .profileSlide {
@@ -40,7 +44,7 @@
 }
 .imagess{
   border-radius: 50%;
-  background-color: red;
+  
   border: 3px solid;
  }
 

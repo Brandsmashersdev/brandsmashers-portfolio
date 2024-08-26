@@ -1,5 +1,5 @@
 // components/StarRating.js
-import styles from '../../src/styles/StarRating.module.css'; // Correctly import CSS module
+import styles from '../../src/styles/Hero/StarRating.module.css'; // Correctly import CSS module
 
 const StarRating = () => {
   return (
