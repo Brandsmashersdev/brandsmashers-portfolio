@@ -2,11 +2,10 @@
     padding: 60px 20px;
     background-color: #fff;
     text-align: center;
-
 }
 
 .featuredLogos h1 {
-    font-size:40px;
+    font-size: 45px;
     font-weight: 900;
     margin-bottom: 50px;
     color: #000000;
@@ -27,21 +26,14 @@
     transition: transform 0.3s ease;
 }
 
-.subFeaturedSection{
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border:0.1px solid #cfc7c7;
-    width:64%;
-    height:60%; 
-    align-items: center;
-    margin-left: 320px;
-
+.subFeaturedSection {
+    border-radius: 40px;
 }
 
 .featuredInfo {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: stretch;
-    /* gap: 20px; */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -49,11 +41,11 @@
 .infoBox {
     background-color: #f7f9fc; 
     padding: 48px;
-    flex: 1 1 30%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border:0.1px solid #cfc7c7;
-    transition: box-shadow 0.3s ease;
+    flex: 1 1 28%;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
+    border: 1px solid #e0e7ef;
     text-align: center;
+    transition: box-shadow 0.3s ease;
 }
 
 .infoBox:hover {
@@ -61,9 +53,8 @@
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 12px;
-
 }
 
 .infoBox h3 {
@@ -75,9 +66,31 @@
 }
 
 .infoBox p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.6;
-    color: #666;
+    color: #1d2434;
+    margin-bottom: 0px;
+    max-width: 200px;
+    margin-left: 55px;
+
+
+}
+
+.subFeaturedTitle{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Specific border-radius for the first and third boxes */
+.firstBox {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.thirdBox {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 @media (max-width: 768px) {
@@ -128,5 +141,17 @@
 
     .infoBox p {
         font-size: 12px;
+    }
+
+    .firstBox {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+       }
+    
+    .thirdBox {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 0px;
     }
 }
