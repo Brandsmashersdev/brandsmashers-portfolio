@@ -9,7 +9,7 @@ import FeatureSection from '../../components/Hero/FeaturedSection';
 import Testimonials from "../../components/Hero/Testimonials";
 import Investors from "../../components/Hero/Investors";
 import Offer from "../../components/Hero/Offer"
-
+import CaseStudies from '../../components/CaseStudies/caseStudies';
 const Home = () => {
   return (
     <>
@@ -21,6 +21,7 @@ const Home = () => {
       <Testimonials/>
       <Investors/>
       <Offer/>
+      <CaseStudies/>
       <VettingProcess/>
       <Footer/>
     </>
