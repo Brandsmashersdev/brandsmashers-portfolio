@@ -5,8 +5,8 @@
   padding: 3rem 5rem;
   /* background-color: #f7f8fa; */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  
-  background: linear-gradient(to right, rgb(110, 22, 110), #bd2571, hsl(235, 55%, 42%), rgb(110, 22, 110), #702f50); 
+  height: 100%;
+  background: linear-gradient(to right, rgb(110, 22, 110), #bd2571, #084bfe, rgb(110, 22, 110), #702f50); 
 }
 
 .heroContainer {
@@ -144,7 +144,7 @@
 
 @media (max-width: 768px) {
   .heroSection {
-    flex-direction: column;
+    display: flex;
     text-align: center;
   }
 
@@ -200,7 +200,7 @@
 
   .hireButton,
   .contactButton {
-    width: 150px; /* Smaller width for very small screens */
+    width: 250px; /* Smaller width for very small screens */
     height: 40px; /* Smaller height for very small screens */
   }
 }
@@ -217,7 +217,7 @@
 
   .hireButton,
   .contactButton {
-    width: 120px; /* Adjust for extra-small screens */
+    width: 150px; /* Adjust for extra-small screens */
     height: 35px; /* Adjust for extra-small screens */
   }
 }

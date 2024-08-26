@@ -1,10 +1,11 @@
-/* Main Navbar Container */
+/* Navbar Container */
 .navContainer {
   width: 100%;
-  background-color: #ffffff; /* White background for the navbar */
-  border-bottom: 1px solid #ddd; /* Light border at the bottom */
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
   position: relative;
-  z-index: 100; /* Ensure navbar stays on top of other content */
+  z-index: 100;
+  padding: 0 20px; /* Adjusted for spacing */
 }
 
 /* Navbar Row */
@@ -12,93 +13,167 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px; /* Adjusted padding for better alignment */
-  flex-wrap: wrap; /* Allow items to wrap */
+  padding: 10px 0; /* Padding for larger screens */
 }
 
-/* Logo Container */
+/* Logo and Brand Name */
 .logo {
-  margin-left: 100px; /* Adjust margin for alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Navigation Links */
+.brandName {
+  margin-left: 15px; /* Adjusted for spacing */
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #000000; /* Adjust based on design */
+}
+
+/* Navigation Links for Desktop */
 .navLinks {
+  margin-left: 15px; /* Margin for larger screens */
   display: flex;
-  flex-grow: 1; /* Allow nav links to grow */
-  justify-content: center; /* Center links */
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .navLinks a {
-  margin-left: 30px;
+  margin-left: 20px;
   text-decoration: none;
-  color: #000000; /* Black color for nav links */
-  font-size: 1rem; /* Relative font size */
+  color: #000000;
+  font-size: 1rem;
   font-weight: 600;
-  transition: color 0.3s; /* Smooth transition effect for hover */
+  transition: color 0.1s;
 }
 
 .navLinks a:hover {
-  color: hsl(290, 100%, 61%); /* Change link color on hover */
+  color: hwb(300 4% 33%);
 }
 
-/* Action Buttons Container */
+/* Action Buttons */
 .navButtons {
   display: flex;
-  align-items: center; /* Align buttons vertically */
+  align-items: center;
+}
+.animatedButtons{
+ 
+}
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px; /* Make the icon large enough for mobile interaction */
 }
 
+/* Sidebar Menu for Mobile */
+.sidebarMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 200;
+  padding-top: 40px; /* Adjust for your design */
+  margin-bottom: 50px;
+}
+
+.sidebarMenu.showMenu {
+  transform: translateX(0);
+}
+
+.sidebarMenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sidebarMenu a:hover {
+  color: hsl(315, 94%, 21%);
+}
+
+/* Show the sidebar when .showMenu class is added */
+.showMenu {
+  display: block !important;
+}
+.animatedButtons{
+
+  margin-bottom: 10px;
+}
+.animatedButtonss{
+ 
+}
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+  /* Desktop screens */
   .navRow {
-    padding: 15px 20px;
+    margin-left: 15px; /* Apply margin only for larger screens */
+    padding: 10px 100px; /* Adjust for desktop */
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Tablet and smaller desktops */
+  .navContainer {
+    padding: 0 15px; /* Adjust for smaller screen space */
   }
 
-  .logo {
-    margin-left: 50px; /* Reduce margin on medium screens */
+  .navLinks a {
+    margin-left: 15px; /* Adjust spacing between links */
+    font-size: 0.9rem; /* Slightly smaller font size */
   }
 
-  .navLinks {
-    justify-content: flex-start; /* Align links to the start */
+  .navButtons .animatedButton {
+    padding: 8px 16px; /* Adjust button padding */
   }
 }
 
 @media (max-width: 768px) {
+  /* Mobile screens */
   .navRow {
-    flex-direction: column; /* Stack items vertically */
-    padding: 10px 15px;
-  }
-
-  .logo {
-    margin-left: 0; /* Center the logo on smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+    padding: 10px; /* Reduce padding for mobile */
   }
 
   .navLinks {
-    flex-direction: column; /* Stack links vertically */
-    align-items: center; /* Center align links */
-    margin: 10px 0; /* Add margin for spacing */
-  }
-
-  .navLinks a {
-    margin: 5px 0; /* Adjust link margins for smaller screens */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    display: none; /* Hide nav links on smaller screens */
   }
 
   .navButtons {
-    margin-top: 10px; /* Add spacing between nav links and buttons */
-    flex-direction: column; /* Stack buttons vertically */
+    display: none; /* Hide action buttons in mobile view */
+   
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger icon on smaller screens */
+  }
+
+  .sidebarMenu {
+    width: 60%; /* Adjust sidebar width for mobile view */
   }
 }
 
 @media (max-width: 480px) {
-  .navRow {
-    padding: 8px 10px;
+  /* Small mobile screens */
+  .navContainer {
+    padding: 0 10px; /* Reduce padding for smaller screen space */
   }
 
-  .logo {
-    margin-left: 0; /* Center the logo */
+  .brandName {
+    font-size: 1rem; /* Smaller font size for brand name */
   }
 
-  .navLinks a {
-    font-size: 0.8rem; /* Smaller font size for very small screens */
+  .sidebarMenu a {
+    font-size: 1rem; /* Adjust font size for menu links */
+    padding: 8px 15px; /* Adjust padding */
   }
 }
