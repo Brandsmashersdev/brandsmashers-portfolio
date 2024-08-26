@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../src/styles/Star.module.css'; 
+import styles from '../../src/styles/Hero/Star.module.css'; 
 
 const Star = ({ filled }) => {
   return (
