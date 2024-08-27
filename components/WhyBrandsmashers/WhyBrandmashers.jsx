@@ -36,7 +36,7 @@ const WhyBrandsmashers = () => {
                
                 <div className={styles.googleTag}>
                     <button className={styles.buttonGoogle}>
-                  <Image src={googleLogo} alt="Google"  width={20} height={20} className={styles.logos}/>
+                  <Image src={googleLogo} alt="Google"  width={30} height={30} className={styles.logos}/>
                    <span>Startups Accelerator: AI First 2024 </span></button>
                 </div>
                 </div>
@@ -46,7 +46,7 @@ const WhyBrandsmashers = () => {
             <div className={styles.backgroundImage}>
                      
            
-                <div className={styles.profiles}>
+                {/* <div className={styles.profiles}>
                     <div className={styles.profile}>
                         <span>Shruti Singh</span>
                         <span>Sr. Python Developer</span>
@@ -59,7 +59,7 @@ const WhyBrandsmashers = () => {
                         <span>Amit Jain</span>
                         <span>Sr. Full Stack Developer</span>
                     </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

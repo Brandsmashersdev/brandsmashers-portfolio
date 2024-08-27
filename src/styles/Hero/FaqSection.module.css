@@ -1,42 +1,120 @@
 .faqContainer {
     display: flex;
-    /* height: 100vh; */
-    background-color: #e0e0e3;
-    
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #eef1f3;
 }
 
-  .faqLeft {
-    width: 60%;
- 
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+.mainHeading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: hsl(0, 6%, 10%);
+}
+
+.faqContent {
     display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-  
-  .faqQuestions {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 0px;
+    /* background: hsl(0, 85%, 55%); 
+    box-shadow: 0 0 10px rgba(216, 32, 32, 0.1);*/
+    border-radius: 8px;
+}
+
+.faqLeft {
+    flex: 2;
+    margin: 10px;
+}
+
+.faqQuestions {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .faqQuestion {
-    padding: 10px;
-    margin: 30px;
-    cursor: pointer;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .faqQuestion:hover {
-    background-color: #ddd;
-  }
-  
-  .faqRight {
-    width: 40%;
+}
+
+.faqItem {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.faqQuestion {
+    font-weight: bold;
+    color: hsl(180, 2%, 9%);
+}
+
+.faqAnswer {
+    padding: 10px 0;
+    color: #555;
+}
+
+.faqRight {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
-  }
+    align-items: center;
+    justify-content: start;
+    /* background-color: #dbd0d0; */
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
 
-  
+.heading {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.heading span {
+    color: #d429ba;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 290px;
+}
+
+.spanButton {
+    color: hsl(213, 91%, 22%);
+}
+
+.meetingButton, .callButton {
+    padding: 10px;
+    background-color: hsl(213, 27%, 94%);
+    color: hsl(0, 0%, 5%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    width: 100%;
+}
+
+/* .meetingButton:hover, .callButton:hover {
+    background-color: #005bb5;
+    color: #fff;
+} */
+
+@media (max-width: 768px) {
+    .faqContent {
+        flex-direction: column;
+    }
+
+    .faqLeft {
+        margin-right: 0;
+    }
+
+    .faqRight {
+        margin-top: 20px;
+    }
+}
