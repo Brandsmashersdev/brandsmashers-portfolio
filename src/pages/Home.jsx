@@ -29,8 +29,11 @@ const Home = () => {
       <FeatureSection />
       <Testimonials/>
       <Investors/>
+      <SuperSourcingSolve />
       <Offer/>
+      <TopDev/>
       <CaseStudies/>
+      <FeatureSection />
       <VettingProcess/>
       <FaqSection/>
       <Footer/>

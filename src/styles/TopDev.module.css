@@ -1,5 +1,4 @@
-  
-.topdevSection {
+ .topdevSection {
   text-align: center;
   padding: 50px 20px;
   background-color: #f7f9fc;
@@ -200,8 +199,6 @@
       max-height: 40px;
     }
   } */
-
-
   .topdevSection {
     text-align: center;
     padding: 50px 20px;
@@ -226,12 +223,14 @@
   }
   
   .topdevSubtitle {
-    margin: 24px;
-    font-size: 16px;
+    margin: 12px;
+    font-size: 18px;
     color: #5f5f6c;
-    max-width: 600px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
+
   }
   
   .topdevSectionBox {

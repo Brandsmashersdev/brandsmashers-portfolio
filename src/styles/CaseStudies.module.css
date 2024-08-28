@@ -73,3 +73,21 @@
     width: 370px;
     text-align: left;
   }
+
+  @media only screen and (max-width: 480px) {
+    .stories_grid{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .stories_grid{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+  }
