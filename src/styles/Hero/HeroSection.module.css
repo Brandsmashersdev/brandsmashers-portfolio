@@ -116,7 +116,9 @@
 .paragraph {
   color: black;
 }
-
+.video{
+  z-index: 10;
+}
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .heroSection {

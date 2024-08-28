@@ -1,115 +1,202 @@
 .container {
   display: flex;
-  background-color: #e8f4fc;
+  flex-direction: column;
+  background-color: hwb(207 91% 6%);
   padding: 20px;
   border-radius: 10px;
-  justify-content: space-between;
-  margin: 150px;
+  margin: 20px;
 }
 
+/* Media Query for Tablets and Larger Screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Aligns items in a row for larger screens */
+    justify-content: space-between;
+    margin: 100px;
+  }
+}
+
+/* Left Section Styles */
 .leftSection {
-  flex: 1;
-  padding: 20px;
+  flex: 2;
+  padding: 10px;
+ 
 }
 
+/* Right Section Styles */
 .rightSection {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  margin-top: 10px;
+  margin-right: 200px;
+  background-image: url("../../../public/download.png"); /* Path to your image */
+  background-size: contain; /* Ensure the image is fully visible */
+  background-position: bottom right; /* Position the image at the bottom right */
+  background-repeat: no-repeat; /* Prevent repeating the image */
 }
 
+/* Heading and Paragraph Styles */
 .heading {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Responsive heading size */
   color: #2c2c2c;
 }
 
 .paragraph {
   color: #5a5a5a;
-  margin: 10px 0 20px;
+  margin-top: 10px;
+  font-size: 1rem; /* Responsive text size */
+}
+
+/* Stats Section Styles */
+.statsSection {
+  /* Styles can be added as needed */
+}
+
+.statsImage {
+  border-radius: 50%;
+}
+
+.statsText {
+  font-size: 0.9em;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Media Query Adjustments for Larger Screens */
+@media (min-width: 768px) {
+  .statsSection {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 }
 
 .contactButton {
-  background-color: #0056ff;
+  padding: 15px 40px;
+  background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
+  margin-right: 20px;
+  font-size: 1em;
 }
-.stats{
- 
+
+.statsImageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #0056ff;
+  padding: 10px;
+  border-radius: 10px;
   
 }
-.stats, .reviews, .googleTag {
+
+.stats,
+.reviews,
+.googleTag {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.logoss {
+  border-radius: 50%;
   margin-top: 15px;
-  display: flex;
-  align-items: center;
 }
-.stats{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  justify-content: space-between;
+
+.textgoogle {
+  margin-right: 10px;
 }
+
 .images {
   border-radius: 50%;
   margin-left: 10px;
 }
 
-.logo {
-  background-color: #0056ff;
+/* Google Button Styles */
+.googleButton {
+  background-color: #ffffff; /* White background color */
+  width: 100%; /* Full width by default */
+  border: none;
+  border-radius: 50px; /* Rounded corners for a modern look */
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logos {
-  display: flex;
-  margin-top: 10px;
-  align-items: start;
-  margin-right: 30px;
-  mix-blend-mode: multiply;
-}
-
-.profiles {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  padding: 5px 20px; /* Padding for better touch targets */
   margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  font-size: 0.9rem; /* Standard font size */
+  color: #333; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.buttonGoogle {
-  
-  color: hsl(0, 0%, 7%);
-  padding: 0px;
-  width: 300px;
-  border-radius: 10%;
-  margin-top: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+.googleButton:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-.profile {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  text-align: center;
+/* Media Query for Tablets and Larger Screens */
+@media (min-width: 768px) {
+  .googleButton {
+    width: auto; /* Adjusts width for larger screens */
+    /* padding: 10px 30px; Extra padding for larger screens */
+  }
 }
 
-.backgroundImage {
-  width: 300px;
-  height: 300px;
-  background-image: url("../../../public/Hero/download.png");
-  background-size: cover;
-  background-position: center;
-  /* border-radius: 50%; */
-  position: absolute;
-  top: 90px;
-  right: -20px;
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+    padding: 10px 30px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .statsSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactButton {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .googleButton {
+    width: 100%; /* Ensures full width on small screens */
+    padding: 15px 10px; /* Increased padding for touch targets */
+    font-size: 0.9rem; /* Slightly smaller font size for small screens */
+    flex-direction: column; /* Stacks content vertically on small screens */
+  }
+}
+
+/* Card Slider Styles */
+.cardslider {
+  background-color: #007bff;
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .cardslider {
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+}
+.backgroundImage{
+  background-color: #0056ff;
+  margin-left: 300px;
 }
