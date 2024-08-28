@@ -19,22 +19,16 @@ const Home = () => {
   return (
     <>
       <Navbar/>
-      <Hero/>
-      {/* <Brandsmashers/> */}
-      <FaqSection/>
-      <WhyBrandsmashers/>
-      
-      <SuperSourcingSolve />
-      <TopDev/>
-      <FeatureSection />
+      <Hero/>      
       <Testimonials/>
       <Investors/>
       <SuperSourcingSolve />
       <Offer/>
       <TopDev/>
       <CaseStudies/>
-      <FeatureSection />
+      <WhyBrandsmashers/>
       <VettingProcess/>
+      <FeatureSection />
       <FaqSection/>
       <Footer/>
     </>

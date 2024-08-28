@@ -115,3 +115,23 @@
     height: 30px;
   }
   
+
+  @media only screen and (max-width: 480px) {
+    .cardsContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cardsContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+
+  }

@@ -445,3 +445,31 @@
   font-size: x-large;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+  .leftContent,.rightContent{
+      display: none; 
+  }
+  .imagesContainer {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    z-index: 5; /* Between ellipse and funnel */
+  }
+
+  
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .leftContent,.rightContent{
+    display: none; 
+}
+
+  
+}
