@@ -33,22 +33,22 @@ const ProfileSlider = () => {
     <div className={styles.mainWrapper}>
       <div className={styles.sliderContainer}>
         <div className={styles.sliderWrapper}>
-          <div className={styles.sliderInner} style={{ transform: `translateX(-${currentIndex * 10}%)` }}>
+          <div className={styles.sliderInner} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {profiles.map((profile) => (
               <div key={profile.id} className={styles.profileSlide}>
                 <Image src={profile.image} alt={`Profile ${profile.id}`} className={styles.imagess} width={50} height={50} />
               </div>
             ))}
           </div>
+        
         </div>
-
         <div className={styles.buttoss}>
         <button className={styles.nextButton} onClick={nextSlide}>
           +100k <FiAlignJustify />
           <FiSearch className={styles.searchIcon} />
         </button>
         </div>
-      </div>
+        </div>
     </div>
   );
 };
