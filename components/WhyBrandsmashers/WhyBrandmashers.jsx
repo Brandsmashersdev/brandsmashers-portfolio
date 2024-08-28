@@ -1,67 +1,57 @@
 import styles from '../../src/styles/Hero/WhyBrandsmashers.module.css';
-import image from '../../public/Hero/img1.png';
+import cardslid from '../../public/Hero/cardslid.png';
 import Image from 'next/image';
-import googleLogo from '../../public/Hero/googlelogo.png'
-import clutchLogo from '../../public/Hero/clutch.png'
+import googleLogo from '../../public/Hero/googles.png'
+import clutchLogo from '../../public/Hero/clutchs.png'
 import gLogo from '../../public/Hero/g.png'
-import download from '../../public/Hero/download.png'
+import user from '../../public/Hero/img1.png'
+import download from '../../public/download.png'
+import Card from './Card';
 
 const WhyBrandsmashers = () => {
     return (
         <div className={styles.container}>
             <div className={styles.leftSection}>
-                <h2 className={styles.heading}>Why Brandsmashers anyway?</h2>
+                <h2 className={styles.heading}>Why Brandsmashers?</h2>
                 <p className={styles.paragraph}>
-                    Supersourcing is an AI recruitment platform that helps you skip CV screening
-                    and tedious interview rounds, and save up to 90% time by either hiring a
-                    software engineer or your entire engineering team with us.
+                Brandsmashers streamlines your recruitment process, eliminating 
+                unnecessary steps,<br></br> and providing you with top-tier software developers or entire teams 
+                tailored to your<br></br> needs, faster and more efficiently.
                 </p>
+
+                  <div className={styles.statsSection}>
+                    <button className={styles.contactButton}>Contact Us</button>
+                       {/* <Image src={user} alt="Top Developers" className={styles.statsImage}
+                         width={50} height={50} /> */}
+                        <span className={styles.statsText}>+100k top developers available for hire</span>
+                    </div>
                
-                <div className={styles.stats}>
-                <button className={styles.contactButton}>Contact Us</button>
-                   <div className={styles.statsImage}>
-                    <Image src={image} alt="Users" className={styles}
-                     width={50} 
-                     height={50}/>
-                   </div>
-                    +100K top developers available for hire
-                </div>
+               
                 <div className={styles.reviews}>
-                    <span>⭐⭐⭐⭐⭐ 20,000+ reviews</span>
-                 </div> 
+                    <span>⭐⭐⭐⭐⭐  <span className={styles.spanNumber}>20,000+ reviews</span></span>
+                </div> 
+                 
+                <div className={styles.logoSction}>
                  <div className={styles.logos}>  
-                    <Image src={googleLogo} alt="Google"  width={50} height={50}   className={styles.logos}/>
-                    <Image src={clutchLogo} alt="Clutch" width={50} height={50}  className={styles.logos} />
-                    <Image src={gLogo} alt="Clutch" width={50} height={50}  className={styles.logos}/>
+                    <Image src={googleLogo} alt="Google"  width={60} height={60}   />
+                    <Image src={clutchLogo} alt="Clutch" width={60} height={60}   />
+                    <Image src={gLogo} alt="Clutch" width={50} height={50} className={styles.logoss}/>
                
-                <div className={styles.googleTag}>
-                    <button className={styles.buttonGoogle}>
-                  <Image src={googleLogo} alt="Google"  width={30} height={30} className={styles.logos}/>
-                   <span>Startups Accelerator: AI First 2024 </span></button>
+                
+                <    button className={styles.googleButton}> 
+                     <Image src={googleLogo} alt="Google"  width={50} height={50} className={styles.textgoogle}/>
+                     <p className={styles.spanText}>Startups Accelerator: AI First 2024</p>
+                     </button>
+                   
                 </div>
                 </div>
             </div>
 
-            <div className={styles.rightSection}>
-            <div className={styles.backgroundImage}>
-                     
-           
-                {/* <div className={styles.profiles}>
-                    <div className={styles.profile}>
-                        <span>Shruti Singh</span>
-                        <span>Sr. Python Developer</span>
-                    </div>
-                    <div className={styles.profile}>
-                        <span>Karan Sharma</span>
-                        <span>Sr. Salesforce Developer</span>
-                    </div>
-                    <div className={styles.profile}>
-                        <span>Amit Jain</span>
-                        <span>Sr. Full Stack Developer</span>
-                    </div>
-                    </div> */}
-                </div>
-            </div>
+            
+          <div className={styles.rightSection}>
+          <Card className={styles.cardslid}/>
+            
+         </div>
         </div>
     );
 };

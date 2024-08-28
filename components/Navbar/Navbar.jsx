@@ -30,8 +30,8 @@ const Navbar = () => {
             src={logo} 
             alt="brandsmashers Logo"
             layout="fixed" 
-            height={60}
-            width={60} // Adjust based on your design
+            height={80}
+            width={80} // Adjust based on your design
           />
           <div className={styles.brandName}>Brandsmashers Tech</div>
         </div>
