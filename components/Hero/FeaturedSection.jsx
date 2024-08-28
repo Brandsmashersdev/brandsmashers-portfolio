@@ -19,21 +19,18 @@ const FeaturedSection = () => {
                 <div className={styles.featuredInfo}>
                     <div className={`${styles.infoBox} ${styles.firstBox}`}>
                         <div className={styles.icon}>⚡</div>
-                        <h2 className={styles.subFeaturedTitle}>Faster</h2>
-                        <p>Get top vetted profiles within 24-48 hours</p>
+                        <h2 className={styles.subFeaturedTitle}>Speed</h2>
+                        <p>Quick turnarounds and efficient hiring solutions.</p>
                     </div>
                     <div className={styles.infoBox}>
                         <div className={styles.icon}>💬</div>
-                        <h2 className={styles.subFeaturedTitle}>Reliable</h2>
-                        <p>Dedicated Account Manager just one email/WhatsApp away</p>
+                        <h2 className={styles.subFeaturedTitle}>Dependability</h2>
+                        <p>Consistent and trustworthy results.</p>
                     </div>
                     <div className={`${styles.infoBox} ${styles.thirdBox}`}>
-                        <div className={styles.icon}>⭐⭐⭐⭐</div>
-                        <h2 className={styles.subFeaturedTitle}>Trusted</h2>
-                        <p>
-                            4.6 Google<br />
-                            4.4 Clutch<br />
-                            4.8 G2
+                        <div className={styles.icon}>⭐⭐⭐⭐⭐</div>
+                        <h2 className={styles.subFeaturedTitle}>Credibility</h2>
+                        <p>Recognized and endorsed by leading industry sources.
                         </p>
                     </div>
                 </div>

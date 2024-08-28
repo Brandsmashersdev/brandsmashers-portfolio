@@ -22,14 +22,16 @@
   
   .SupersolveBox h2 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
+  
   }
   
   .SupersolveBox p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-weight:600;
+ 
   }
   
   .superSolvebutton{
@@ -43,6 +45,33 @@
     font-size: 1rem;
   }
   
+
+
+  .SupersolveBox::before {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 800px;
+    left: -20px;
+    top: 0;
+    border-radius: 390px;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.18) 6.76%, rgba(255, 255, 255, 0.00) 82.08%);
+    transform: rotate(45deg);
+    z-index: 1; 
+}
+
+.SupersolveBox::after {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 800px;
+    right: 139px;
+    top: -486px;
+    border-radius: 390px;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.18) 6.76%, rgba(255, 255, 255, 0.00) 82.08%);
+    transform: rotate(306deg);
+    z-index: 1; 
+}
   .superSolvebutton:hover {
     background-color: #f0f0f0;
   }

@@ -7,9 +7,15 @@ const VettingProcess = () => {
   return (
     <>
     <div>
-      <h1 className={styles.heading}>Vetting Process</h1>
+    <div className={styles.heading}><h1> <span>Brandsmashers</span> Vetting Process</h1>
+    </div>
 
-      {/* <h5 className={styles.heading}>Vetting Process</h5> */}
+
+     <div className={styles.VettingContent}>
+     <div className={styles.leftContent}>
+      <p>We carefully screen resumes and portfolios to ensure relevant experience and skills match the job requirements.</p>
+      <p1>Candidates complete tailored assessments to evaluate their technical proficiency and problem-solving abilities.</p1>
+     </div>
       <div className={styles.VettingProcessContainer}>
         <div className={styles.imagesContainer}>
           <Image
@@ -154,8 +160,13 @@ const VettingProcess = () => {
             {/* </div> */}
           </div>
         </div>
-      {/* </div> */}
-                </div>
+
+        <div className={styles.rightContent}> 
+        <p>Senior developers conduct detailed interviews to assess candidates' practical knowledge and coding expertise.</p>
+        <p>Experienced developers review the overall performance to ensure a strong fit for the role.</p>
+        </div>
+  </div>
+</div>
     </>
   );
 };
