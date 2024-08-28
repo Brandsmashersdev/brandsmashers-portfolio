@@ -2,8 +2,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: #6c63ff;
     border-radius: 50%;
     display: flex;
@@ -15,11 +15,11 @@
   }
   
   .slickPrev {
-    left: 10px;
+    left: 30px;
   }
   
   .slickNext {
-    right: 10px;
+    right: 30px;
   }
   
   .slick-prev:before, .slick-next:before {
@@ -31,7 +31,7 @@
   }
   
   .slick-prev:hover, .slick-next:hover {
-    background-color: #5348b7;
+    background-color: #ada4ff;
   }
   
   .testimonials_section {
@@ -46,15 +46,16 @@
   }
   
   .slick-list {
-    margin: 0 120px; /* Negative margin to counteract the slide margins */
+    margin: 0 60px;
     padding: 0;
   }
   
   .slick-slide {
     display: flex;
     justify-content: center;
-    margin: 0 100px;
+    margin: 0 15px;
     padding: 0 10px;
+    gap: 20px;
   }
   
   .testimonial_card {
@@ -65,10 +66,12 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    height: 400px; /* Set a fixed height for consistent card sizes */
-    box-sizing: border-box; /* Ensure padding is included in the height */
-    margin: 0 15px;
+    height: auto; 
+    box-sizing: border-box; 
     border: 1px solid black;
+    margin: 0 15px;
+    width: 90%!important; 
+  
   }
   
   .testimonial_author {
@@ -119,10 +122,6 @@
     font-weight: 700;
   }
 
-  /* .testimonials_section{
-    margin: 30px;
-  } */
-
   .cardsContainer{
     margin-top: 60px;
   }
@@ -130,4 +129,10 @@
   .testimonial_logo{
     font-size: 30px;
 
-  }
+  } 
+
+
+  .slick-track {
+    display: flex;
+    gap: 20px; /* Adjust gap to desired spacing */
+}

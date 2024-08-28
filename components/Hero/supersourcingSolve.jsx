@@ -5,9 +5,10 @@ const SuperSourcingSolve = () => {
   return (
     <div className={styles.SupersolveContainer}>
       <div className={styles.SupersolveBox}>
-        <h2>The problem that job platforms cannot solve, Supersourcing solves</h2>
-        <p>No pre and post hiring hustle required, we take care of everything. Want to learn more?</p>
-        <button className={styles.superSolvebutton}>Schedule a call</button>
+        <h2>Brandsmashers fills the gaps where job platforms fall short. <br/>
+        We handle the entire hiring process so you don’t have to. </h2>
+        <p>Ready to see how we make hiring hassle-free? </p>
+        <button className={styles.superSolvebutton}>Call Us Today</button>
       </div>
     </div>
   );

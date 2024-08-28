@@ -15,13 +15,13 @@ const Home = () => {
     <>
       <Navbar/>
       <Hero/>
-      <SuperSourcingSolve />
-      <TopDev/>
-      <FeatureSection />
       <Testimonials/>
       <Investors/>
+      <SuperSourcingSolve />
       <Offer/>
+      <TopDev/>
       <CaseStudies/>
+      <FeatureSection />
       <VettingProcess/>
       <Footer/>
     </>

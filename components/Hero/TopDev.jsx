@@ -11,10 +11,10 @@ const TopDevSection = () => {
   return (
     <section className={styles.topdevSection}>
       <h2>
-        <span className={styles.topdevTitleHighlight}>Top Devs</span><span className={styles.topdevTitle}>, Trusted by The Best in Business</span>
+        <span className={styles.topdevTitleHighlight}>Top Developers</span><span className={styles.topdevTitle}> for top companies</span>
       </h2>
       <p className={styles.topdevSubtitle}>
-        Join 24 Unicorns, 132 YC-backed Startups, 17 Fortune 500s, 20 VC Portfolios & 400 Large IT Services Companies who trusted Supersourcing.
+        We connect you with top tech talent that delivers results and drives your business forward.
       </p>
       <div className={styles.topdevSectionBox}>
         <div className={styles.topdevCompanyLogos}>
