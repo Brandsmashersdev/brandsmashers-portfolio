@@ -51,7 +51,7 @@ const Investors = () => {
 
     <div className={styles.investors_section}>
           <h2 className={styles.ivestors_title}>Trusted by top investors</h2>
-        <div className="slider-container">
+        <div className={styles.slider_container}>
             <Slider {...settings}>
                 {data.map((investor, index) => (
                     <div className={styles.slider_item} key={index}>

@@ -10,9 +10,9 @@ import WhyBrandsmashers from '../../components/WhyBrandsmashers/WhyBrandmashers'
 import FaqSection from '../../components/FaqSection/FaqSection';
 // import Brandsmashers from '../../components/WhyBrandsmashers/Brandsmashers';
 
-import Testimonials from "../../components/Hero/Testimonials";
-import Investors from "../../components/Hero/Investors";
-import Offer from "../../components/Hero/Offer"
+import Testimonials from "../../components/Testimonials/Testimonials";
+import Investors from "../../components/Investors/Investors";
+import Offer from "../../components/Offer/Offer"
 import CaseStudies from '../../components/CaseStudies/caseStudies';
 
 const Home = () => {
