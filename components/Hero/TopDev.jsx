@@ -2,9 +2,8 @@ import styles from '@/styles/TopDev.module.css';
 
 const TopDevSection = () => {
   const companies = [
-    'teslac', 'amazon', 'salesforce', 'walmart', 'google@', 
-    'meta', 'spotify', 'dunzo', 'paytm', 'uber', 
-    'chase', 'leapfinance', 'khatabook', 'adani', 'airbnb', 
+   'amazon', 'salesforce','spotify', 'accion-labs','dunzo', 'Goeasy','paytm', 'uber', 
+    'chase', 'leapfinance', 'khatabook', 'airbnb', 
     'swiggy', 'github'
   ];
 
@@ -19,23 +18,23 @@ const TopDevSection = () => {
       <div className={styles.topdevSectionBox}>
         <div className={styles.topdevCompanyLogos}>
           <div className={styles.row7}>
-            {companies.slice(0, 7).map((company, index) => (
+            {companies.slice(0, 6).map((company, index) => (
               <div key={index} className={styles.topdevCompanyLogo}>
-                <img src={`/Hero/${company}.png`} alt={company} />
+                <img src={`/topDevs/${company}.png`} alt={company} />
               </div>
             ))}
           </div>
           <div className={styles.row6}>
-            {companies.slice(7, 13).map((company, index) => (
+            {companies.slice(6, 11).map((company, index) => (
               <div key={index} className={styles.topdevCompanyLogo}>
-                <img src={`/Hero/${company}.png`} alt={company} />
+                <img src={`/topDevs/${company}.png`} alt={company} />
               </div>
             ))}
           </div>
           <div className={styles.row5}>
-            {companies.slice(13, 18).map((company, index) => (
+            {companies.slice(11, 20).map((company, index) => (
               <div key={index} className={styles.topdevCompanyLogo}>
-                <img src={`/Hero/${company}.png`} alt={company} />
+                <img src={`/topDevs/${company}.png`} alt={company} />
               </div>
             ))}
           </div>

@@ -88,12 +88,12 @@ const HeroSection = () => {
       </div>
       
       <div className={styles.imageContainer}>
-        <div className={styles.video}>
+        {/* <div className={styles.video}>
           <video width={500} height={100}  autoPlay >
             <source src="/Hero/video.mp4.gif" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
         
         {/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
          width="800" height="450" 
@@ -101,7 +101,7 @@ const HeroSection = () => {
          allowfullscreen></iframe> */}
 
         {/* <div className={styles.heroImage}> </div> */}
-        <CardSlider/>
+        <CardSlider/> 
       </div>
     </div>
   );
