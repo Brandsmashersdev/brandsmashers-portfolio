@@ -141,6 +141,23 @@
 @media (min-width: 1024px) {
   .testimonial_card {
       height: 450px; /* Height for larger screens */
+      font-size: 20px;
+  }
+  .testimonials_subtitle{
+    margin: 10px;
+  }
+  .testimonial_text{
+    font-size: 20px;
+  }
+  .testimonial_author{
+    font-size: 15px;
+  }
+  .testimonial_name{
+    font-size: 20px;
+  }
+  .testimonial_image{
+    height: 40px;
+    width: 40px;
   }
 }
 
@@ -148,17 +165,56 @@
   .testimonial_card {
       height: 400px; /* Height for medium screens */
   }
+  .testimonial_text{
+    font-size: 20px;
+  }
+  .testimonial_author{
+    font-size: 15px;
+  }
+  .testimonial_name{
+    font-size: 20px;
+  }
+  .testimonial_image{
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media (max-width: 768px) {
   .testimonial_card {
       height: 350px; /* Height for smaller screens */
   }
+  .testimonial_text{
+    font-size: 20px;
+  }
+  .testimonial_author{
+    font-size: 15px;
+  }
+  .testimonial_name{
+    font-size: 20px;
+  }
+  .testimonial_image{
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media (max-width: 480px) {
   .testimonial_card {
       height: auto; /* Allow auto height for very small screens */
+  }
+  .testimonial_text{
+    font-size: 15px;
+  }
+  .testimonial_author{
+    font-size: 15px;
+  }
+  .testimonial_name{
+    font-size: 20px;
+  }
+  .testimonial_image{
+    height: 40px;
+    width: 40px;
   }
 
   .slick-slide {

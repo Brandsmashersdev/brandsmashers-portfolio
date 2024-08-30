@@ -13,6 +13,7 @@ const Footer = () => {
           Founded in 2018, Brandsmashers has rapidly expanded its reach with clients across multiple industries. We provide a comprehensive suite of IT services and tailored solutions to businesses worldwide, specialising in over 20 domains.
           </p>
         </div>
+        
 
         <div className={styles.offerings}>
           <h4>OFFERINGS</h4>
