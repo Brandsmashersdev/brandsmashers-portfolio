@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: #eef1f3;
+    /* background-color: #eef1f3; */
+    background: linear-gradient(135deg, #e9edf1, hsl(208, 50%, 87%));
 }
 
 .mainHeading {

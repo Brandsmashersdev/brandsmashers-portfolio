@@ -39,7 +39,7 @@ const HeroSection = () => {
      
         {/* <div className={styles.heroImage}> </div> */}
         <div className={styles.cardSlid}>
-           <CardSlider className={styles. card}/>
+           <CardSlider className={styles.card}/>
         </div>
         </div>
       

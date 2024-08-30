@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from "../../src/styles/Hero/Navbar.module.css";
 import Image from 'next/image';
-import logo from '../../public/Hero/logo.png';
+import logo from '../../public/Hero/bransdmasherslogo.png';
+
 import AnimatedButton from '../Hero/AnimationButton';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import both the hamburger and cross icons
 import { useRouter } from 'next/router'; // Import useRouter for navigation
@@ -30,8 +31,8 @@ const Navbar = () => {
             src={logo} 
             alt="brandsmashers Logo"
             layout="fixed" 
-            height={80}
-            width={80} // Adjust based on your design
+            height={90}
+            width={90} // Adjust based on your design
           />
           <div className={styles.brandName}>Brandsmashers Tech</div>
         </div>
