@@ -1,0 +1,57 @@
+.sliderContainer {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #000; /* Adjust the background color as needed */
+    position: relative;
+  }
+  
+  .slider {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 15s linear infinite;
+    
+  }
+  
+  .sliderText {
+    color: #FFF;
+    text-align: center;
+    font-family: Gabarito;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    white-space: nowrap;
+    padding: 40px 0;
+    display: inline-block;
+        
+  }
+
+  .sliderText span{
+    background: linear-gradient(90deg, #134CFB 34.68%, #EE4C8E 91.26%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Gabarito;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    margin-right: 80px;
+  }
+  
+  .sliderText:hover {
+    color: rgb(207, 2, 214); /* Change to the color you want on hover */
+  }
+  
+  /* Keyframes for sliding animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  

@@ -435,6 +435,23 @@
   font-size: x-large;
 }
 
+.leftContent p {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgba(123, 130, 236, 0.685);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.leftContent p1 {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgba(255, 152, 152, 0.774);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
 .rightContent{
   width: auto;
   margin: auto;
@@ -443,6 +460,22 @@
   flex-direction: column;
   gap: 90px;
   font-size: x-large;
+}
+
+.rightContent p {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgba(255, 192, 203, 0.507);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.rightContent p1 {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgb(100, 146, 245);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -472,4 +505,87 @@
 }
 
   
+}
+
+/* Animation Keyframes */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottomLeft {
+  0% {
+    transform: translateX(-100%);
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottomRight {
+  0% {
+    transform: translateX(100%);
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation Classes */
+.animateLeft {
+  animation: slideInLeft 1s ease-out;
+}
+
+.animateRight {
+  animation: slideInRight 1s ease-out;
+}
+
+.animateBottomLeft {
+  animation: slideInBottomLeft 1s ease-out;
+}
+
+.animateBottomRight {
+  animation: slideInBottomRight 1s ease-out;
+}
+
+/* Apply Delays for Sequential Animation */
+.leftContent p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.leftContent p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.rightContent p:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.rightContent p:nth-child(2) {
+  animation-delay: 1.5s;
 }

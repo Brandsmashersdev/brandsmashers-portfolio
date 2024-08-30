@@ -62,15 +62,15 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    height: auto; 
+    height: 450px; 
     box-sizing: border-box; 
     border: 1px solid black;
-    margin: 0 15px;
-    width: 90%!important; 
+    margin: 50px 15px;
+    width: 75%!important; 
   
   }
   
@@ -135,4 +135,33 @@
   .slick-track {
     display: flex;
     gap: 20px; /* Adjust gap to desired spacing */
+}
+
+
+@media (min-width: 1024px) {
+  .testimonial_card {
+      height: 450px; /* Height for larger screens */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .testimonial_card {
+      height: 400px; /* Height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial_card {
+      height: 350px; /* Height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial_card {
+      height: auto; /* Allow auto height for very small screens */
+  }
+
+  .slick-slide {
+      margin: 0 5px; /* Adjusted margin for very small screens */
+  }
 }

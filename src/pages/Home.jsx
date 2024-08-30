@@ -14,6 +14,7 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import Investors from "../../components/Investors/Investors";
 import Offer from "../../components/Offer/Offer"
 import CaseStudies from '../../components/CaseStudies/caseStudies';
+import TextSlider from '../../components/TextSlider/TextSlider';
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <FeatureSection />
       <FaqSection/>
       <Footer/>
+      <TextSlider/>
     </>
   )
 }
