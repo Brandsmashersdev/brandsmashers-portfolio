@@ -29,7 +29,7 @@ const Home = () => {
       <TopDev/>
       <CaseStudies/>
       <WhyBrandsmashers/>
-      <VettingProcess/>
+      {/* <VettingProcess/> */}
       <FeatureSection />
       <FaqSection/>
       <Footer/>

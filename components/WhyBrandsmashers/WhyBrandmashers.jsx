@@ -50,7 +50,7 @@ const WhyBrandsmashers = () => {
        
       <div className={styles.buttonWrapper}>
         <p className={styles.googleButton}>
-          <Image src={googleLogo} alt="Google" width={20} height={20} className={styles.textGoogle} />
+          <Image src={googleLogo} alt="Google" width={30} height={30} className={styles.textGoogle} />
           <span className={styles.spanText}>Startups Accelerator: AI First 2024</span>
         </p>
       </div>

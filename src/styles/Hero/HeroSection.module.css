@@ -5,7 +5,11 @@
   padding:0px  150px ; 
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   height: 80vh;
+<<<<<<< Updated upstream
   background: linear-gradient(90deg, hwb(289 26% 28%), hwb(305 3% 61%), rgb(125, 57, 112) 100%);
+=======
+  background: linear-gradient(90deg, hwb(289 13% 29%), hwb(304 6% 56%), rgb(14, 0, 12) 100%);
+>>>>>>> Stashed changes
   position: relative;
 }
 
@@ -21,7 +25,8 @@
 }
 
 .highlight {
-  color: hsl(280, 9%, 87%);
+ 
+  color: hwb(280 85% 1%);
 }
 
 .highlight1 {
@@ -213,6 +218,7 @@
   padding-bottom: 60px;
   margin-top: 30px;
   margin-left: 200px;
+
 
 }
 
