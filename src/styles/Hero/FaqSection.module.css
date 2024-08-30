@@ -119,3 +119,30 @@
         margin-top: 20px;
     }
 }
+
+.faqItem {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Ensure that the icon is positioned relative to the question box */
+  }
+  
+  .faqQuestion {
+    display: flex;
+    justify-content: space-between; /* Pushes the icon to the right side */
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .arrowIcon {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .faqAnswer {
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  

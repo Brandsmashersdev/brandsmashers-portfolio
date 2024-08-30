@@ -2,19 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 5rem;
-  /* background-color: #f7f8fa; */
+  padding:0px  150px ; 
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  height: 100%;
-  background: linear-gradient(to right, rgb(110, 22, 110), #bd2571, #084bfe, rgb(110, 22, 110), #702f50); 
+  height: 80vh;
+  background: linear-gradient(90deg, hwb(289 26% 28%), hwb(305 3% 61%), rgb(125, 57, 112) 100%);
+ 
 }
 
 .heroContainer {
-  max-width: 600px;
+  /* max-width: 500px; */
+  flex: 1 1 300px; /* Grow to fit, but not less than 300px */
 }
 
 .heading {
-  font-size: 2.9rem;
+  font-size: 2rem;
   font-weight: bold;
   color: black;
 }
@@ -73,26 +74,6 @@
 
 .arrowIcon {
   margin-left: 0.5rem;
-}
-
-.google {
-  mix-blend-mode: multiply;
-}
-
-.clutch, .g {
-  margin-bottom: 10px;
-  margin-left: 20px;
-  mix-blend-mode: multiply;
-  border-radius: 50%;
-}
-
-.AnimatedButton {
-  display: flex;
-  align-items: center;
-}
-
-.imageb {
-  mix-blend-mode: multiply;
 }
 
 .imageContainer {
@@ -179,6 +160,8 @@
     width: 250px;
     height: 250px;
   }
+ 
+  
 }
 
 @media (max-width: 576px) {
@@ -221,5 +204,27 @@
   .contactButton {
     width: 150px; /* Adjust for extra-small screens */
     height: 35px; /* Adjust for extra-small screens */
+  }
+}
+
+.cardSlid {
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 60px;
+  margin-top: 30px;
+  margin-left: 200px;
+
+}
+
+ /* Adjustments for Laptop Screen */
+@media (min-width: 992px) {
+  .cardSlid {
+  
+    max-width: 600px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    margin-left: 700px;
+   
+  
   }
 }

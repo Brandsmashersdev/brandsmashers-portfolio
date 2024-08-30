@@ -15,16 +15,18 @@ import Investors from "../../components/Hero/Investors";
 import Offer from "../../components/Hero/Offer"
 import CaseStudies from '../../components/CaseStudies/caseStudies';
 
+
 const Home = () => {
   return (
     <>
       <Navbar/>
-      <Hero/>      
+      <Hero/>  
+        
       <Testimonials/>
       <Investors/>
       <SuperSourcingSolve />
       <Offer/>
-      <TopDev/>
+      {/* <TopDev/> */}
       <CaseStudies/>
       <WhyBrandsmashers/>
       <VettingProcess/>

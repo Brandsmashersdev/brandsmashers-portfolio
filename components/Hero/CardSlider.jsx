@@ -8,7 +8,7 @@ import Star from "./Star";
 const cardData = [
   {
     id: 1,
-    name: "Neha Patankar",
+    name: "Alex Johnson",
     title: "Frontend Developer",
     rate: "$90/hr",
     img: img1,
@@ -18,7 +18,7 @@ const cardData = [
   },
   {
     id: 2,
-    name: "Dolly Patankar",
+    name: "Dolly Sharma",
     title: "YouTuber & Blogger",
     rate: "$30/hr",
     img: img1,
@@ -28,7 +28,7 @@ const cardData = [
   },
   {
     id: 3,
-    name: "Nishi Patankar",
+    name: "John Smith",
     title: "Frontend Developer",
     rate: "$30/hr",
     img: img1,
@@ -38,7 +38,7 @@ const cardData = [
   },
   {
     id: 4,
-    name: "Nidhi Patankar",
+    name: "Emma Brown",
     title: "Backend Developer",
     rate: "$30/hr",
     img: img1,
@@ -48,7 +48,7 @@ const cardData = [
   },
   {
     id: 5,
-    name: "Tanu Patankar",
+    name: "Emma Brown",
     title: "React JS Developer",
     rate: "$30/hr",
     img: img1,
