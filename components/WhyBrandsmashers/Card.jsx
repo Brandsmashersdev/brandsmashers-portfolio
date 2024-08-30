@@ -58,26 +58,27 @@ import styles from '../../src/styles/Hero/Card.module.css'; // Assuming you're u
 const personData = [
     {
         id: 1,
-        name: "Neha Patankar",
-        title: "Frontend Developer",
-        rate: "super dev",
-        img: "/Hero/img1.png", // Correcting the path for Next.js usage
+        name: "Amit Sharma",
+        title: "Backend Developer",
+        rate: "80% match",
+        img: "/Hero/img1.png", // Ensure the path is correct for your setup
     },
     {
         id: 2,
-        name: "Dolly Patankar",
-        title: "YouTuber & Blogger",
-        rate: "90% match",
-        img: "/Hero/img1.png",
+        name: "Sneha Kapoor",
+        title: "UI/UX Designer",
+        rate: "85% match",
+        img: "/Hero/img1.png", // Ensure the path is correct for your setup
     },
     {
         id: 3,
-        name: "Nishi Patankar",
-        title: "Frontend Developer",
-        rate: "95% match",
-        img: "/Hero/img1.png",
+        name: "Rahul Desai",
+        title: "Full Stack Developer",
+        rate: "90% match",
+        img: "/Hero/img1.png", // Ensure the path is correct for your setup
     },
 ];
+
 
 const Card = () => {
     return (
@@ -96,7 +97,17 @@ const Card = () => {
                         <h3 className={styles.cardName}>{person.name}</h3>
                         <p className={styles.cardTitle}>{person.title}</p>
                     </div>
-                </div>
+                 </div>
+
+                 <div className={styles.placeholders_container}>
+                    <div
+                      className={`${styles.placeholder} ${styles.placeholder_long}`}
+                    ></div>
+                    <div
+                      className={`${styles.placeholder} ${styles.placeholder_short}`}
+                    ></div>
+                  </div>
+                  
                 </div>
             ))}
         </div>

@@ -166,6 +166,9 @@
     padding: 10px;
   }
 
+}
+  
+
   @media (max-width: 1200px) {
     .topdevCompanyLogo {
       width: 160px; 
@@ -219,3 +222,4 @@
     }
   }
 }
+

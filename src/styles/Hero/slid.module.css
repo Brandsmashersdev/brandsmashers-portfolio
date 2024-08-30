@@ -1,0 +1,83 @@
+/* slid.module.css */
+
+.sliderWrapperContainer {
+    background-color:white;
+    border-radius: 5%;
+    width: 30%;
+    display: flex;
+    align-items: start; /* Align items in the center vertically */
+    /* justify-content: space-between; Space between slider and button */
+}
+
+.sliderContainer {
+    display: flex;
+    overflow: hidden; /* Hide overflow to avoid scrollbars */
+    position: relative;
+    width: 50%;/* Make the slider container flexible */
+    background-color: #f5f5f5; /* Background color for the slider container */
+    border-radius: 10px; /* Rounded corners */
+    margin-left:40px; /* Space between slider and button */
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    animation: scroll 10s linear infinite; /* Continuous scroll animation */
+}
+
+.slide {
+    flex: 0 0 auto; /* Ensures each slide stays at its original size */
+    scroll-snap-align: start; /* Aligns each slide to the start of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Slightly larger to accommodate image padding */
+    height: 60px;
+    border: 1px solid #ccc; /* Border around each slide */
+    border-radius: 50px; /* Rounded corners for slides */
+    background-color: white; /* Background color for slides */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin-right: 0; /* No gap between slides */
+}
+
+.slide img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensures image fits within the slide container */
+    border-radius: 50%; /* Makes the image round */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Button styles */
+.buttonContainer {
+    display: flex;
+    align-items: center; /* Center the button vertically */
+}
+
+.nextButton {
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px; /* Add padding around the button text */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size */
+    gap: 8px; /* Space between text and icons */
+}
+
+.searchIcon {
+    margin-left: 8px; /* Space between the icon and button text */
+}
