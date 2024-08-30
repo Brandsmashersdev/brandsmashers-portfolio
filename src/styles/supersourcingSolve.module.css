@@ -78,7 +78,7 @@
   
   @media (max-width: 768px) {
     .SupersolveBox {
-        width: 100%;
+        width: 85%;
         height:20%;
         padding: 50px 20px;
     }
@@ -99,7 +99,7 @@
 
 @media (max-width: 480px) {
     .SupersolveBox {
-        width: 100%;
+        width: 85%;
         padding: 35px 30px;
         height:20%;
     }

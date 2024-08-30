@@ -42,6 +42,7 @@ const HeroSection = () => {
            <CardSlider className={styles. card}/>
         </div>
         </div>
+      
       </div>
  
   );
