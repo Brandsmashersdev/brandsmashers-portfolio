@@ -22,12 +22,11 @@ const Home = () => {
     <>
       <Navbar/>
       <Hero/>  
-        
       <Testimonials/>
       <Investors/>
-      <SuperSourcingSolve />
+      {/* <SuperSourcingSolve /> */}
       <Offer/>
-      {/* <TopDev/> */}
+      <TopDev/>
       <CaseStudies/>
       <WhyBrandsmashers/>
       <VettingProcess/>

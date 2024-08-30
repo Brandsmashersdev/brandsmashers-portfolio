@@ -6,7 +6,7 @@
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   height: 80vh;
   background: linear-gradient(90deg, hwb(289 26% 28%), hwb(305 3% 61%), rgb(125, 57, 112) 100%);
- 
+  position: relative;
 }
 
 .heroContainer {
