@@ -2,8 +2,8 @@ import styles from '@/styles/TopDev.module.css';
 
 const TopDevSection = () => {
   const companies = [
-   'amazon', 'salesforce','spotify', 'accion-labs','dunzo', 'Goeasy','paytm', 'uber', 
-    'chase', 'leapfinance', 'khatabook', 'airbnb', 
+   'amazon', 'salesforce','spotify', 'accion-labs','dunzo', 'Goeasy','paytm','Dell','eventbrite', 'uber', 
+     'leapfinance', 'khatabook', 'airbnb', 
     'swiggy', 'github'
   ];
 
