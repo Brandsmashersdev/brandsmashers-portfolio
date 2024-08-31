@@ -5,11 +5,7 @@
   padding:0px  150px ; 
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   height: 80vh;
-<<<<<<< Updated upstream
-  background: linear-gradient(90deg, hwb(289 26% 28%), hwb(305 3% 61%), rgb(125, 57, 112) 100%);
-=======
   background: linear-gradient(90deg, hwb(289 13% 29%), hwb(304 6% 56%), rgb(14, 0, 12) 100%);
->>>>>>> Stashed changes
   position: relative;
 }
 
@@ -19,16 +15,18 @@
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: black;
 }
 
 .highlight {
  
-  color: hwb(280 85% 1%);
+  color: hwb(280 78% 5%);
 }
-
+.paragraph{
+  
+}
 .highlight1 {
   color: #d7f024;
 }

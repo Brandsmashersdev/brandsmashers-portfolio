@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #28a745;
+  /* background-color: #28a745; */
 }
 
 .card {
@@ -80,8 +80,8 @@
 .card .img {
   height: 50px;
   width: 50px;
- border-radius: 50%;
-  padding: 5px;
+  border-radius: 50%;
+  padding-right: 10px;
 }
 
 .card .img img {
@@ -92,7 +92,7 @@
 }
 
 .details .name {
-   margin-right: 70px;
+  margin-right: 70px;
   font-weight: 600;
   font-size: 12px;
 }
@@ -112,6 +112,7 @@
 
 .title {
   margin-right: 60px;
+  margin-top: 8px;
   margin-top: 2px;
   opacity: 0.8;
   font-size: 11px;
@@ -121,9 +122,11 @@
 .stars {
   display: flex;
   align-items: center;
+
   width: 150px;
   height: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
+ 
   
 }
 
@@ -131,19 +134,21 @@
   font-size: 10px;
   font-weight: 500;
   color: #777;
+  margin-top: 5px;
   
 }
 
 .right {
   width: 25px;
   height: 25px;
+  margin-top: 5px;
   background-size: cover;
 }
 
 .extra_d {
   width: 100%;
   font-size: 10px;
-  margin-left: 8px;
+  margin-left: 80px;
 }
 
 .rate {
@@ -170,7 +175,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 4px;
-  margin-top: 10px;
+  margin: 10px;
   width: 100%;
 }
 

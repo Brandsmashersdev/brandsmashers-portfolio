@@ -138,7 +138,7 @@
 }
 .spanText{
  
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 @media (min-width: 768px) {
@@ -160,6 +160,10 @@
 
   .statsRow {
     justify-content: start;
+  }
+  .spanText{
+ 
+    margin-left: 15px;
   }
 }
 
