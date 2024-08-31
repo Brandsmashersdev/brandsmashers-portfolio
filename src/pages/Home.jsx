@@ -8,8 +8,6 @@ import TopDev from '../../components/Hero/TopDev';
 import FeatureSection from '../../components/Hero/FeaturedSection';
 import WhyBrandsmashers from '../../components/WhyBrandsmashers/WhyBrandmashers';
 import FaqSection from '../../components/FaqSection/FaqSection';
-// import Brandsmashers from '../../components/WhyBrandsmashers/Brandsmashers';
-
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Investors from "../../components/Investors/Investors";
 import Offer from "../../components/Offer/Offer"
@@ -24,12 +22,12 @@ const Home = () => {
       <Hero/>  
       <Testimonials/>
       <Investors/>
-      {/* <SuperSourcingSolve /> */}
+      <SuperSourcingSolve />
       <Offer/>
       <TopDev/>
       <CaseStudies/>
       <WhyBrandsmashers/>
-      {/* <VettingProcess/> */}
+      <VettingProcess/>
       <FeatureSection />
       <FaqSection/>
       <Footer/>

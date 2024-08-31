@@ -21,7 +21,7 @@ const HeroSection = () => {
          <span className={styles.highlight}> Experienced Developers!<span className={styles.highlight1}></span></span>
         </h1>
 
-        <p>
+        <p className={styles.paragraph}>
        Get the best profiles in <span className={styles.hours}>24-48 hours,</span>
        conduct just one or two interviews with pre-vetted candidates, and onboard our domain experts immediately.
         </p>

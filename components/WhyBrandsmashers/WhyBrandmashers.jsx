@@ -6,6 +6,7 @@ import clutchLogo from '../../public/Hero/clutchs.png'
 import gLogo from '../../public/Hero/g.png'
 import user from '../../public/Hero/img1.png'
 import download from '../../public/download.png'
+import professionalImage from '../../public/Hero/Professional.png'
 import Card from './Card';
 
 const WhyBrandsmashers = () => {
