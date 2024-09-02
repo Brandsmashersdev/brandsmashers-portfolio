@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .recognition {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .recognition h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0B3B75; /* Adjust color as needed */
+    /* margin-bottom: 20px; */
+  }
+  
+  .recognitionLogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .recognitionLogo {
+    max-height: 60px;
+    object-fit: contain;
+  }
+  
+  .services {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    color: #0B3B75; /* Adjust color as needed */
+    margin-bottom: 30px;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .serviceBox {
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid #eaeaea; */
+    border-radius: 10px;
+    /* background-color: #F8F8F8; */
+    transition: transform 0.3s ease;
+  }
+  
+  .serviceBox:hover {
+    transform:translateY(-5px);
+  }
+  
+  .serviceIcon {
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
