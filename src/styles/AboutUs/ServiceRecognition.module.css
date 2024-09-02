@@ -55,13 +55,17 @@
     /* background-color: #F8F8F8; */
     transition: transform 0.3s ease;
   }
+
+  .serviceBox p{
+    font-size: 1.5rem;
+  }
   
   .serviceBox:hover {
     transform:translateY(-5px);
   }
   
   .serviceIcon {
-    height: 50px;
+    height: 150px;
+    width: 150px;
     margin-bottom: 15px;
   }
-  
