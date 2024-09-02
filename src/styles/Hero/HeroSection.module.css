@@ -5,7 +5,7 @@
   padding:0px  150px ; 
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   height: 80vh;
-  background: linear-gradient(90deg, hwb(289 13% 29%), hwb(304 6% 56%), rgb(14, 0, 12) 100%);
+  background: linear-gradient(90deg, hwb(287 52% 14%), hwb(304 6% 56%), rgb(14, 0, 12) 100%);
   position: relative;
 }
 

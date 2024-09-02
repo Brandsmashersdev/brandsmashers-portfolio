@@ -1,0 +1,171 @@
+/* components/NumbersSection.module.css */
+.numbersSection {
+    background-image: url('../../../public/Hero/backgrounds.png');
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    
+    /* Set a transparent background color */
+    background-color: hsla(268, 72%, 38%, 0.8); /* Purple color with 80% opacity */
+    
+    /* Blend the color and image */
+    background-blend-mode: overlay; /* Overlay the color on top of the image */
+    
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Adjusted padding for the section */
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    align-items: flex-start; /* Align items to the start for better layout */
+    justify-content: space-between;
+}
+
+.leftContent {
+    flex: 3;
+    max-width: 40%;
+    margin-bottom: 20px;
+    padding-right: 40px; /* Added padding for space between text and stats */
+}
+
+.rightContent {
+    flex: 2;
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ctaButton {
+    padding: 12px 20px;
+    background-color: #ff6600; /* Matching button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+    background-color: #cc5200; /* Matching hover color */
+}
+
+.stat {
+    flex: 1 1 45%; /* Makes sure the stats are 2 per row */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a polished look */
+    text-align: center;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.statNumber {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.statText {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller devices (up to 768px) */
+@media (max-width: 768px) {
+    .leftContent {
+        max-width: 100%;
+        padding-right: 0; /* Remove right padding for smaller screens */
+    }
+
+    .rightContent {
+        max-width: 100%;
+        flex-direction: column; /* Stack the stats vertically */
+    }
+
+    .stat {
+        flex: 1 1 100%; /* Make stats take full width on smaller screens */
+        margin-bottom: 10px; /* Reduced margin for closer stacking */
+    }
+
+    .title {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .ctaButton {
+        padding: 10px 18px; /* Adjust button padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Stack left and right content vertically */
+    }
+
+    .leftContent {
+        max-width: 100%;
+        padding-right: 0; /* Remove right padding for mobile screens */
+        margin-bottom: 20px; /* Added margin-bottom for spacing */
+    }
+
+    .rightContent {
+        max-width: 100%;
+        flex-direction: row; /* Display stats in rows */
+        flex-wrap: wrap; /* Wrap stats to create 2x2 grid */
+    }
+
+    .stat {
+        flex: 1 1 45%; /* Each stat takes about half the width */
+        padding: 15px; /* Adjust padding for mobile screens */
+        margin-bottom: 10px; /* Reduced margin for mobile screens */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Adjust font size for mobile screens */
+    }
+
+    .subtitle {
+        font-size: 0.9rem; /* Adjust font size for mobile screens */
+    }
+
+    .description {
+        font-size: 0.8rem; /* Adjust font size for mobile screens */
+    }
+
+    .ctaButton {
+        padding: 8px 16px; /* Adjust button padding for mobile screens */
+        font-size: 0.8rem; /* Adjust font size for mobile screens */
+    }
+}

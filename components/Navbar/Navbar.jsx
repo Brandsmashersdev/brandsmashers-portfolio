@@ -45,8 +45,8 @@ const Navbar = () => {
         {/* Navigation Links for Desktop */}
         <div className={styles.navLinks}>
         
-          <a href="#">Home</a>
-          <a href="#">Hire Developers</a>
+          <a href="/HomeSection">Home</a>
+          <a href="/Home">Hire Developers</a>
           <a href="#">Services</a>
           <a href="#">Technologies</a>
           <a href="#">About Us</a>
@@ -65,8 +65,8 @@ const Navbar = () => {
          <AnimatedButton  className={styles.animatedButtonss} />
       </div>
 
-        <a href="#" onClick={goToHome}>Home</a> {/* Close and navigate to Home */}
-        <a href="#">Hire Developers</a>
+        <a href="/HomeSection" onClick={goToHome}>Home</a> {/* Close and navigate to Home */}
+        <a href="/Home">Hire Developers</a>
         <a href="#">Services</a>
         <a href="#">Technologies</a>
         <a href="#">About Us</a>

@@ -23,7 +23,7 @@ const HeroSection = () => {
 
         <p className={styles.paragraph}>
        Get the best profiles in <span className={styles.hours}>24-48 hours,</span>
-       conduct just one or two interviews with pre-vetted candidates, and onboard our domain experts immediately.
+       conduct just one or two interviews with<br></br> pre-vetted candidates, and onboard our domain experts immediately.
         </p>
 
         <div className={styles.buttons}>

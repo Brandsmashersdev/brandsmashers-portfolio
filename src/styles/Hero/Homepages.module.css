@@ -1,0 +1,124 @@
+.heroSection {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 80vh;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #eef2f4; /* Adjust the color as needed */
+  font-weight: 800;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  padding: 12px 25px;
+  background-color: #3aa1e1; /* Adjust the color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #307a9d; /* Adjust the hover color as needed */
+}
+
+.arrowIcon {
+  margin-left: 1rem;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  height: 500px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align content to the start */
+    height: auto; /* Adjust height to content */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .title {
+    font-size: 2.5rem; /* Slightly reduce title size */
+  }
+
+  .description {
+    font-size: 1rem; /* Adjust description font size */
+  }
+
+  .imageContainer {
+    order: 2; /* Ensure image container comes after content */
+    width: 100%; /* Make image container full width */
+    margin-top: 50px; /* Add some space above image container */
+  }
+
+  .content {
+    order: 1; /* Ensure content comes before image */
+    width: 100%; /* Make content full width */
+  }
+
+  .heroImage {
+    width: 100%; /* Ensure image scales to full width */
+    max-width: 100%; /* Maintain aspect ratio */
+  }
+}
+
+/* Further adjustments for very small screens (mobile devices) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; /* Further reduce title size for small screens */
+  }
+
+  .ctaButton {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Further adjust description font size */
+  }
+
+  .container {
+    padding: 15px; /* Further adjust padding */
+  }
+}

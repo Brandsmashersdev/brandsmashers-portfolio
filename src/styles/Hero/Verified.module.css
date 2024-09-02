@@ -1,0 +1,118 @@
+.container {
+    padding: 0px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+   
+   
+  }
+  
+  .verified {
+    color: green;
+
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 50px;
+  
+  }
+  
+  .category {
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Default width for larger screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: left;
+    transition: all 0.3s ease; /* For smooth transition on hover or screen resize */
+    /* box-shadow: 10px 10px  rgb(12, 12, 80);; */
+  }
+  .category1{
+    border-left: 8px solid var(--cat-color, #cc6510);
+  }
+  .category2{
+    border-left: 8px solid var(--cat-color, #0b7d1a);
+  }
+  .category3{
+    border-left: 8px solid var(--cat-color, #080f5f);
+  }
+  .category4{
+    border-left: 8px solid var(--cat-color, hsl(200, 75%, 67%));
+  }
+  .category5{
+    border-left: 8px solid var(--cat-color, #d8d21f);
+  }
+  .category6{
+    border-left: 8px solid var(--cat-color, #dc0f75);
+  }
+
+  .categoryHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .categoryHeader h3 {
+    margin: 0;
+  }
+  
+  .categoryHeader img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ulList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ulList li {
+    margin: 5px 0;
+  }
+  
+  .viewAll {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hoverText {
+ /* Changes cursor to pointer on hover to indicate it's clickable */
+}
+
+/* Change color and position on hover */
+.hoverText:hover {
+    
+  
+}
+
+/* Change color on click using the 'active' state */
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .category {
+      width: 45%; /* Adjust for tablets and small desktops */
+   
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .categories {
+      flex-direction: column; /* Stack categories vertically */
+      align-items: center; /* Center align categories */
+    }
+  
+    .category {
+      width: 80%; /* Full width with some padding for mobile devices */
+      margin: 10px 0; /* Ensure even spacing on mobile */
+    }
+  }
+  

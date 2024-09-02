@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    /* background-color: #eef1f3; */
     background: linear-gradient(135deg, #e9edf1, hsl(208, 50%, 87%));
 }
 
@@ -21,14 +20,14 @@
     max-width: 1200px;
     margin-top: 20px;
     padding: 0px;
-    /* background: hsl(0, 85%, 55%); 
-    box-shadow: 0 0 10px rgba(216, 32, 32, 0.1);*/
     border-radius: 8px;
+    flex-wrap: wrap; /* Allows the content to wrap */
 }
 
 .faqLeft {
     flex: 2;
     margin: 10px;
+   
 }
 
 .faqQuestions {
@@ -61,11 +60,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    /* background-color: #dbd0d0; */
+    justify-content: flex-start;
     padding: 40px;
     border-radius: 8px;
     text-align: center;
+    margin: 10px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
@@ -102,18 +101,16 @@
     width: 100%;
 }
 
-/* .meetingButton:hover, .callButton:hover {
-    background-color: #005bb5;
-    color: #fff;
-} */
-
 @media (max-width: 768px) {
     .faqContent {
+        flex-wrap: wrap; 
         flex-direction: column;
+        align-items: center; /* Centers content horizontally in column layout */
     }
 
-    .faqLeft {
-        margin-right: 0;
+    .faqLeft, .faqRight {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Margin for separation */
     }
 
     .faqRight {
@@ -125,25 +122,24 @@
     cursor: pointer;
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    position: relative; /* Ensure that the icon is positioned relative to the question box */
-  }
-  
-  .faqQuestion {
+    position: relative;
+}
+
+.faqQuestion {
     display: flex;
-    justify-content: space-between; /* Pushes the icon to the right side */
+    justify-content: space-between;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-  }
-  
-  .arrowIcon {
+}
+
+.arrowIcon {
     font-size: 18px;
     margin-left: 10px;
-  }
-  
-  .faqAnswer {
+}
+
+.faqAnswer {
     padding: 10px;
     font-size: 16px;
     color: #555;
-  }
-  
+}
