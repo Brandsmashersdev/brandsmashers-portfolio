@@ -1,0 +1,33 @@
+.aboutContent {
+    padding: 2rem;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0 10%;
+    width: 75%;
+  }
+  
+  .aboutContent p {
+    margin-bottom: 1.5rem;
+    font-size: large;
+  }
+  
+  .aboutStats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #007bff;
+    background: #f9f9f9;
+    width: 40%;
+    text-align: left;
+  }
+
+  .stat p{
+    margin: 8px;
+  }
+  
