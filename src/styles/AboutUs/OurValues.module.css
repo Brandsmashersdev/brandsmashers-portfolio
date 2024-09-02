@@ -1,0 +1,49 @@
+.valuesSection {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  .valueCard {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .valueTitle {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .valueDescription {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  

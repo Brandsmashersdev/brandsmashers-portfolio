@@ -1,0 +1,60 @@
+.aboutUsSection {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 99%;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin: 0 30px 20px 30px;
+    text-align: left;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #7f8c8d;
+    margin: 0 30px 20px 30px;
+    text-align: left;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .featureBox {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .featureHeading {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .featureDescription {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  

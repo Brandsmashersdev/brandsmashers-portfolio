@@ -49,7 +49,7 @@ const Navbar = () => {
           <a href="/Home">Hire Developers</a>
           <a href="#">Services</a>
           <a href="#">Technologies</a>
-          <a href="#">About Us</a>
+          <a href="/About">About Us</a>
         </div>
 
         {/* Action Buttons for Desktop */}
@@ -69,7 +69,7 @@ const Navbar = () => {
         <a href="/Home">Hire Developers</a>
         <a href="#">Services</a>
         <a href="#">Technologies</a>
-        <a href="#">About Us</a>
+        <a href="/About">About Us</a>
       
       </div>
     </div>

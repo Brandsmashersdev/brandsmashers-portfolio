@@ -4,6 +4,11 @@ import AboutHeader from '../../components/AboutUs/AboutHeader'
 import AboutContent from '../../components/AboutUs/AboutContent'
 import Nutshell from '../../components/AboutUs/Nutshell'
 import RecognitionAndServices from '../../components/AboutUs/ServicesRecognition'
+import Engagement  from '../../components/AboutUs/Engagement'
+import WhyBrandsmashers from '../../components/AboutUs/WhyBrandsmashers'
+import OurValues from '../../components/AboutUs/OurValues'
+import Footer from '../../components/Footer/Footer'
+import TextSlider from '../../components/TextSlider/TextSlider'
 
 const About = () => {
   return (
@@ -13,6 +18,11 @@ const About = () => {
       <AboutContent/>
       <Nutshell/>
       <RecognitionAndServices/>
+      <Engagement/>
+      <WhyBrandsmashers/>
+      <OurValues/>
+      <Footer/>
+      <TextSlider/>
     
     
     
