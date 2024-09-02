@@ -22,7 +22,7 @@ const Offer = () => {
             <div className={styles.card}>
             <FaDollarSign className={styles.icon} />
               <h3>Time-Zone Flexibility</h3>
-              <p>Work with developers in different time zones to align with your project’s schedule.</p>
+              <p>Work with developers in different time zones to align with your project&apos;s schedule.</p>
             </div>
           </div>
         );
