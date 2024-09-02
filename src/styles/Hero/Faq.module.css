@@ -1,0 +1,97 @@
+/* src/styles/Hero/Faq.module.css */
+
+.faqContainer {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px;
+  margin: 0 auto;
+  /* max-width: 1200px; */
+  background: linear-gradient(135deg, #e4e7ea, hsl(209, 70%, 75%));
+  border-radius: 10px;
+  flex-wrap: wrap; /* Allows the content to wrap */
+  box-shadow: 1px solid white;
+}
+
+.leftSection {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftSection h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.leftSection p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.rightSection {
+  flex: 2;
+  max-width: 60%;
+}
+
+.faqList {
+  border-top: 1px solid #e0e0e0;
+}
+
+.faqItem {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.faqQuestion {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.faqQuestion:hover {
+  color: #0070f3;
+}
+
+.faqAnswer {
+  padding: 10px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.faqToggle {
+  font-size: 24px;
+  color: #0070f3;
+  transition: transform 0.3s;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .faqContainer {
+      flex-direction: column; /* Stacks sections vertically */
+      padding: 20px;
+      margin: 10px;
+  }
+
+  .leftSection, .rightSection {
+      max-width: 100%; /* Full width on smaller screens */
+      flex: 1 1 100%; /* Adjust flex to take full width */
+      padding: 10px 0; /* Padding to separate sections */
+  }
+
+  .leftSection {
+      order: 1; /* Ensure left section comes first */
+  }
+
+  .rightSection {
+      order: 2; /* Ensure right section comes below left section */
+  }
+}

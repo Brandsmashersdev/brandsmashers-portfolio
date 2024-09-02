@@ -1,0 +1,118 @@
+/* TechExpert.module.css */
+
+.numbersSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Adjust the max width as needed */
+    margin: 0 auto; /* Centering the container */
+}
+
+.leftContent, .rightContent {
+    flex: 1;
+}
+
+.leftContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.detailes {
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.subHeading {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.ctaButton {
+    background-color: #0070f3; /* Adjust as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #005bb5; /* Adjust as needed */
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller devices (up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftContent, .rightContent {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .heroImage {
+        max-width: 80%; /* Adjust as needed for better fit */
+    }
+
+    .heading {
+        font-size: 1.75rem; /* Slightly smaller font size */
+    }
+
+    .subHeading {
+        font-size: 1.25rem; /* Slightly smaller font size */
+    }
+
+    .ctaButton {
+        font-size: 0.9rem; /* Slightly smaller font size */
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .subHeading {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .ctaButton {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+        padding: 6px 12px;
+    }
+}

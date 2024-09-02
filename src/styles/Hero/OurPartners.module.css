@@ -1,0 +1,93 @@
+.carouselContainer {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.carouselTitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.slider {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.slide img {
+    max-height: 80px; /* Default size for larger screens */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Adjusting font-size and padding for smaller screens */
+@media (max-width: 768px) {
+    .carouselTitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+      
+    }
+    
+    .slider {
+        width: 95%; /* Make the slider take more width on smaller screens */
+       
+    }
+    
+    .slide {
+        padding: 20px; /* Reduce padding around the images */
+        padding-left: 40px;
+       
+    }
+    .slide img {
+        max-height: 60px; /* Reduced size for medium-sized screens */
+        width: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center images */
+        padding: 10px;
+       
+      
+    }
+}
+
+/* Adjusting layout for mobile devices */
+@media (max-width: 480px) {
+    .carouselTitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .carouselContainer {
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 50px; /* Adjusted for better spacing */
+    }
+    
+    .slide {
+        padding: 10px; /* Further reduce padding for mobile */
+ 
+    }
+
+    .slide img {
+        max-height: 40px; /* Further reduced size for very small screens */
+        width: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center images */
+       
+    }
+}
