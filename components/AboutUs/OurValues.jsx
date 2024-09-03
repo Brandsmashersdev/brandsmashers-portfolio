@@ -12,9 +12,13 @@ const ValuesComponent = () => {
         <div className={styles.valuesGrid}>
           {valuesData.map((value, index) => (
             <div key={index} className={styles.valueCard}>
+            <div className={styles.valuesHeading}>
               <IoMdCheckmarkCircleOutline className={styles.icon} />
+              <div className={styles.valuesContent}>
               <h3 className={styles.valueTitle}>{value.title}</h3>
               <p className={styles.valueDescription}>{value.description}</p>
+              </div>
+              </div>
             </div>
           ))}
         </div>

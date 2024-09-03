@@ -18,32 +18,46 @@
   
   .valuesGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2,1fr);
     gap: 40px;
   }
   
   .valueCard {
-    /* background-color: #f9f9f9; */
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    /* background-color: #fff; */
     border-radius: 8px;
-    text-align: left;
+    
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+  .valuesHeading{
+    display: flex;
+    gap: 20px;
+    /* margin: 20px; */
+
   }
   
   .icon {
-    width: 40px;
+    width: 40%;
     height: 40px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .valueTitle {
-    font-size: 24px;
+    font-size: 2rem;
     color: #2c3e50;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   
   .valueDescription {
-    font-size: 16px;
-    color: #7f8c8d;
+    font-size: 1.5rem;
+    color: #000000d6;
+    margin-top: 10px;
   }
   
+
+  .valuesContent{
+    text-align: left;
+  }
