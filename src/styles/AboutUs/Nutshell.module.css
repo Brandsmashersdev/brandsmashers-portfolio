@@ -1,7 +1,11 @@
 .aboutUs {
-    background-color: #123456; /* Update with the actual color you want */
-    padding: 40px 20px;
-    text-align: center;
+  background-image: url('/AboutUs/nutshell.jpg');
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+  /* min-height: 100vh; */
   }
   
   .title {
