@@ -10,7 +10,7 @@ export const recognitions = [
 // Services data
 export const services = [
   { icon: '/AboutUs/SD.png', title: 'Custom Software Development' },
-  { icon: '/AboutUs/webd.jpg', title: 'Web Development' },
+  { icon: '/AboutUs/webd.png', title: 'Web Development' },
   { icon: '/AboutUs/Team.png', title: 'Dedicated Development Team' },
   { icon: '/AboutUs/product.webp', title: 'Product Development' },
   { icon: '/AboutUs/e-commerce.webp', title: 'E-Commerce' },
