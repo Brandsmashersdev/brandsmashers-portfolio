@@ -1,11 +1,11 @@
 /* components/NumbersSection.module.css */
 .numbersSection {
-    background-image: url('../../../public/Hero/backgrounds.png');
+    /* background-image: url('../../../public/Hero/backgrounds.png'); */
     background-size: cover; /* Cover the entire element */
     background-position: center; /* Center the background image */
     
     /* Set a transparent background color */
-    background-color: hsla(268, 72%, 38%, 0.8); /* Purple color with 80% opacity */
+    background-color: hsla(268, 96%, 27%, 0.8); /* Purple color with 80% opacity */
     
     /* Blend the color and image */
     background-blend-mode: overlay; /* Overlay the color on top of the image */

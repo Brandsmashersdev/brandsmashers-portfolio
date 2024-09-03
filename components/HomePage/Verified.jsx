@@ -3,6 +3,7 @@ import Image from 'next/image';
 import branding from '../../public/Hero/brandings.png';
 import website from '../../public/Hero/website.png';
 import marketing from '../../public/Hero/marketing.png';
+// import branding from '../../public/AboutUs/product.webp';
 import software from '../../public/Hero/softwareApp.png';
 import service from '../../public/Hero/service.png';
 import business from '../../public/Hero/business.png'

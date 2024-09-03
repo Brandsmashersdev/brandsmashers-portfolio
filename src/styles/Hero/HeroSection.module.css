@@ -5,8 +5,11 @@
   padding:0px  150px ; 
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   height: 80vh;
-  background: linear-gradient(90deg, hwb(287 52% 14%), hwb(304 6% 56%), rgb(14, 0, 12) 100%);
+  /* background: linear-gradient(90deg,top hwb(230 39% 15%), middle hwb(235 2% 66%),down rgb(14, 0, 12) 100%); */
   position: relative;
+  /* background-color: #093567; */
+  background: linear-gradient(90deg, hwb(230 39% 15%), hwb(235 2% 66%), rgb(14, 0, 12) 100%);
+
 }
 
 .heroContainer {
