@@ -1,39 +1,28 @@
-import React from 'react';
-import Hero from '../../components/Hero/HeroSection';
-import Footer from '../../components/Footer/Footer';
-import VettingProcess from '../../components/VettingProcess/VettingProcess';
-import Navbar from '../../components/Navbar/Navbar';
-import SuperSourcingSolve from '../../components/Hero/supersourcingSolve';
-import TopDev from '../../components/Hero/TopDev';
-import FeatureSection from '../../components/Hero/FeaturedSection';
-import WhyBrandsmashers from '../../components/WhyBrandsmashers/WhyBrandmashers';
-import FaqSection from '../../components/FaqSection/FaqSection';
-import Testimonials from "../../components/Testimonials/Testimonials";
-import Investors from "../../components/Investors/Investors";
-import Offer from "../../components/Offer/Offer"
-import CaseStudies from '../../components/CaseStudies/caseStudies';
-import TextSlider from '../../components/TextSlider/TextSlider';
+import Footer from "../../components/Footer/Footer";
+import AchiedCardSlider from "../../components/HomePage/AchievedCardSlider";
+import Faq from "../../components/HomePage/Faq";
+import Homepages from "../../components/HomePage/Homepages";
+import NumbersSection from "../../components/HomePage/NumbersSection";
+import OurPartners from "../../components/HomePage/OurPartners";
+import TechExpert from "../../components/HomePage/TechExpert";
+import Verified from "../../components/HomePage/Verified";
+import Navbar from "../../components/Navbar/Navbar";
+import TextSlider from "../../components/TextSlider/TextSlider";
 
-
-const Home = () => {
-  return (
-    <>
-      <Navbar/>
-      <Hero/>  
-      <Testimonials/>
-      <Investors/>
-      <SuperSourcingSolve />
-      <Offer/>
-      <TopDev/>
-      <CaseStudies/>
-      <WhyBrandsmashers/>
-      <VettingProcess/>
-      <FeatureSection />
-      <FaqSection/>
-      <Footer/>
-      <TextSlider/>
-    </>
-  )
+const HomeSection = () => {
+    return (
+       <div>
+        <Navbar/>
+        <Homepages/>
+        <NumbersSection/>
+        <Verified/>
+        <TechExpert/>
+        <AchiedCardSlider/>
+        <OurPartners/>
+        <Faq/>
+        <Footer/>
+        <TextSlider/>
+       </div>
+    )
 }
-
-export default Home
+export default HomeSection;

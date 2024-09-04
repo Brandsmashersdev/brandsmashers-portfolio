@@ -1,0 +1,41 @@
+/* src/Investors.css */
+.investors_section{
+    margin: 50px;
+}
+
+.ivestors_title{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 52px;
+}
+
+.slider_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.slider_item {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile_pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.company_logo {
+    width: 30px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}

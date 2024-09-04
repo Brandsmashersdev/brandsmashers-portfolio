@@ -5,14 +5,16 @@
     background-position: center; /* Center the background image */
     
     /* Set a transparent background color */
-    background-color: hsla(268, 96%, 27%, 0.8); /* Purple color with 80% opacity */
+    background-color: #0b93b2; /* Purple color with 80% opacity */
     
     /* Blend the color and image */
     background-blend-mode: overlay; /* Overlay the color on top of the image */
     
+
     color: #ffffff; /* Text color */
     padding: 10px 20px; /* Adjusted padding for the section */
 }
+
 
 
 
@@ -59,7 +61,7 @@
 
 .ctaButton {
     padding: 12px 20px;
-    background-color: #ff6600; /* Matching button color */
+    background-color: var(--primary-color); /* Matching button color */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -69,7 +71,7 @@
 }
 
 .ctaButton:hover {
-    background-color: #cc5200; /* Matching hover color */
+    background-color: var(--background-color); /* Matching hover color */
 }
 
 .stat {

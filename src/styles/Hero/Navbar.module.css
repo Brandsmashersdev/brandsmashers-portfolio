@@ -100,7 +100,7 @@
 }
 
 .sidebarMenu a:hover {
-  color: hsl(315, 94%, 21%);
+  color: #6EE4FF;
 }
 
 /* Show the sidebar when .showMenu class is added */

@@ -10,7 +10,7 @@
   color: white;
   cursor: pointer;
   margin: 0 30px; /* Margin left and right */
-  background: linear-gradient(45deg, #46316b, hsl(310, 87%, 54%)); /* Blue and purple mix */
+  background: var(--primary-color); /* Blue and purple mix */
   background-size: 200% 200%;
   animation: gradientAnimation 4s ease infinite;
   transition: transform 0.3s ease;
@@ -19,6 +19,7 @@
 /* Hover effect */
 .animatedButton:hover {
   transform: scale(1.05); /* Increase size on hover */
+  background: var(--background-color);
 }
 
 /* Icon style */
