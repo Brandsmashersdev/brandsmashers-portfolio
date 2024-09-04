@@ -45,10 +45,10 @@ const Navbar = () => {
         {/* Navigation Links for Desktop */}
         <div className={styles.navLinks}>
         
-          <a href="/Home">Home</a>
+          <a href="/">Home</a>
           <a href="/HireDevelopers">Hire Developers</a>
-          <a href="#">Services</a>
-          <a href="#">Technologies</a>
+          <a href="/Services">Services</a>
+          <a href="/Technologies">Technologies</a>
           <a href="/About">About Us</a>
         </div>
 

@@ -15,7 +15,7 @@ import CaseStudies from '../../components/HireDevelopers/caseStudies';
 import TextSlider from '../../components/TextSlider/TextSlider';
 
 
-const Home = () => {
+const HireDevelopers = () => {
   return (
     <>
       <Navbar/>
@@ -36,4 +36,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HireDevelopers
