@@ -8,10 +8,19 @@
   --font-size-small: 0.9rem;
   --font-size-medium: 1rem;
   --font-size-large: 1.2rem;
+
+
+  --primary-color: #6EE4FF;
+  --background-color: #0b93b2;
+  --text-color: white;
+  --secondText-color: black;
+
+
   --gray-light: #F6F6F6;
   --blue-light: #156BA3;
   --padding-technology-page: 2rem 12rem;
   
+
 }
 /* styles/globals.css */
 /* body {

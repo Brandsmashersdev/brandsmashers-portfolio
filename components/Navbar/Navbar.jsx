@@ -3,7 +3,7 @@ import styles from "../../src/styles/Hero/Navbar.module.css";
 import Image from 'next/image';
 import logo from '../../public/Hero/bransdmasherslogo.png';
 
-import AnimatedButton from '../Hero/AnimationButton';
+import AnimatedButton from '../HireDeveloperHero/AnimationButton';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import both the hamburger and cross icons
 import { useRouter } from 'next/router'; // Import useRouter for navigation
 
@@ -45,8 +45,8 @@ const Navbar = () => {
         {/* Navigation Links for Desktop */}
         <div className={styles.navLinks}>
         
-          <a href="/HomeSection">Home</a>
-          <a href="/Home">Hire Developers</a>
+          <a href="/Home">Home</a>
+          <a href="/HireDevelopers">Hire Developers</a>
           <a href="#">Services</a>
           <a href="#">Technologies</a>
           <a href="/About">About Us</a>
