@@ -1,20 +1,24 @@
-/* Navbar Container */
 .navContainer {
   width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
-  position: relative;
-  /* position: fixed; */
+  background-color: transparent; /* Initial background as transparent */
+  position: fixed; 
+  top: 0;
+  left: 0;
   z-index: 100;
-  padding: 0 20px; /* Adjusted for spacing */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
+/* Navbar when scrolled */
+.navContainer.navScrolled {
+  background-color: white !important;
+  transition: background-color 0.3s ease; /* Optional: For smooth transition */
+}
 /* Navbar Row */
 .navRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0; /* Padding for larger screens */
+  padding: 0; 
 }
 
 /* Logo and Brand Name */
@@ -26,19 +30,20 @@
 }
 
 .brandName {
-  margin-left: 15px; /* Adjusted for spacing */
+  margin-left: 15px;
   font-weight: bold;
   font-size: 1.3rem;
-  color: #000000; /* Adjust based on design */
+  color: #000000;
 }
 
 /* Navigation Links for Desktop */
 .navLinks {
-  margin-left: 15px; /* Margin for larger screens */
+  margin-left: 150px;
   display: flex;
   flex-grow: 1;
+  gap: 12px;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .navLinks a {
@@ -59,14 +64,12 @@
   display: flex;
   align-items: center;
 }
-.animatedButtons{
- 
-}
+
 /* Hamburger Icon */
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 24px; /* Make the icon large enough for mobile interaction */
+  font-size: 24px;
 }
 
 /* Sidebar Menu for Mobile */
@@ -81,8 +84,7 @@
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   z-index: 200;
-  padding-top: 40px; /* Adjust for your design */
-  margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .sidebarMenu.showMenu {
@@ -107,76 +109,64 @@
 .showMenu {
   display: block !important;
 }
-.animatedButtons{
 
-  margin-bottom: 10px;
-}
-.animatedButtonss{
- 
-}
 /* Media Queries for Responsiveness */
 @media (min-width: 1024px) {
-  /* Desktop screens */
   .navRow {
-    margin-left: 15px; /* Apply margin only for larger screens */
-    padding: 10px 100px; /* Adjust for desktop */
+    margin-left: 15px;
+    padding: 0 150px;
   }
 }
 
 @media (max-width: 1024px) {
-  /* Tablet and smaller desktops */
   .navContainer {
-    padding: 0 15px; /* Adjust for smaller screen space */
+    padding: 0 15px;
   }
 
   .navLinks a {
-    margin-left: 15px; /* Adjust spacing between links */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    margin-left: 15px;
+    font-size: 0.9rem;
   }
 
   .navButtons .animatedButton {
-    padding: 8px 16px; /* Adjust button padding */
+    padding: 8px 16px;
   }
 }
 
 @media (max-width: 768px) {
-  /* Mobile screens */
   .navRow {
-    margin-left: 0; /* Remove left margin for smaller screens */
-    padding: 10px;
-    padding-right: 20px; /* Reduce padding for mobile */
+    margin-left: 0;
+    padding: 10px 20px;
   }
 
   .navLinks {
-    display: none; /* Hide nav links on smaller screens */
+    display: none;
   }
 
   .navButtons {
-    display: none; /* Hide action buttons in mobile view */
-   
+    display: none;
   }
 
   .hamburger {
-    display: block; /* Show the hamburger icon on smaller screens */
+    display: block;
   }
 
   .sidebarMenu {
-    width: 50%; /* Adjust sidebar width for mobile view */
+    width: 50%;
   }
 }
 
 @media (max-width: 480px) {
-  /* Small mobile screens */
   .navContainer {
-    padding: 0 10px; /* Reduce padding for smaller screen space */
+    padding: 0 10px;
   }
 
   .brandName {
-    font-size: 1rem; /* Smaller font size for brand name */
+    font-size: 1rem;
   }
 
   .sidebarMenu a {
-    font-size: 1rem; /* Adjust font size for menu links */
-    padding: 8px 15px; /* Adjust padding */
+    font-size: 1rem;
+    padding: 8px 15px;
   }
 }

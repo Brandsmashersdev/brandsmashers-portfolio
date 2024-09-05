@@ -1,93 +1,60 @@
-.carouselContainer {
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: white;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.cardContainer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .carouselTitle {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #333;
+  margin-top: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.slider {
-    width: 90%;
-    margin: 0 auto;
+.cardGrid {
+  display: flex;
+  justify-content: center;
+  /* Space between cards */
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Default to full width */
+  max-width: 250px; /* Limit the card width */
 }
 
-.slide img {
-    max-height: 80px; /* Default size for larger screens */
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.3s;
+.stars, .starsg, .starsG {
+  margin-top: 0px;
+  font-size: 20px;
+  color: #ffc107;
 }
 
-.slide img:hover {
-    transform: scale(1.1);
+/* Responsive Design */
+@media (min-width: 768px) {
+  .cardGrid {
+    gap: 50px; /* Adjust spacing between cards for tablet and larger screens */
+  }
+
+  .card {
+    max-width: 200px; /* Adjust max width for larger screens */
+  }
 }
 
-/* Media Queries for Responsive Design */
+@media (min-width: 1024px) {
+  .cardGrid {
+    gap: 150px; /* Adjust spacing between cards for desktop screens */
+  }
 
-/* Adjusting font-size and padding for smaller screens */
-@media (max-width: 768px) {
-    .carouselTitle {
-        font-size: 20px;
-        margin-bottom: 20px;
-      
-    }
-    
-    .slider {
-        width: 95%; /* Make the slider take more width on smaller screens */
-       
-    }
-    
-    .slide {
-        padding: 20px; /* Reduce padding around the images */
-        padding-left: 40px;
-       
-    }
-    .slide img {
-        max-height: 60px; /* Reduced size for medium-sized screens */
-        width: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center images */
-        padding: 10px;
-       
-      
-    }
-}
-
-/* Adjusting layout for mobile devices */
-@media (max-width: 480px) {
-    .carouselTitle {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-    
-    .carouselContainer {
-        padding: 10px;
-        margin-top: 30px;
-        margin-bottom: 50px; /* Adjusted for better spacing */
-    }
-    
-    .slide {
-        padding: 10px; /* Further reduce padding for mobile */
- 
-    }
-
-    .slide img {
-        max-height: 40px; /* Further reduced size for very small screens */
-        width: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center images */
-       
-    }
+  .card {
+    max-width: 250px; /* Adjust max width for larger screens */
+  }
 }

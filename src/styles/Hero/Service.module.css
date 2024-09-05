@@ -1,0 +1,45 @@
+.container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+   .services {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .services h2 {
+    font-size: 3rem;
+    color: #0B3B75; /* Adjust color as needed */
+    margin-bottom: 30px;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .serviceBox {
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid #eaeaea; */
+    border-radius: 10px;
+    /* background-color: #F8F8F8; */
+    transition: transform 0.3s ease;
+  }
+
+  .serviceBox p{
+    font-size: 1.5rem;
+  }
+  
+  .serviceBox:hover {
+    transform:translateY(-5px);
+  }
+  
+  .serviceIcon {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+  }
