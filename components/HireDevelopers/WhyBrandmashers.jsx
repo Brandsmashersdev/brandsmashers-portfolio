@@ -5,7 +5,7 @@ import googleLogo from '../../public/Hero/googles-removebg-preview.png'
 import clutchLogo from '../../public/Hero/clutchs.png'
 import gLogo from '../../public/Hero/g.png'
 import user from '../../public/Hero/img1.png'
-import download from '../../public/download.png'
+import download from '../../public/Hero/backgroundimages.png'
 import professionalImage from '../../public/Hero/Professional.png'
 import Card from '../HireDevelopers/Card';
 
@@ -27,8 +27,8 @@ const WhyBrandsmashers = () => {
             src={user} 
             alt="Top Developers" 
             className={styles.statsImage} 
-            width={50} 
-            height={50} 
+            width={500} 
+            height={500} 
           />
           <span className={styles.statsText}>+100k top developers<br></br> available for hire</span>
         </div>

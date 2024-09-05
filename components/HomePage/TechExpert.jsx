@@ -2,7 +2,7 @@
 import styles from '../../src/styles/Hero/TechExpert.module.css';
 import Image from 'next/image';
 // import downloads from '../../public/download.png';
-import discussion from '../../public/Hero/discussion.png';
+import discussion from '../../public/Hero/consults.png';
 // import discussions from '../../public/Hero/discussions.png';
 
 const TechExpert = () => {
@@ -11,8 +11,8 @@ const TechExpert = () => {
         <div className={styles.container}>
           <div className={styles.leftContent}>
           <Image src={discussion} 
-          width={400}
-          height={200}
+          width={500}
+          height={300}
           className={styles.heroImage} />
           </div>
 
