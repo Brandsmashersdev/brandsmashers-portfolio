@@ -5,7 +5,7 @@
 
 .SupersolveBox{
  
-    background: linear-gradient(90deg, #084BFF 22.31%, #F24B8B 100%);
+    background: linear-gradient(90deg, var(--primary-color) 22.31%, var(--background-color)100%);
     position: relative;
     color: white;
     /* padding: 60px 30px; */
@@ -37,7 +37,7 @@
   .superSolvebutton{
     padding: 20px 33px;
     background-color: #fff;
-    color: #0152ff;
+    color: var(--secondText-color);
     font-weight:bold;
     border: none;
     border-radius: 30px;
