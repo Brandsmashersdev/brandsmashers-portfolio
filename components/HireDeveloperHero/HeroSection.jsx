@@ -13,6 +13,10 @@ import CardSlider from './CardSlider';
 const HeroSection = () => {
   return (
     <div className={styles.heroSection}>
+      <video autoPlay loop muted className={styles.backgroundVideo}>
+        <source src="/HireDevelopers.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       
       <div className={styles.heroContainer}>
         <h1 className={styles.heading}>
@@ -23,7 +27,7 @@ const HeroSection = () => {
 
         <p className={styles.paragraph}>
        Get the best profiles in <span className={styles.hours}>24-48 hours,</span>
-       conduct just one or two interviews with<br></br> pre-vetted candidates, and onboard our domain experts immediately.
+       conduct just one or two interviews with pre-vetted candidates, and onboard our domain experts immediately.
         </p>
 
         <div className={styles.buttons}>
@@ -39,7 +43,7 @@ const HeroSection = () => {
      
         {/* <div className={styles.heroImage}> </div> */}
         <div className={styles.cardSlid}>
-           <CardSlider className={styles.card}/>
+           {/* <CardSlider className={styles.card}/> */}
         </div>
         </div>
       

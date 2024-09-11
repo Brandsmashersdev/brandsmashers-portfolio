@@ -2,19 +2,18 @@
 
 .numbersSection {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-color: #0a0a0a;
-   
+    padding: 20px; */
+    background-color: var(--background-color);
 
 }
 
 .container {
     display: flex;
     width: 100%;
-    max-width: 1200px; /* Adjust the max width as needed */
-    margin: 0 auto; /* Centering the container */
+    max-width: 1400px; 
+    /* margin: 0 auto;  */
 }
 
 .leftContent, .rightContent {
@@ -23,22 +22,23 @@
 
 .leftContent {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
 .heroImage {
     max-width: 100%;
     height: auto;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
 }
 
 .rightContent {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    /* background-color: black; */
+    line-height: 1.3;
+    margin: 40px;
 }
 
 .detailes {
@@ -49,27 +49,32 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: white;
+    color: var(--text-color);
 }
 
 .subHeading {
     font-size: 1.5rem;
-    color: #666;
+    color: var(--text-color);
 }
 
 .ctaButton {
-    background-color: #0070f3; /* Adjust as needed */
+    background-color: var(--button-color); /* Adjust as needed */
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
+    font-weight: 900;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
+.letstalk{
+    margin-top: 40px;
+}
+
 .ctaButton:hover {
-    background-color: #005bb5; /* Adjust as needed */
+    background-color: var(--background-color); /* Adjust as needed */
 }
 
 /* Responsive Styles */

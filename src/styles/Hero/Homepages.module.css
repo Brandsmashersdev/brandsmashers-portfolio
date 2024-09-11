@@ -26,7 +26,8 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 900;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -36,19 +37,27 @@
   font-weight: 800;
 }
 
+.gradient{
+  color: #7b61ff;
+  background: linear-gradient(to right, var(--button-color), var(--background-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .description {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
 .ctaButton {
   padding: 12px 25px;
-  background-color: var(--primary-color); /* Adjust the color as needed */
+  background-color: var(--button-color); /* Adjust the color as needed */
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 800;
   transition: background-color 0.3s;
 }
 

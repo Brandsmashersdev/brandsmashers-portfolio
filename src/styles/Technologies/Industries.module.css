@@ -1,0 +1,52 @@
+.industriesSection {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .subHeading {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #777;
+  }
+  
+  .industriesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .industryCard {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .industryCard:hover {
+    transform: translateY(-10px);
+  }
+  
+  .iconWrapper {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .industryTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .industryDescription {
+    font-size: 1rem;
+    color: #555;
+  }
+  

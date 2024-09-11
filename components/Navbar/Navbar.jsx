@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from "../../src/styles/Hero/Navbar.module.css";
 import Image from 'next/image';
-import logo from '../../public/Hero/logobrandsmasher.png';
+import logo from '../../public/Hero/logoBrandsmashers.png';
+
 import AnimatedButton from '../HireDeveloperHero/AnimationButton';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
 import { useRouter } from 'next/router'; 

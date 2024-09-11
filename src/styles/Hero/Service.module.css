@@ -10,7 +10,7 @@
   
   .services h2 {
     font-size: 3rem;
-    color: #0B3B75; /* Adjust color as needed */
+    color: var(--secondText-color); /* Adjust color as needed */
     margin-bottom: 30px;
   }
   

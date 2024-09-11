@@ -10,6 +10,7 @@ import TechExpert from "../../components/HomePage/TechExpert";
 import Verified from "../../components/HomePage/Verified";
 import Navbar from "../../components/Navbar/Navbar";
 import TextSlider from "../../components/TextSlider/TextSlider";
+import Services from "../../components/HomePage/servicess"
 
 const HomeSection = () => {
     return (
@@ -17,7 +18,6 @@ const HomeSection = () => {
         <Navbar/>
         <Homepages/>
         <NumbersSection/>
-        {/* <Achieved/> */}
         <Services/>
         {/* <Verified/> */}
         <TechExpert/>

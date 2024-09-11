@@ -40,7 +40,7 @@
   }
   
   .sliderText:hover {
-    color: rgb(207, 2, 214); /* Change to the color you want on hover */
+    color: var(--button-color); /* Change to the color you want on hover */
   }
   
   /* Keyframes for sliding animation */

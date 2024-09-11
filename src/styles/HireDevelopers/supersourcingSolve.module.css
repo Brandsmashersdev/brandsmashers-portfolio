@@ -5,7 +5,7 @@
 
 .SupersolveBox{
  
-    background: linear-gradient(90deg, var(--primary-color) 22.31%, var(--background-color)100%);
+    background: linear-gradient(90deg, var(--button-color) 22.31%, var(--background-color)100%);
     position: relative;
     color: white;
     /* padding: 60px 30px; */
