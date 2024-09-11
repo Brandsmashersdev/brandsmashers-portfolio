@@ -1,0 +1,50 @@
+/* styles/ContactSlider.module.css */
+.sliderContainer {
+    width: 40%; /* Adjust the width to 50% */
+    overflow: hidden; /* Hide the overflow to enable smooth scroll */
+    margin: 0 auto; /* Center the slider on the page */
+    margin-right: 100%;
+    margin-left: 0px;
+    background-color: aquamarine;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 30px; /* Gap between tech items */
+    animation: scroll 15s linear infinite; /* Infinite scroll */
+  }
+  
+  .techItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 120px; /* Minimum width for each tech item */
+    height: 100px; /* Consistent height */
+  }
+  
+  .techItem img {
+    max-width: 60px;
+    max-height: 40px;
+    object-fit: contain;
+  }
+  
+  .techItem p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

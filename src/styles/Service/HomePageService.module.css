@@ -1,0 +1,49 @@
+.container {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Section */
+  .header {
+    position: relative;
+    background-image: url('../../../public/Service/Servicesbackground.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  }
+  
+  .headerContent {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .header p {
+      font-size: 1.2rem;
+      margin:10px;
+    }
+  }
+  
