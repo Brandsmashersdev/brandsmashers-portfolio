@@ -11,10 +11,10 @@
   }
   
   .success_stories h2 span {
-    color: #6b21a8; /* Adjust this color to match the gradient style */
-    background-image: linear-gradient(90deg, #9333ea, #6b21a8); /* Adjust the gradient as needed */
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #7b61ff;
+  background: linear-gradient(to right, var(--button-color), var(--background-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
   
   .success_stories p {

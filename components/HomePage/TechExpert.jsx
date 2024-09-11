@@ -11,9 +11,12 @@ const TechExpert = () => {
         <div className={styles.container}>
           <div className={styles.leftContent}>
           <Image src={discussion} 
-          width={400}
-          height={200}
-          className={styles.heroImage} />
+          width={500}
+          height={300}
+          className={styles.heroImage} 
+          layout="responsive"
+          quality={100}
+          />
           </div>
 
           <div className={styles.rightContent}>
@@ -28,7 +31,7 @@ const TechExpert = () => {
               </h3>
             </div>
 
-            <div>
+            <div className={styles.letstalk}>
             <button className={styles.ctaButton}>Let's Talk</button>
             </div>
           </div>

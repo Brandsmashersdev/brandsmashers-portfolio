@@ -1,8 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState, useRef } from 'react';
 import Image from 'next/image';
 import styles from '../../src/styles/HireDevelopers/VettingProcess.module.css';
 
 const VettingProcess = () => {
+  const [isLeftVisible, setIsLeftVisible] = useState(false);
+  const [isRightVisible, setIsRightVisible] = useState(false);
+
+  const leftContentRef = useRef(null);
+  const rightContentRef = useRef(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null, // viewport
+      threshold: 0.1, // 10% of the content should be visible
+    };
+
+    const leftObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsLeftVisible(true);
+        }
+      });
+    }, observerOptions);
+
+    const rightObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsRightVisible(true);
+        }
+      });
+    }, observerOptions);
+
+    if (leftContentRef.current) {
+      leftObserver.observe(leftContentRef.current);
+    }
+    if (rightContentRef.current) {
+      rightObserver.observe(rightContentRef.current);
+    }
+
+    return () => {
+      if (leftContentRef.current) {
+        leftObserver.unobserve(leftContentRef.current);
+      }
+      if (rightContentRef.current) {
+        rightObserver.unobserve(rightContentRef.current);
+      }
+    };
+  }, []);
 
   return (
     <>
@@ -12,7 +56,12 @@ const VettingProcess = () => {
 
 
      <div className={styles.VettingContent}>
-     <div className={`${styles.leftContent} ${styles.animateLeft}`}>
+     <div
+            ref={leftContentRef}
+            className={`${styles.leftContent} ${
+              isLeftVisible ? styles.animateLeft : ''
+            }`}
+          >
       <p>We carefully screen resumes and portfolios to ensure relevant experience and skills match the job requirements.</p>
       <p1>Candidates complete tailored assessments to evaluate their technical proficiency and problem-solving abilities.</p1>
      </div>
@@ -161,7 +210,12 @@ const VettingProcess = () => {
           </div>
         </div>
 
-        <div className={`${styles.rightContent} ${styles.animateRight}`}>
+        <div
+            ref={rightContentRef}
+            className={`${styles.rightContent} ${
+              isRightVisible ? styles.animateRight : ''
+            }`}
+          >
         <p>Senior developers conduct detailed interviews to assess candidates' practical knowledge and coding expertise.</p>
         <p1>Experienced developers review the overall performance to ensure a strong fit for the role.</p1>
         </div>

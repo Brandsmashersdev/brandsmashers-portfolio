@@ -12,6 +12,16 @@
 
 }
 
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the video is behind the text */
+}
+
 .heroContainer {
   /* max-width: 500px; */
   flex: 1 1 300px; /* Grow to fit, but not less than 300px */
@@ -20,29 +30,29 @@
 .heading {
   font-size: 3rem;
   font-weight: bold;
-  color: black;
+  color: var(--text-color);
 }
 
 .highlight {
  
-  color: hwb(280 78% 5%);
+  color: hwb(0 100% 0%);
 }
-.paragraph{
-  
-}
+
 .highlight1 {
-  color: #d7f024;
+  color: var(--primary-color);
 }
 
 .heroContainer p {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color:white;
+  line-height: 1.2;
+  width: 70%  ;
   /* color: #1D2434B8 !important; */
 }
 
 .hours {
-  color: black;
+  color: var(--text-color);
   font-weight: 800;
 }
 
@@ -68,15 +78,31 @@
 }
 
 .hireButton {
-  background-color: #0070f3;
+  border: 1px solid var(--background-color);
+  background-color: var(--primary-color);
   color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
-.contactButton {
-  border: 1px solid #171a1d;
-  color: white;
-  background: none;
+.hireButton:hover{
+  background-color: var(--background-color);
 }
+
+
+.contactButton {
+  border: 1px solid var(--background-color);
+  color: white;
+  background: var(--primary-color);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.contactButton:hover{
+  background-color: var(--background-color);
+
+}
+
 
 .arrowIcon {
   margin-left: 0.5rem;
@@ -230,7 +256,7 @@
     max-width: 600px;
     padding-bottom: 60px;
     margin-top: 0px;
-    margin-left: 700px;
+    /* margin-left: 700px; */
    
   
   }

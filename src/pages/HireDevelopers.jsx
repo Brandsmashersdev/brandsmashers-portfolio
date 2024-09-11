@@ -21,15 +21,15 @@ const HireDevelopers = () => {
     <>
       <Navbar/>
       <Hero/>  
-      <Testimonials/>
-      <Investors/>
+      <VettingProcess/>
       <SuperSourcingSolve />
-      <Offer/>
       <TopDev/>
+      {/* <Testimonials/> */}
+      <Investors/>
+      <Offer/>
       <CaseStudies/>
       <WhyBrandsmashers/>
-      <VettingProcess/>
-      <FeatureSection />
+      {/* <FeatureSection /> */}
       <FaqSection/>
       <Footer/>
       <TextSlider/>

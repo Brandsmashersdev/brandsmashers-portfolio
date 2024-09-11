@@ -7,7 +7,18 @@
     margin: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 52px;
+    gap: 12px;
+    flex-wrap: nowrap; /* Prevents the text from wrapping */
+    white-space: nowrap;
+}
+
+.highlight{
+    color: #7b61ff;
+  background: linear-gradient(to right, var(--button-color), var(--background-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .slider_container {
@@ -38,4 +49,22 @@
     height: auto;
     margin: auto;
     margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .ivestors_title {
+        font-size: 42px; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .ivestors_title {
+        font-size: 36px; /* Adjust for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .ivestors_title {
+        font-size: 28px; /* Adjust for mobile screens */
+    }
 }

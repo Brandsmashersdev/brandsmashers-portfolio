@@ -12,7 +12,7 @@
 
 .topdevTitleHighlight {
   color: #7b61ff;
-  background: linear-gradient(to right, #7b61ff, #ff61a6);
+  background: linear-gradient(to right, var(--button-color), var(--background-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

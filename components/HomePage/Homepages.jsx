@@ -39,111 +39,19 @@ const HeroSection = () => {
       </video>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Brandsmashers<br />
-          <span className={styles.highlight}>Software Development</span> <br />
-          Company
+          Expert <span className={styles.gradient}>Developers,</span><br />
+          <span className={styles.highlight}>Streamlined <span className={styles.gradient}>Solutions</span></span> <br />
+          
         </h1>
         <p className={styles.description}>
-          Delivering custom software development services and solutions to build intelligent <br/> enterprises with speed and agility.
+        All in One Place with Brandsmashers Tech.
         </p>
         <button className={styles.ctaButton}>
           Consult with Us
           <FaArrowRight className={styles.arrowIcon} />
         </button>
       </div>
-      <Slider {...settings}>
-        {/* First Slide: Mobile App */}
-        <div>
-          <div className={styles.container}>
-            <div className={styles.content}>
-              <h1 className={styles.title}>
-                Brandsmashers<br />
-                <span className={styles.highlight}>Mobile App</span> <br />
-                Company
-              </h1>
-              <p className={styles.description}>
-                Delivering custom mobile app development services and solutions to build intelligent enterprises with speed and agility.
-              </p>
-              <button className={styles.ctaButton}>
-                Consult with Us
-                <FaArrowRight className={styles.arrowIcon} />
-              </button>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image src={mobileAppImage} className={styles.heroImage} alt="Mobile App" />
-            </div>
-          </div>
-        </div>
-
-        {/* Second Slide: UI-UX Design */}
-        <div>
-          <div className={styles.container}>
-            <div className={styles.content}>
-              <h1 className={styles.title}>
-                Brandsmashers<br />
-                <span className={styles.highlight}>UI-UX Design</span> <br />
-                Company
-              </h1>
-              <p className={styles.description}>
-                Crafting intuitive and user-friendly interfaces that provide seamless user experiences.
-              </p>
-              <button className={styles.ctaButton}>
-                Consult with Us
-                <FaArrowRight className={styles.arrowIcon} />
-              </button>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image src={uiUxImage} className={styles.heroImage} alt="UI-UX Design" />
-            </div>
-          </div>
-        </div>
-
-        {/* Third Slide: Custom Software Development */}
-        <div>
-          <div className={styles.container}>
-            <div className={styles.content}>
-              <h1 className={styles.title}>
-                Brandsmashers<br />
-                <span className={styles.highlight}>Custom Software Development</span> <br />
-                Company
-              </h1>
-              <p className={styles.description}>
-                Delivering tailored software solutions to meet your business needs and drive growth.
-              </p>
-              <button className={styles.ctaButton}>
-                Consult with Us
-                <FaArrowRight className={styles.arrowIcon} />
-              </button>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image src={customSoftwareImage} className={styles.heroImage} alt="Custom Software Development" />
-            </div>
-          </div>
-        </div>
-
-        {/* Fourth Slide: Machine Learning */}
-        <div>
-          <div className={styles.container}>
-            <div className={styles.content}>
-              <h1 className={styles.title}>
-                Brandsmashers<br />
-                <span className={styles.highlight}>Machine Learning</span> <br />
-                Company
-              </h1>
-              <p className={styles.description}>
-                Leveraging machine learning to build intelligent systems that enhance decision-making and automation.
-              </p>
-              <button className={styles.ctaButton}>
-                Consult with Us
-                <FaArrowRight className={styles.arrowIcon} />
-              </button>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image src={mlImage} className={styles.heroImage} alt="Machine Learning" />
-            </div>
-          </div>
-        </div>
-      </Slider>
+      
     </section>
   );
 };

@@ -50,7 +50,8 @@ const Investors = () => {
     return (
 
     <div className={styles.investors_section}>
-          <h2 className={styles.ivestors_title}>Trusted by top investors</h2>
+          <h2 className={styles.ivestors_title}>Trusted by <span className={styles.highlight}> Top Investors </span>
+          </h2>
         <div className={styles.slider_container}>
             <Slider {...settings}>
                 {data.map((investor, index) => (
