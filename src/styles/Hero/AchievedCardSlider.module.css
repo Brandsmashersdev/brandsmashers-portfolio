@@ -3,8 +3,8 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 100px;
-  position: relative;
-  
+  margin-bottom: 100px;
+  margin-left: 200px;
 }
 
 /* Heading styling */
@@ -12,28 +12,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 2rem;
+  margin-bottom: 0px;
+  font-size: 52px;
   color: #333;
+}
+
+/* Wrapper for each card to manage padding between them */
+.cardWrapper {
+  padding: 0 15px; /* Adjusts gap between the cards */
+ 
 }
 
 /* Card styling */
 .card {
+  margin-top: 100px;
+  width: 100%; /* Full width within the slider */
+  max-width: 300px; /* Maximum width for larger screens */
+  height: 350px; /* Fixed height */
+  max-height: 500px; /* Maximum height */
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #0a0a0a;
+  box-shadow: 0 4px 8px rgba(22, 22, 22, 0.1);
   cursor: pointer;
-  width: 100%; /* Ensure the card takes up full width of the slide */
-  max-width: 300px;
-  margin: 0 auto; /* Center the card within the slide */
+ 
 }
 
 /* Image styling */
 .cardImage {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height for image */
   object-fit: cover;
 }
 
@@ -64,15 +72,23 @@
     width: 90%;
     margin-top: 50px;
   }
-  
+
+  .card {
+    max-width: 260px; /* Smaller width for smaller screens */
+  }
+
+  .cardImage {
+    height: 180px; /* Smaller height for image */
+  }
+
   .cardContent {
     padding: 10px;
   }
-  
+
   .cardTitle {
     font-size: 1.1rem;
   }
-  
+
   .cardDescription {
     font-size: 0.9rem;
   }
@@ -80,7 +96,7 @@
 
 /* Slick slide styling */
 .slick-slide {
-  padding: 0 20px; /* Horizontal padding for space between cards */
+  padding: 0 15px; /* Horizontal padding for space between cards */
 }
 
 /* Center the content of each slide */
@@ -88,11 +104,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Adjust slider container for devices with max-width of 600px */
-@media (max-width: 600px) {
-  .slick-slide {
-    padding: 0 10px; /* Smaller padding for smaller screens */
-  }
 }

@@ -15,6 +15,7 @@ import CaseStudies from '../../components/HireDevelopers/caseStudies';
 import TextSlider from '../../components/TextSlider/TextSlider';
 
 
+
 const HireDevelopers = () => {
   return (
     <>

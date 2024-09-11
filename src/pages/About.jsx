@@ -9,23 +9,26 @@ import WhyBrandsmashers from '../../components/AboutUs/WhyBrandsmashers'
 import OurValues from '../../components/AboutUs/OurValues'
 import Footer from '../../components/Footer/Footer'
 import TextSlider from '../../components/TextSlider/TextSlider'
+import Nav from '../../components/Navbar/Nav'
+
+
 
 const About = () => {
   return (
     <>
-      <Navbar/>
+    
+    <Navbar/>
       <AboutHeader/>
       <AboutContent/>
       <Nutshell/>
+   
       <RecognitionAndServices/>
       <Engagement/>
       <WhyBrandsmashers/>
       <OurValues/>
       <Footer/>
       <TextSlider/>
-    
-    
-    
+      
     </>
 
     

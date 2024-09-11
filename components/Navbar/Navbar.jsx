@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styles from "../../src/styles/Hero/Navbar.module.css";
 import Image from 'next/image';
 import logo from '../../public/Hero/logobrandsmasher.png';
-
 import AnimatedButton from '../HireDeveloperHero/AnimationButton';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import both the hamburger and cross icons
-import { useRouter } from 'next/router'; // Import useRouter for navigation
+import { FaBars, FaTimes } from 'react-icons/fa'; 
+import { useRouter } from 'next/router'; 
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,18 +20,20 @@ const Navbar = () => {
     router.push('/'); 
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log('scrollY:', window.scrollY); // Debugging
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  const handleScroll = () => {
+    console.log("vbn ");
+    if (window.scrollY > 50) {
+      setScrolled(false);
+      console.log("setscroll", scrolled);
+    } else {
+      setScrolled(true);
+      console.log("setscroll", scrolled);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    }
+  };
+
+  useEffect(() => {
+    document.body.addEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -46,7 +47,7 @@ const Navbar = () => {
             height={70}
             width={70} 
           />
-          <div className={styles.brandName}>Brandsmashers Tech</div>
+          <div className={styles.brandName}></div>
         </div>
 
         <div className={styles.hamburger} onClick={toggleMenu}>
@@ -54,7 +55,6 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navLinks}>
-        
           <a href="/">Home</a>
           <a href="/HireDevelopers">Hire Developers</a>
           <a href="/Services">Services</a>
@@ -63,7 +63,10 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navButtons}>
-          <AnimatedButton text="Hire Now" /> 
+          {/* <AnimatedButton text="Hire Now" />  */}
+          <a href="/contactus"> <button className={styles.animatedButton}>
+            Contact Us
+          </button> </a>
         </div>
       </div>
 
@@ -72,10 +75,10 @@ const Navbar = () => {
           <AnimatedButton className={styles.animatedButtonss} />
         </div>
 
-        <a href="/HomeSection" onClick={goToHome}>Home</a> 
-        <a href="/Home">Hire Developers</a>
-        <a href="#">Services</a>
-        <a href="#">Technologies</a>
+        <a href="/" onClick={goToHome}>Home</a> 
+        <a href="/HireDevelopers">Hire Developers</a>
+        <a href="/Services">Services</a>
+        <a href="/Technologies">Technologies</a>
         <a href="/About">About Us</a>
       </div>
     </div>
@@ -83,3 +86,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -27,7 +27,7 @@ const Verified = () => {
             <li>Logo Design Companies</li>
             <li>Graphic Design Companies</li>
           </ul>
-          <a href="#" className={styles.viewAll}>VIEW ALL</a>
+        
         </div>
 
         <div className={`${styles.category} ${styles.category2} `}>
@@ -43,7 +43,7 @@ const Verified = () => {
             <li>WordPress Development Companies</li>
             <li>Magento Development Companies</li>
           </ul>
-          <a href="#" className={styles.viewAll}>VIEW ALL</a>
+          
         </div>
 
         <div className={`${styles.category} ${styles.category3}`}>
@@ -59,7 +59,7 @@ const Verified = () => {
             <li>Search Engine Marketing Agencies</li>
             <li>Email Marketing Agencies</li>
           </ul>
-          <a href="#" className={styles.viewAll}>VIEW ALL</a>
+         
         </div>
 
         <div className={`${styles.category} ${styles.category4}`}>
@@ -75,7 +75,7 @@ const Verified = () => {
             <li>VR & Augmented Reality Companies</li>
             <li>Ai Companies</li>
           </ul>
-          <a href="#" className={styles.viewAll}>VIEW ALL</a>
+         
         </div>
 
         <div className={`${styles.category} ${styles.category5}`}>
@@ -91,7 +91,7 @@ const Verified = () => {
             <li>Big Data Analytics Companies</li>
             <li>Cloud Consulting Companies</li>
           </ul>
-          <a href="#" className={styles.viewAll}>VIEW ALL</a>
+        
         </div>
         
         <div className={`${styles.category} ${styles.category6}`}>
@@ -107,7 +107,7 @@ const Verified = () => {
             <li>Accounting Firms </li>
             <li>HR Outsourcing Companies</li>
           </ul>
-          <a href="#" className={styles.viewAll}>VIEW ALL</a>
+       
         </div>
     
         

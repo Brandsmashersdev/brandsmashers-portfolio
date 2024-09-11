@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../src/styles/Hero/Service.module.css';
 import {services} from '../../data/services'; // Notice the correct import name
 
-const Servicess = () => {
+const Services = () => {
   return (
     <div className={styles.container}>
       <section className={styles.services}>
@@ -24,4 +24,4 @@ const Servicess = () => {
   );
 };
 
-export default Servicess;
+export default Services;
