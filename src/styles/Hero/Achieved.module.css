@@ -1,0 +1,47 @@
+.sliderContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 0;
+    margin: 0; /* Removed margin, will handle spacing using Swiper */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 0px; /* Fixed width for each card */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .image {
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .cardContent {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .cardContent h3 {
+    font-size: 52px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .cardContent p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  

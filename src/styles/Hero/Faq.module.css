@@ -5,8 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 90px;
+  padding: 120px;
   margin: 0 auto;
+  margin: 100px;
   /* max-width: 1200px; */
   background: linear-gradient(135deg, #e4e7ea, hsl(209, 70%, 75%));
   border-radius: 10px;
