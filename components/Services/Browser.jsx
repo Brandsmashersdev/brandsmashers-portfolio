@@ -5,7 +5,7 @@ import android from '../../public/Service/android.png';
 import hybrid from '../../public/Service/hybrid.png';
 import crossp from '../../public/Service/crossplateform.png';
 import styles from '../../src/styles/Service/Browser.module.css';
-import QABox from './QABox';
+import QABoxbrowser from './QABoxbrowser';
 
 const Browser = () => {
     return(
@@ -21,7 +21,7 @@ const Browser = () => {
           </video>
 
           <div className={styles.qabox}>
-               <QABox/>
+               <QABoxbrowser/>
           </div>
         </div>
        
@@ -29,13 +29,13 @@ const Browser = () => {
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
             <h1>Beyond the Browser</h1>
-            <h4>Elevating User Experiences with Desktop Apps</h4>
+            <h4>Innovate with applications and technologies that stand out</h4>
             <p>
-            At Brandsmashers, we believe in delivering solutions that are as unique as your business. 
-            Our custom desktop applications are meticulously crafted to cater to your specific needs.
-             Whether you're looking to automate complex workflows, enhance your data analysis capabilities, 
-             or develop a proprietary tool to gain a competitive edge,
-             we have the expertise to turn your vision into reality. ...
+            At Brandsmashers, we transcend conventional web solutions to offer groundbreaking digital
+            experiences. Our services encompass the development of advanced applications and the 
+            integration of innovative technologies, enhancing user interaction and optimising processes. 
+            We specialise in crafting engaging and impactful digital solutions that elevate your brand and
+             ensure a standout presence in the digital landscape.
             </p>
           </div>
 

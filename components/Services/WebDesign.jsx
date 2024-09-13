@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import styles from '../../src/styles/Service/WebDesign.module.css';
-import machineLearning from '../../public/Service/machinLearning.png';
-import blockchain from '../../public/Service/blockchain.png';
+// import machineLearning from '../../public/Service/machinLearning.png';
+// import blockchain from '../../public/Service/blockchain.png';
 import ai from '../../public/Service/ai.png';
 import webl from '../../public/Service/webl.png'
-import iot from '../../public/Service/iot.png';
-import webdev from '../../public/Service/webdev.png';
+// import iot from '../../public/Service/iot.png';
+// import webdev from '../../public/Service/webdev.png';
 import ui from '../../public/Service/Ui-ux.png';
 import sd from '../../public/Service/sd.png';
 import dataS from '../../public/Service/dataS.png'
 
-import QABox from './QABox';
+import QABox from './QABoxw';
+import QABoxw from './QABoxw';
 
 const WebDesign = () => {
   return (
@@ -20,12 +21,15 @@ const WebDesign = () => {
         <div className={styles.leftSection}>
           <div className={styles.headerContent}>
             <h1>Web Design</h1>
-            <h4>Welcome to the digital hub where innovation meets excellence</h4>
+            <h4>Create stunning, user-friendly websites that captivate and convert.</h4>
             <p>
-              We are not just another web development agency. Our team at BrandSmashers has been working with
-              Next.js and React.js for years. We have tackled all sorts of projects, from simple websites to
-              complex web applications. You can trust us to know these technologies inside and out, so we can
-              handle whatever comes our way. We are always keeping an eye on the latest trends and technologies.
+            At Brandsmashers, we’re more than just a web development agency.
+           With years of expertise in Next.js and React.js, we’ve successfully delivered projects 
+           ranging from simple websites to complex, high-performance web applications. Our deep knowledge 
+           of these technologies allows us to handle any challenge with confidence. Always staying ahead
+            of the curve, we continuously monitor emerging trends and advancements to ensure your digital
+             presence is cutting-edge and future-ready.
+
             </p>
           </div>
 
@@ -74,7 +78,7 @@ const WebDesign = () => {
           </video>
 
             <div className={styles.qabox}>
-               <QABox />
+               <QABoxw/>
             </div>
           
         </div>

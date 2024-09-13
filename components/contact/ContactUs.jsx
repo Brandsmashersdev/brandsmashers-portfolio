@@ -1,21 +1,15 @@
 import Image from 'next/image';
 import styles from '../../src/styles/Hero/ContactUs.module.css';
 import googleLogo from '../../public/Hero/googles.png';
-import logo from '../../public/Hero/logobrandsmasher.png';
+// import logo from '../../public/Hero/logobrandsmasher.png';
 import { GrLinkedin } from "react-icons/gr";
 import ContactSlider from './ContactSlider';
 
-import google from '../../public/Hero/googles.png'; // adjust path as per your project
-
-import paytm from '../../public/Service/paytm.png';
-import amazon from '../../public/Service/amazon.png';
-import swiggy from '../../public/Service/Swiggy.png';
-import salesforce from '../../public/Service/salesforce.png';
 
 
 const ContactUs = () => {
   return (
-    <div className={styles.container}>
+  <div className={styles.container}>
 
       {/* Left Section */}
       <div className={styles.left}>
@@ -48,56 +42,19 @@ const ContactUs = () => {
               <span className={styles.spanText1}>AI Bootcamp Top 20</span>
             </p>
           </div>
-          
         </div>
 
         <div className={styles.trustedBy}>
-          <p>Top Devs, Trusted by The Best in Business</p>
-        <div className={styles.slider}>
-           <div className={styles.techItem}>
-              <Image src={google} alt="google" />
-            </div>
-          <div className={styles.techItem}>
-             <Image src={paytm} alt="paytm" />
-           </div>
+          <p className={styles.paragraph}>Top Devs, Trusted by The Best in Business</p>
+          <ContactSlider/>
+          
+        </div>
 
-           <div className={styles.techItem}>
-               <Image src={amazon} alt="amazon" />
-            </div>
-
-            <div className={styles.techItem}>
-                <Image src={swiggy } alt="swiggy" />
-            </div>
-
-            <div className={styles.techItem}>
-               <Image src={salesforce} alt="Salesforce" />
-             </div>
-
-       {/* Duplicate items for smooth scrolling */}
-       <div className={styles.techItem}>
-         <Image src={google} alt="google" />
-      </div>
-       <div className={styles.techItem}>
-         <Image src={paytm} alt="paytm" />
+      </div>  
         
-       </div>
-       <div className={styles.techItem}>
-         <Image src={amazon} alt="amazon" />
-         
-       </div>
-       <div className={styles.techItem}>
-         <Image src={swiggy} alt="swiggy" />
-        
-       </div>
-       <div className={styles.techItem}>
-         <Image src={salesforce} alt="salesforce" />
-        
-       </div>
-     </div>
-    </div>  
         
       
-      </div>
+   
 
       {/* Right Section */}
       <div className={styles.right}>

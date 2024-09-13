@@ -22,8 +22,9 @@ const Services = () => {
             <UiUXDesign/>
             <AiMl/>
             <DataDive/>
-            <Browser />
             <DigitalMarketing/>
+            <Browser />
+            
             <Footer/>
             <TextSlider/>
         </div>
