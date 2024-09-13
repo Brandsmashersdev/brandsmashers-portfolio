@@ -4,7 +4,8 @@ import machineLearning from '../../public/Service/machinLearning.png';
 import blockchain from '../../public/Service/blockchain.png';
 import ai from '../../public/Service/ai.png';
 import iot from '../../public/Service/iot.png';
-import QABox from './QABox';
+import QABox from './QABoxw';
+import QABoxdigital from './QABoxdigital';
 
 const DigitalMarketing = () => {
   return (
@@ -14,13 +15,14 @@ const DigitalMarketing = () => {
         <div className={styles.leftSection}>
           <div className={styles.headerContent}>
             <h1>Digital Marketing </h1>
-            <h4>Unlocking Intelligence: AI/ML Solutions for Tomorrow</h4>
+            <h4>Grow your brand with tailored digital marketing strategies</h4>
             <p>
-            Brandsmashers leads the charge in delivering AI/ML solutions that yield tangible, 
-            transformative results for your business. Whether it's streamlining operations,
-            foreseeing customer behaviors, or optimizing resource allocation,
-            we're dedicated to driving measurable outcomes that propel your organization forward.
-            Our AI/ML expertise, paired with cutting-edge technologies, ensures that you... 
+            At Brandsmashers, our digital marketing services start with a thorough analysis 
+            of your market and audience to create personalised strategies that resonate with 
+            your target demographic. We enhance your online presence through targeted SEO, 
+            dynamic social media campaigns, and compelling content marketing. Our team 
+            continuously monitors performance and adjusts strategies to maximise brand visibility,
+             drive traffic, and deliver measurable growth for your business.
             </p>
           </div>
 
@@ -72,7 +74,7 @@ const DigitalMarketing = () => {
                 Your browser does not support the video tag.
           </video>
             <div className={styles.qabox}>
-               <QABox />
+               <QABoxdigital />
             </div>
           
         </div>

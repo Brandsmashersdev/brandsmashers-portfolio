@@ -1,7 +1,4 @@
-
-
 import Image from 'next/image';
-
 import react from '../../public/Service/react.png';
 import ios from '../../public/Service/ios.png';
 import android from '../../public/Service/android.png';
@@ -9,8 +6,8 @@ import hybrid from '../../public/Service/hybrid.png';
 import crossp from '../../public/Service/crossplateform.png';
 
 import styles from '../../src/styles/Service/Ui-Ux.module.css'
-import QABox from './QABox';
-import mobileApp from '../../public/Service/mobileApp.png';
+import QABoxui from './QABoxui';
+// import mobileApp from '../../public/Service/mobileApp.png';
 // import Uiux from '../../public/Service/uiux.png';
 
 
@@ -28,7 +25,7 @@ const UiUXDesign = () => {
           </video>
 
           <div className={styles.qabox}>
-               <QABox/>
+               <QABoxui/>
           </div>
         </div>
        
@@ -36,13 +33,15 @@ const UiUXDesign = () => {
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
             <h1>UI/UX </h1>
-            <h4>Elevate Your Digital Experience: UI/UX Consultancy at Brandsmashers</h4>
+            <h4>Design intuitive interfaces that boost user satisfaction</h4>
             <p>
-            Embark on a transformative journey with Brandsmashers' UI/UX Consultancy services.
-            In the ever-evolving digital landscape, user interface and user experience are paramount 
-            to innovation and success. We specialize in crafting seamless digital experiences that captivate
-            audiences and drive tangible results.
-            From website interfaces to mobile applications, our expert team combines industry best p...
+            At Brandsmashers, we believe that exceptional user experiences are at the heart of every
+             successful product. Our UI/UX design services are focused on creating intuitive, engaging, 
+             and visually striking interfaces that not only look great but function seamlessly. 
+             We work closely with you to understand your users' needs and behaviours, ensuring that 
+             every touchpoint is optimised for maximum usability and satisfaction. From wireframes and 
+             prototypes to fully interactive designs,
+             we craft digital experiences that leave a lasting impression and drive business growth.
             </p>
           </div>
 

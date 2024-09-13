@@ -1,0 +1,252 @@
+/* Base styles for the navbar */
+.navContainer {
+  width: 100%;
+  background-color: transparent; 
+  background-color: white;
+  color: #101010;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+/* Transparent background for the navbar */
+.navTransparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Background color when scrolled */
+.navScrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust color and opacity as needed */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar Row */
+.navRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0; 
+}
+
+/* Logo and Brand Name */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandName {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color:black;
+}
+
+/* Navigation Links for Desktop */
+.navLinks {
+  margin-left: 150px;
+  display: flex;
+  flex-grow: 1;
+  gap: 12px;
+  justify-content: center;
+  align-items: center; 
+}
+
+.navLinks a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.1s;
+}
+
+.navLinks a:hover {
+  color: hwb(300 4% 33%);
+}
+
+/* Action Buttons */
+.navButtons {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Sidebar Menu for Mobile */
+.sidebarMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 200;
+  padding-top: 40px;
+}
+
+.sidebarMenu.showMenu {
+  transform: translateX(0);
+}
+
+.sidebarMenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sidebarMenu a:hover {
+  color: #6EE4FF;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 1024px) {
+  .navRow {
+    margin-left: 15px;
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navContainer {
+    padding: 0 15px;
+  }
+
+  .navLinks a {
+    margin-left: 15px;
+    font-size: 0.9rem;
+  }
+
+  .navButtons .animatedButton {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navRow {
+    margin-left: 0;
+    padding: 10px 20px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navButtons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebarMenu {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navContainer {
+    padding: 0 10px;
+  }
+
+  .brandName {
+    font-size: 1rem;
+  }
+
+  .sidebarMenu a {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Base Styles for Animated Button */
+.animatedButton {
+  text-decoration: none; 
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem; /* Base padding */
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin: 0 30px; /* Margin left and right */
+  background: var(--primary-color); /* Blue and purple mix */
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s ease infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.animatedButton:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  background: var(--background-color);
+}
+
+/* Icon style */
+.icon {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.5rem;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive Styles */
+
+/* For medium-sized devices */
+@media (max-width: 1200px) {
+  .animatedButton {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 0.9rem; /* Slightly smaller font size */
+   
+    width: auto; /* Allow button to resize */
+  }
+}
+
+/* For small-sized devices */
+@media (max-width: 768px) {
+  .animatedButton {
+    padding: 0.4rem 0.8rem; /* Reduce padding for smaller screens */
+    font-size: 0.8rem; /* Smaller font size */
+    /* Margin for spacing and center alignment */
+    width: auto; /* Allow button to resize */
+  }
+}
+
+/* For extra small-sized devices */
+@media (max-width: 480px) {
+  .animatedButton {
+    padding: 0.4rem 0.6rem; /* Minimal padding for very small screens */
+    font-size: 0.7rem; /* Smaller font size */
+    position: static; /* Use static to keep the button in the flow */
+    transform: translateX(0); /* Remove horizontal transform */
+    width: auto; /* Adjust width */
+  }
+}

@@ -5,8 +5,8 @@ import android from '../../public/Service/android.png';
 import hybrid from '../../public/Service/hybrid.png';
 import crossp from '../../public/Service/crossplateform.png';
 import styles from '../../src/styles/Service/MobileApp.module.css';
-import mobileApp from '../../public/Service/mobileApp.png';
-import QABox from './QABox';
+// import mobileApp from '../../public/Service/mobileApp.png';
+import QABoxm from './QABoxm';
 
 const MobileApp = () => {
     return(
@@ -21,7 +21,7 @@ const MobileApp = () => {
           </video>
           
           <div className={styles.qabox}>
-               <QABox/>
+               <QABoxm/>
           </div>
         </div>
        
@@ -29,13 +29,13 @@ const MobileApp = () => {
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
             <h1>Mobile App </h1>
-            <h4>Mobile App Development is the trending Part of Industry</h4>
+            <h4>Develop seamless, engaging mobile experiences.</h4>
             <p>
-            Welcome to BrandSmashers, your premier destination where innovation intersects with mobility.
-             We're passionate about crafting mobile solutions that propel your business forward and 
-             surpass your wildest expectations. With an unwavering commitment to user-centric design
-             and leveraging cutting-edge technology, we specialize in developing mobile apps that make 
-             a lasting impact. In the curren
+            At Brandsmashers, innovation intersects with mobility to deliver exceptional mobile 
+            solutions that drive your business forward and exceed expectations. With a strong 
+            focus on user-centric design and the latest technologies, we specialize in developing
+             mobile apps that leave a lasting impact. Our passion lies in creating experiences that 
+             not only meet your needs but also elevate your business to new heights.
             </p>
           </div>
 

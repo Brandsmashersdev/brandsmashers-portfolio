@@ -6,7 +6,7 @@ import hybrid from '../../public/Service/hybrid.png';
 import crossp from '../../public/Service/crossplateform.png';
 import datasecurity from '../../public/Service/datasecurity.png';
 import styles from '../../src/styles/Service/MobileApp.module.css';
-import QABox from './QABox';
+import QABoxdata from './QABoxdata';
 
 const DataDive = () => {
     return(
@@ -20,7 +20,7 @@ const DataDive = () => {
                 Your browser does not support the video tag.
           </video>
           <div className={styles.qabox}>
-               <QABox/>
+               <QABoxdata/>
           </div>
         </div>
        
@@ -28,13 +28,12 @@ const DataDive = () => {
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
             <h1>Data Dive</h1>
-            <h4>Exploring Insights Through Analysis</h4>
+            <h4>Transform data into valuable insights with expert analysis</h4>
             <p>
-            Dive deep into the wealth of information at your fingertips with our expert 
-            data scientist development services. At Brandsmashers, we're committed to unlocking the 
-            full potential of your data, transforming raw information into valuable insights that drive 
-            informed decisions and propel your business to new heights.
-             From initial data collection to advanced analytics, our team of dedicated ...
+            Explore the full potential of your data with our specialised data science development services.
+           At Brandsmashers, we are focused on turning raw data into valuable insights that inform 
+           strategic decisions and boost your business. From initial data gathering to sophisticated
+            analytics, our expert team delivers solutions that enhance the value and impact of your data.
             </p>
           </div>
 
