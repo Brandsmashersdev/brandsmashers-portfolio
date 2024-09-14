@@ -13,7 +13,7 @@ const Engagement = () => {
         </div>
         <div className={styles.stat}>
         <h2>Team Augmentation</h2>
-          <p> Access a pool of highly experienced developers and IT professionals to fill immediate skill gaps, boost your team’s capabilities, and accelerate project timelines.</p>
+          <p> Access a pool of highly experienced developers and IT professionals to fill immediate skill gaps, boost your team&apos;s capabilities, and accelerate project timelines.</p>
         </div>
       </div>
     </div>

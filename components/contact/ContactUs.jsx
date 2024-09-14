@@ -79,12 +79,12 @@ const ContactUs = () => {
           <p>How we can help</p>
           <div className={styles.radioGroup}>
             <label>
-              <input type="radio" name="help" value="I'm Recruiting" required  className={styles.input} />
-              I'm Recruiting
+              <input type="radio" name="help" value="I&apos;m Recruiting" required  className={styles.input} />
+              I&apos;m Recruiting
             </label>
             <label>
-              <input type="radio" name="help" value="I'm a Developer" required className={styles.input} />
-              I'm a Developer
+              <input type="radio" name="help" value="I&apos;m a Developer" required className={styles.input} />
+              I&apos;m a Developer
             </label>
           </div>
           

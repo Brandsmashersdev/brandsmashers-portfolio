@@ -8,7 +8,7 @@ const AboutUsComponent = () => {
       <div className={styles.container}>
         <h2 className={styles.heading}>Why Brandsmashers</h2>
         <p className={styles.description}>
-        At Brandsmashers, we don't just build software, we build long-term partnerships based on trust, quality, and innovation. Our commitment to excellence ensures that we consistently deliver top-tier solutions that meet your evolving business needs.
+        At Brandsmashers, we don&apos;t just build software, we build long-term partnerships based on trust, quality, and innovation. Our commitment to excellence ensures that we consistently deliver top-tier solutions that meet your evolving business needs.
         </p>
         <div className={styles.features}>
           <div className={styles.featureBox}>
