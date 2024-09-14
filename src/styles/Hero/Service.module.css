@@ -24,9 +24,7 @@
   .serviceBox {
     text-align: center;
     padding: 20px;
-    /* border: 1px solid #eaeaea; */
     border-radius: 10px;
-    /* background-color: #F8F8F8; */
     transition: transform 0.3s ease;
   }
 
@@ -36,6 +34,77 @@
   
   .serviceBox:hover {
     transform:translateY(-5px);
+  }
+  
+  .serviceIcon {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+
+  @media (max-width: 1200px) {
+    .servicesGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .servicesGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .serviceIcon {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .servicesGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .services h2 {
+      font-size: 0.5rem;
+    }
+  
+    .serviceBox p {
+      font-size: 1.3rem;
+    }
+    .serviceIcon {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .services h2 {
+      font-size: 2rem;
+    }
+  
+    .serviceBox p {
+      font-size: 1.2rem;
+    }
+  
+    .serviceIcon {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  
+  .serviceBox {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .serviceBox p {
+    font-size: 1.5rem;
+  }
+  
+  .serviceBox:hover {
+    transform: translateY(-5px);
   }
   
   .serviceIcon {

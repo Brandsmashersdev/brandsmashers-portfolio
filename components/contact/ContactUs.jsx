@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '../../src/styles/Hero/ContactUs.module.css';
 import googleLogo from '../../public/Hero/googles.png';
 // import logo from '../../public/Hero/logobrandsmasher.png';
+// import logo from '../../public/Hero/logoBrandsmashers.png';
 import { GrLinkedin } from "react-icons/gr";
 import ContactSlider from './ContactSlider';
 

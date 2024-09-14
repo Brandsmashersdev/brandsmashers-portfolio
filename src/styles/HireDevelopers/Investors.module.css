@@ -45,11 +45,14 @@
 }
 
 .company_logo {
-    width: 30px;
+    width: 60%;
     height: auto;
     margin: auto;
     margin-top: 10px;
+    object-fit: contain; /* Ensures logos maintain aspect ratio */
 }
+
+
 
 @media (max-width: 1200px) {
     .ivestors_title {

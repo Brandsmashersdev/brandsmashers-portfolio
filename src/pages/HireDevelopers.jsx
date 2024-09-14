@@ -25,10 +25,10 @@ const HireDevelopers = () => {
       <SuperSourcingSolve />
       <TopDev/>
       {/* <Testimonials/> */}
-      <Investors/>
+      {/* <Investors/> */}
       <Offer/>
       <CaseStudies/>
-      <WhyBrandsmashers/>
+      {/* <WhyBrandsmashers/> */}
       {/* <FeatureSection /> */}
       <FaqSection/>
       <Footer/>

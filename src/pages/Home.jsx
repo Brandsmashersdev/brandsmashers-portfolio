@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer/Footer";
+import Investors from "../../components/HireDevelopers/Investors";
 import Achieved from "../../components/HomePage/Achieved";
 import AchiedCardSlider from "../../components/HomePage/AchievedCardSlider";
 import Faq from "../../components/HomePage/Faq";
@@ -23,6 +24,9 @@ const HomeSection = () => {
         <TechExpert/>
         {/* <AchiedCardSlider/>
         <OurPartners/> */}
+        <Investors/>
+        {/* <AchiedCardSlider/> */}
+        {/* <OurPartners/> */}
         <Faq/>
         <Footer/>
         <TextSlider/>

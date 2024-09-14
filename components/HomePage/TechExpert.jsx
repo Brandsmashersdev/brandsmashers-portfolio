@@ -2,7 +2,7 @@
 import styles from '../../src/styles/Hero/TechExpert.module.css';
 import Image from 'next/image';
 // import discussion from '../../public/Hero/techExperts.png';
-import discussion from '../../public/Hero/techexpert.png';
+import discussion from '../../public/Hero/discussion.jpeg';
 // import discussions from '../../public/Hero/discussions.png';
 
 const TechExpert = () => {
@@ -22,12 +22,12 @@ const TechExpert = () => {
           <div className={styles.rightContent}>
            <div className={styles.detailes}>
               <h2 className={styles.heading}>
-              Let's Innovate Together
-              Start Your Project with Us Today!
+              Ready to Innovate? Kickstart Your Project with Us Now!
+
               </h2>
 
               <h3 className={styles.subHeading}>
-              Speak with Our Tech Experts Today!
+              Connect with Our Tech Specialists and Get Started Today!
               </h3>
             </div>
 

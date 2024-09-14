@@ -67,7 +67,7 @@
 }
 
 .navLinks a:hover {
-  color: hwb(300 4% 33%);
+  color: var(--button-color);
 }
 
 /* Action Buttons */

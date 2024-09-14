@@ -8,24 +8,36 @@ const Faq = () => {
 
   const faqs = [
     {
-      question: "What Makes Hidden Brains Unique in Enterprise Software Development?",
-      answer: "Hidden Brains is unique because of its innovative approach, expert team, and custom solutions tailored to each client's needs.",
+      question: "What services does Brandsmashers Tech offer?",
+      answer: "We provide a range of services, including software product development, mobile app development, full-stack development, UI/UX design, and staff augmentation. Our team of expert developers can handle various technologies like iOS, Android, AWS, Blockchain, and more.",
     },
     {
-      question: "How Hidden Brains Add Strategic Value to Our Enterprise?",
-      answer: "We add strategic value by aligning technology solutions with your business goals, enhancing efficiency, and driving growth.",
+      question: "How does Brandsmashers Tech ensure the quality of its developers?",
+      answer: "All our developers go through a rigorous screening process. We only hire the top 1.2% of senior developers, ensuring that clients receive highly skilled professionals with proven track records of delivering successful projects.",
     },
     {
-      question: "How Does Hidden Brains Handle Project Deadlines?",
-      answer: "We use agile methodologies, clear communication, and constant monitoring to ensure projects are delivered on time.",
+      question: "What industries do you serve?",
+      answer: "We serve a wide variety of industries, including e-commerce, healthcare, fintech, gaming, and more. Our team tailors solutions to meet the specific needs of each industry.",
     },
     {
-      question: "How Does Hidden Brains Stay Ahead with the Latest Technology Trends?",
-      answer: "Our team is dedicated to continuous learning and innovation, staying updated with the latest trends and technologies.",
+      question: "What is your typical project timeline?",
+      answer: "Project timelines depend on the scope and complexity of the work. However, we are committed to meeting deadlines and provide timely updates throughout the development process to ensure on-time delivery.",
     },
     {
-      question: "What Is Your Process for Quality Assurance and Testing?",
-      answer: "Our process involves rigorous testing at each development phase to ensure the highest quality and performance standards.",
+      question: "Do you offer post-launch support?",
+      answer: "Yes, we provide ongoing support and maintenance after the product launch to ensure smooth operation and to implement any necessary updates or improvements.",
+    },
+    {
+      question: "Can Brandsmashers Tech scale a team for a large project?",
+      answer: "Absolutely! We offer flexible staff augmentation services, allowing you to scale your development team quickly and efficiently based on your project&apos;s needs.",
+    },
+    {
+      question: "What technologies do your developers specialise in?",
+      answer: "Our developers are proficient in a wide range of technologies, including but not limited to JavaScript frameworks (Next.js, React.js), AWS, Salesforce, Blockchain, Android, iOS, and more.",
+    },
+    {
+      question: "Do you offer a trial period for your services?",
+      answer: "Yes, we offer a two-week trial period for our development services, allowing you to assess our capabilities before committing long-term.",
     },
   ];
 
@@ -36,10 +48,9 @@ const Faq = () => {
   return (
     <div className={styles.faqContainer}>
       <div className={styles.leftSection}>
-        <h2>Frequently Asked Questions (FAQ’s)</h2>
+        <h2>Frequently Asked Questions (FAQ&apos;s)</h2>
         <p>
-          Here are some frequently asked questions about our software product
-          development services, answered to help you understand our process and capabilities better.
+        Explore Our Frequently Asked Questions About Software Product Development Services. Get Insights into Our Process and Capabilities.
         </p>
       </div>
       <div className={styles.rightSection}>

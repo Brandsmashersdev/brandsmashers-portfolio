@@ -4,13 +4,13 @@ import styles from '@/styles/AboutUs/AboutContent.module.css';
 const AboutContent = () => {
   return (
     <div className={styles.aboutContent}>
-      <p>We are a Consummate Custom Software Development company delivering splendid business IT Solutions and related services to customers across the globe. Our development services are led by our dedicated and passionate team to provide best industry practices combined with technology expertise and business domain knowledge to drive digital transformation. Our proficiency in understanding business challenges and professional competence allows us to create a better experience for our customers.</p>
+      <p>Founded in 2018, Brandsmashers has quickly grown into a trusted name in the world of software development and staff augmentation. We specialize in delivering tailor-made software solutions that drive business success and help companies scale their operations with top-tier talent. By combining technical expertise with innovative solutions, we help our clients navigate the complexities of digital transformation with ease.</p>
       <div className={styles.aboutStats}>
         <div className={styles.stat}>
-          <p>We have successfully served for more than 1800 success stories ranging from Enterprise level to Start-ups, who have grown alongside the success of the company.</p>
+          <p>Our mission is to empower businesses by providing top-notch software solutions and access to highly skilled talent, helping them accelerate growth and drive innovation. We aim to be a reliable partner that delivers superior quality and sustainable results, enabling our clients to achieve their goals.</p>
         </div>
         <div className={styles.stat}>
-          <p>At present we are a Robust Team having diverse skills with more than 21+ years of Technology experience engaging with customers at Deeper level to provide cutting edge solutions and innovations.</p>
+          <p>We envision a future where Brandsmashers is the go-to partner for businesses looking to innovate, scale, and thrive in a constantly evolving digital landscape. Our goal is to set new benchmarks in delivering software development and staff augmentation services that propel businesses to new heights.</p>
         </div>
       </div>
     </div>

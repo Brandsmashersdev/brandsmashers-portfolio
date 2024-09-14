@@ -9,7 +9,7 @@
   margin: 0 auto;
   margin: 100px;
   /* max-width: 1200px; */
-  background: linear-gradient(135deg, #e4e7ea, hsl(209, 70%, 75%));
+  background: linear-gradient(135deg, #e4e7ea, var(--primary-color));
   border-radius: 10px;
   flex-wrap: wrap; /* Allows the content to wrap */
   box-shadow: 1px solid white;

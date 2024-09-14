@@ -50,16 +50,19 @@ const Investors = () => {
     return (
 
     <div className={styles.investors_section}>
-          <h2 className={styles.ivestors_title}>Trusted by <span className={styles.highlight}> Top Investors </span>
+          <h2 className={styles.ivestors_title}>Our<span className={styles.highlight}> Partners </span>
           </h2>
         <div className={styles.slider_container}>
             <Slider {...settings}>
                 {data.map((investor, index) => (
                     <div className={styles.slider_item} key={index}>
-                        <Image src={investor.image} alt={investor.name} className={styles.profile_pic} width={80} height={80} />
-                        <h3>{investor.name}</h3>
-                        <p>{investor.title}</p>
-                        <Image src={investor.logo} alt="company-logo" className={styles.company_logo} width={30} height={30}/>
+                        <Image  src={investor.logo}
+                                alt={`company-logo-${index}`}
+                                className={styles.company_logo}
+                                width={100}
+                                height={100}
+                                objectFit='contain' />
+                        
                     </div>
                 ))}
             </Slider>
