@@ -93,7 +93,7 @@
     }
 
     .heroImage {
-        max-width: 80%; /* Adjust as needed for better fit */
+        max-width: 100%; /* Adjust as needed for better fit */
     }
 
     .heading {
@@ -102,6 +102,9 @@
 
     .subHeading {
         font-size: 1.25rem; /* Slightly smaller font size */
+    }
+    .rightContent{
+        margin: 20px;
     }
 
     .ctaButton {

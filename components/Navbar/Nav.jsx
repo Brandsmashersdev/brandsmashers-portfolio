@@ -95,9 +95,11 @@
 import React, { useState, useEffect } from 'react';
 import styles from "../../src/styles/Hero/Nav.module.css";
 import Image from 'next/image';
+import logo from '../../public/Hero/BrandsmashersLogo.png';
+import AnimatedButton from '../HireDeveloperHero/AnimationButton';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
 import { useRouter } from 'next/router'; 
-import logo from '../../public/Hero/logoBrandsmashers.png';
+
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);

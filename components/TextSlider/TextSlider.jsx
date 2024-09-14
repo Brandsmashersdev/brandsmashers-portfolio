@@ -6,25 +6,25 @@ const TextSlider = () => {
     <div className={styles.sliderContainer}>
       <div className={styles.slider}>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+        Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+        Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+          Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+          Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+          Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+          Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
         <span className={styles.sliderText}>
-          Build your dream team. <span>10X Faster.</span>
+          Your Trusted Development Partner. <span>10X Faster and smarter</span>
         </span>
       </div>
     </div>

@@ -11,44 +11,44 @@ const TechnologiesCard = () => {
       icon: <FaLock size={40} />, // Using react-icons
       title: 'Backend',
       description:
-        'Combat development challenges by reinforcing the backend functioning of the application with easy synchronization of different features and seamless communication with relational or NoSQL databases.',
+        'Building robust, scalable backend systems that handle the business logic, manage databases, and integrate APIs for smooth application performance.',
     },
     {
       icon: <FaCog size={40} />,
       title: 'Frontend',
       description:
-        'Reinvent the look and feel of web applications using JavaScript technologies along with HTML and CSS to improve aesthetics and enhance the digital experience of your customers.',
+        'Creating engaging and intuitive user interfaces with modern web technologies like React.js, Angular, and Vue.js, ensuring a seamless user experience.',
     },
     {
       icon: <FaLaptopCode size={40} />,
       title: 'Mobile',
       description:
-        'Transform web applications into leading-edge mobile applications by enabling mobility across multiple platforms such as iOS, Android, and Windows.',
+        'Developing high-performance mobile applications for iOS and Android, delivering seamless user experiences with cross-platform compatibility.',
     },
     {
       icon: <FaUsers size={40} />,
       title: 'Database',
       description:
-        'Consolidate data from multiple complex data sources and manage end-to-end data integration to predict significant and actionable insights.',
+        'Managing and optimizing data storage solutions, from SQL to NoSQL databases, ensuring secure, efficient, and scalable data handling.',
     },
     {
       icon: <FaDatabase size={40} />,
       title: 'Testing',
       description:
-        'Ensure high performing and bug-free applications by implementing our structured testing methodologies for your tangled and complex applications.',
+        'Ensuring software reliability and performance through automated and manual testing strategies, detecting bugs early to improve quality and user experience.',
     },
 
     {
         icon: <FaDatabase size={40} />,
         title: 'Cloud & DevOps',
         description:
-          'Fast Track your deliveries using agile and cloud-based technology approaches for anytime and anywhere accessibility and transparency.',
+          'Leveraging cloud computing to provide scalable solutions and integrating DevOps for faster development cycles, continuous integration, and seamless deployments.',
       },
     {
         icon: <FaDatabase size={40} />,
         title: 'Others',
         description:
-          'Leverage our capabilities to better upgrade and reinforce your business models using leading modern technology offerings.',
+          'Utilizing a wide range of technologies including AI, machine learning, blockchain, IoT, and more to deliver innovative, future-proof solutions tailored to client needs.',
     },
   ];
 
@@ -60,7 +60,7 @@ const TechnologiesCard = () => {
     autoplay: true,         
     autoplaySpeed: 0, 
     cssEase:'Linear', // Auto slide every 3 seconds
-    pauseOnHover: false,
+    pauseOnHover: true,
     draggable: false,
     responsive: [
       {
@@ -84,7 +84,7 @@ const TechnologiesCard = () => {
     <div className={styles.featuresSection}>
       <h2 className={styles.title}>Technologies</h2>
       <p className={styles.subtitle}>
-      Designing and developing innovative and professional software solutions for hundreds of companies across global tech markets for almost two decades now.
+      Developing powerful, reliable software solutions for leading companies across global industries for nearly two decades.
       </p>
       <Slider {...settings} className={styles.slider}>
         {features.map((feature, index) => (

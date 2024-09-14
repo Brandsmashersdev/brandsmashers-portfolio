@@ -5,15 +5,15 @@ const Engagement = () => {
   return (
     <div className={styles.engagmentHeading}>
       <h1>Our Business Engagement Approach</h1>
-      <p>We help businesses to increase their revenue by leveraging our domain expertise and reliable software development services. Our flexible business models enable our customers across multiple industry verticals to choose as per their need and be effective in their business. </p>
+      <p>At Brandsmashers, we offer flexible and client-centric business engagement models that ensure efficiency and high-quality results. Whether you're looking to augment your team with skilled professionals or need a dedicated team to build and manage your software solutions, we have the right approach for you. </p>
       <div className={styles.engagementStats}>
         <div className={styles.stat}>
-          <h2>Fixed Cost</h2>
-          <p>Our Fixed scope implementation includes precision of estimates and customized solutions as per the requirements. You can leverage our cross-domain expertise in defining the projects from the scratch and have a clearly defined budget for your initiatives. Based on your custom needs, our expert team provides a fixed cost proposal and the project is accomplished in milestones</p>
+          <h2>End-to-End Services</h2>
+          <p>We provide full software development services, including planning, design, development, testing, and maintenance, ensuring that your project is completed to the highest standard.</p>
         </div>
         <div className={styles.stat}>
         <h2>Team Augmentation</h2>
-          <p>To manage the timely achievement of your goals, utilize our on- demand skills and resources. Our expert IT team specializing in various technologies can seamlessly work as your team to meet the business objectives with short and long term engagements, cost effectively. With our proven, reliable and professional acumen, you can scale-up your projects conveniently to gain a competitive advantage</p>
+          <p> Access a pool of highly experienced developers and IT professionals to fill immediate skill gaps, boost your team’s capabilities, and accelerate project timelines.</p>
         </div>
       </div>
     </div>

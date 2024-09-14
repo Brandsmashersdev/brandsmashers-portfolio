@@ -12,7 +12,6 @@ import TextSlider from '../../components/TextSlider/TextSlider'
 
 
 
-
 const About = () => {
   return (
     <>
@@ -21,7 +20,7 @@ const About = () => {
       <AboutHeader/>
       <AboutContent/>
       <Nutshell/>
-      <RecognitionAndServices/>
+      {/* <RecognitionAndServices/> */}
       <Engagement/>
       <WhyBrandsmashers/>
       <OurValues/>

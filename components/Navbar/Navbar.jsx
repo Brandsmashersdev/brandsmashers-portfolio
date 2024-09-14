@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from "../../src/styles/Hero/Navbar.module.css";
 import Image from 'next/image';
-import logo from '../../public/Hero/logoBrandsmashers.png';
+import logo from '../../public/Hero/BrandsmashersLogo.png';
 
 import AnimatedButton from '../HireDeveloperHero/AnimationButton';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
@@ -45,8 +45,8 @@ const Navbar = () => {
             src={logo} 
             alt="brandsmashers Logo"
             layout="fixed" 
-            height={70}
-            width={70} 
+            height={50}
+            width={50} 
           />
           <div className={styles.brandName}></div>
         </div>

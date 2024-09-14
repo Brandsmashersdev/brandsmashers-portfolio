@@ -23,8 +23,8 @@ const WebDesign = () => {
             <h1>Web Design</h1>
             <h4>Create stunning, user-friendly websites that captivate and convert.</h4>
             <p>
-            At Brandsmashers, we’re more than just a web development agency.
-           With years of expertise in Next.js and React.js, we’ve successfully delivered projects 
+            At Brandsmashers, we&apos;re more than just a web development agency.
+           With years of expertise in Next.js and React.js, we&apos;ve successfully delivered projects 
            ranging from simple websites to complex, high-performance web applications. Our deep knowledge 
            of these technologies allows us to handle any challenge with confidence. Always staying ahead
             of the curve, we continuously monitor emerging trends and advancements to ensure your digital
@@ -73,7 +73,7 @@ const WebDesign = () => {
               
          
           <video autoPlay loop muted className={styles.backgroundVideo}>
-           <source src="/video/webDesign.mp4" type="video/mp4" />
+           <source src="/video/Web.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
           </video>
 
