@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from "../../src/styles/Hero/Navbar.module.css";
 import Image from 'next/image';
 import logo from '../../public/Hero/BrandsmashersLogo.png';
-
+import Link from 'next/link'; // Import Link component
 import AnimatedButton from '../HireDeveloperHero/AnimationButton';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
 import { useRouter } from 'next/router'; 
@@ -22,14 +22,10 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    console.log("vbn ");
     if (window.scrollY > 50) {
       setScrolled(false);
-      console.log("setscroll", scrolled);
     } else {
       setScrolled(true);
-      console.log("setscroll", scrolled);
-
     }
   };
 
@@ -56,18 +52,20 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navLinks}>
-          <a href="/">Home</a>
-          <a href="/HireDevelopers">Hire Developers</a>
-          <a href="/Services">Services</a>
-          <a href="/Technologies">Technologies</a>
-          <a href="/About">About Us</a>
+          <Link href="/">Home</Link>
+          <Link href="/HireDevelopers">Hire Developers</Link>
+          <Link href="/Services">Services</Link>
+          <Link href="/Technologies">Technologies</Link>
+          <Link href="/About">About Us</Link>
         </div>
 
         <div className={styles.navButtons}>
           {/* <AnimatedButton text="Hire Now" />  */}
-          <a href="/contactus"> <button className={styles.animatedButton}>
-            Contact Us
-          </button> </a>
+          <Link href="/contactus">
+            <button className={styles.animatedButton}>
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -76,15 +74,14 @@ const Navbar = () => {
           <AnimatedButton className={styles.animatedButtonss} />
         </div>
 
-        <a href="/" onClick={goToHome}>Home</a> 
-        <a href="/HireDevelopers">Hire Developers</a>
-        <a href="/Services">Services</a>
-        <a href="/Technologies">Technologies</a>
-        <a href="/About">About Us</a>
+        <Link href="/" onClick={goToHome}>Home</Link> 
+        <Link href="/HireDevelopers">Hire Developers</Link>
+        <Link href="/Services">Services</Link>
+        <Link href="/Technologies">Technologies</Link>
+        <Link href="/About">About Us</Link>
       </div>
     </div>
   );
 };
 
 export default Navbar;
-

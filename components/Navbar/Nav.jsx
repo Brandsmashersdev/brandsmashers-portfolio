@@ -151,36 +151,36 @@ const Nav = () => {
         </div>
 
         <div className={styles.navLinks}>
-          <a href="/">Home</a>
-          <a href="/HireDevelopers">Hire Developers</a>
-          <a href="/Services">Services</a>
-          <a href="/Technologies">Technologies</a>
-          <a href="/About">About Us</a>
+          <Link href="/">Home</Link>
+          <Link href="/HireDevelopers">Hire Developers</Link>
+          <Link href="/Services">Services</Link>
+          <Link href="/Technologies">Technologies</Link>
+          <Link href="/About">About Us</Link>
         </div>
 
         <div className={styles.navButtons}>
-          <a href="/contactus"> 
+          <Link href="/contactus"> 
             <button className={styles.animatedButton}>
               Contact Us
             </button> 
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className={`${styles.sidebarMenu} ${isOpen ? styles.showMenu : ''}`}>
         <div className={styles.navButtons}>
-          <a href="/contactus">
+          <Link href="/contactus">
             <button className={styles.animatedButton}>
               Contact Us
             </button>
-          </a>
+          </Link>
         </div>
 
-        <a href="/" onClick={goToHome}>Home</a> 
-        <a href="/HireDevelopers">Hire Developers</a>
-        <a href="/Services">Services</a>
-        <a href="/Technologies">Technologies</a>
-        <a href="/About">About Us</a>
+        <Link href="/" onClick={goToHome}>Home</Link> 
+        <Link href="/HireDevelopers">Hire Developers</Link>
+        <Link href="/Services">Services</Link>
+        <Link href="/Technologies">Technologies</Link>
+        <Link href="/About">About Us</Link>
       </div>
     </div>
   );

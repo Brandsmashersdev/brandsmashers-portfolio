@@ -38,7 +38,7 @@ const UiUXDesign = () => {
             At Brandsmashers, we believe that exceptional user experiences are at the heart of every
              successful product. Our UI/UX design services are focused on creating intuitive, engaging, 
              and visually striking interfaces that not only look great but function seamlessly. 
-             We work closely with you to understand your users' needs and behaviours, ensuring that 
+             We work closely with you to understand your users&apos; needs and behaviours, ensuring that 
              every touchpoint is optimised for maximum usability and satisfaction. From wireframes and 
              prototypes to fully interactive designs,
              we craft digital experiences that leave a lasting impression and drive business growth.
