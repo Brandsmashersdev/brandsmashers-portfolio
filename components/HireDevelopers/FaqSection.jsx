@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import styles from '../../src/styles/Hero/FaqSection.module.css';
 import { FaRegCalendarCheck } from "react-icons/fa";
@@ -16,7 +14,7 @@ export default function FaqSection() {
 
   return (
     <div className={styles.faqContainer}>
-      <h1 className={styles.mainHeading}>FAQ'S</h1>
+      <h1 className={styles.mainHeading}>FAQ&apos;S</h1>
       <div className={styles.faqContent}>
         <div className={styles.faqLeft}>
           <ul className={styles.faqQuestions}>
@@ -57,4 +55,3 @@ export default function FaqSection() {
     </div>
   );
 }
-

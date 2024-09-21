@@ -5,7 +5,7 @@ const Engagement = () => {
   return (
     <div className={styles.engagmentHeading}>
       <h1>Our Business Engagement Approach</h1>
-      <p>At Brandsmashers, we offer flexible and client-centric business engagement models that ensure efficiency and high-quality results. Whether you're looking to augment your team with skilled professionals or need a dedicated team to build and manage your software solutions, we have the right approach for you. </p>
+      <p>At Brandsmashers, we offer flexible and client-centric business engagement models that ensure efficiency and high-quality results. Whether you&apos;re looking to augment your team with skilled professionals or need a dedicated team to build and manage your software solutions, we have the right approach for you. </p>
       <div className={styles.engagementStats}>
         <div className={styles.stat}>
           <h2>End-to-End Services</h2>

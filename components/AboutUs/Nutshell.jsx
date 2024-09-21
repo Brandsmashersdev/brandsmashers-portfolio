@@ -18,6 +18,8 @@ const AboutUs = () => {
   ];
 
   useEffect(() => {
+    const sectionElement = sectionRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -31,13 +33,13 @@ const AboutUs = () => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (sectionElement) {
+      observer.observe(sectionElement);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
       }
     };
   }, []);
@@ -50,14 +52,13 @@ const AboutUs = () => {
           <div key={index} className={styles.metricBox}>
             <h3 className={styles.metricValue}>
               {isVisible && (
-              <CountUp 
-                start={0} 
-                end={metric.value} 
-                duration={4.5} 
-                suffix={metric.suffix ? metric.suffix : ""} 
-                                
-              />
-              )}              
+                <CountUp 
+                  start={0} 
+                  end={metric.value} 
+                  duration={4.5} 
+                  suffix={metric.suffix ? metric.suffix : ""} 
+                />
+              )}
             </h3>
             <p className={styles.metricLabel}>{metric.label}</p>
           </div>
