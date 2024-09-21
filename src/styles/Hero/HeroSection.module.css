@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:0px  150px ; 
+  padding:0px 150px; 
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   height: 90vh;
   /* background: linear-gradient(90deg,top hwb(230 39% 15%), middle hwb(235 2% 66%),down rgb(14, 0, 12) 100%); */
@@ -70,10 +70,11 @@
   justify-content: center;
   border: none;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.2vmax;
   cursor: pointer;
-  width: 200px; /* Set consistent width for both buttons */
-  height: 50px; /* Set consistent height for both buttons */
+  /* width: 200px;
+  height: 50px; */
+  padding: 0.7rem 2vmax;
   max-width: 500px; /* Ensure it doesn't get too wide */
 }
 
@@ -81,8 +82,7 @@
   border: 1px solid var(--background-color);
   background-color: var(--primary-color);
   color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .hireButton:hover{
@@ -94,8 +94,7 @@
   border: 1px solid var(--background-color);
   color: white;
   background: var(--primary-color);
-  font-weight: 800;
-  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .contactButton:hover{
@@ -160,6 +159,8 @@
 @media (max-width: 768px) {
   .heroSection {
     display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
@@ -167,6 +168,9 @@
     max-width: 100%;
     margin-bottom: 2rem;
     margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .heading {
@@ -181,8 +185,7 @@
 
   .hireButton,
   .contactButton {
-    width: 180px; /* Slightly smaller for better fit */
-    height: 45px; /* Slightly smaller for better fit */
+     font-size: 1.6vmax;
   }
 
   .imageContainer {
@@ -220,8 +223,8 @@
 
   .hireButton,
   .contactButton {
-    width: 250px; /* Smaller width for very small screens */
-    height: 40px; /* Smaller height for very small screens */
+    width: 180px; /* Smaller width for very small screens */
+     /* Smaller height for very small screens */
   }
 }
 
@@ -238,7 +241,7 @@
   .hireButton,
   .contactButton {
     width: 150px; /* Adjust for extra-small screens */
-    height: 35px; /* Adjust for extra-small screens */
+     /* Adjust for extra-small screens */
   }
 }
 

@@ -70,6 +70,12 @@
   color: var(--button-color);
 }
 
+.navLinks span.active,
+.sidebarMenu span.active {
+  color: var(--button-color); /* Change this to the color you want for active links */
+  font-weight: bold; /* Optionally, make it bold */
+}
+
 /* Action Buttons */
 .navButtons {
   display: flex;

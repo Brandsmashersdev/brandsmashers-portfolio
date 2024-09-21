@@ -27,14 +27,12 @@
 
 .title {
   font-size: 5rem;
-  font-weight: 900;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .highlight {
   color: #eef2f4; /* Adjust the color as needed */
-  font-weight: 800;
 }
 
 .gradient{
@@ -45,7 +43,7 @@
 }
 
 .description {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 

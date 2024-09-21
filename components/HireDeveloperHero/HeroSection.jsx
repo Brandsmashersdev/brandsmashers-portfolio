@@ -1,14 +1,5 @@
 import { FaArrowRight } from 'react-icons/fa';
 import styles from '../../src/styles/Hero/HeroSection.module.css';
-import StarRating from './StarRating';
-import Image from 'next/image';
-import google from '../../public/Hero/Google-Emblem.png';
-import clutch from '../../public/Hero/clutch.png';
-import g from '../../public/Hero/g.png';
-import AnimatedButton from './AnimationButton';
-import CardSlider from './CardSlider';
-// import ProfileSlider from './ProfileSlider';
-// import Slid from './slid';
 
 const HeroSection = () => {
   return (

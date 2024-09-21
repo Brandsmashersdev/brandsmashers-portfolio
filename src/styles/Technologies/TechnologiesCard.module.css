@@ -48,6 +48,11 @@
     width: 95% !important;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+
+  .featureCard::-webkit-scrollbar{
+    display: none;
   }
   
   .featureCard:hover {

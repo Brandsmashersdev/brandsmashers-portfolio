@@ -33,6 +33,17 @@ const Navbar = () => {
     document.body.addEventListener('scroll', handleScroll);
   }, []);
 
+  // const NAVLINKS = ['/', '/Hire Developers', '/Services', '/Technologies', '/About']
+
+  const NAVLINKS = [
+    { path: '/', label: 'Home' },
+    { path: '/HireDevelopers', label: 'Hire Developers' },
+    { path: '/Services', label: 'Services' },
+    { path: '/Technologies', label: 'Technologies' },
+    { path: '/About', label: 'About Us' }
+  ];
+  
+
   return (
     <div className={`${styles.navContainer} ${scrolled ? styles.navScrolled : ''}`}>
       <div className={styles.navRow}>
@@ -52,11 +63,13 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navLinks}>
-          <Link href="/">Home</Link>
-          <Link href="/HireDevelopers">Hire Developers</Link>
-          <Link href="/Services">Services</Link>
-          <Link href="/Technologies">Technologies</Link>
-          <Link href="/About">About Us</Link>
+        {NAVLINKS.map(({path, label}) => (
+            <Link href={path} key={path}>
+              <span className={router.pathname === path ? styles.active : ''}>
+                {path === '/' ? 'Home' : label}
+              </span>
+            </Link>
+          ))}
         </div>
 
         <div className={styles.navButtons}>
@@ -74,11 +87,13 @@ const Navbar = () => {
           <AnimatedButton className={styles.animatedButtonss} />
         </div>
 
-        <Link href="/" onClick={goToHome}>Home</Link> 
-        <Link href="/HireDevelopers">Hire Developers</Link>
-        <Link href="/Services">Services</Link>
-        <Link href="/Technologies">Technologies</Link>
-        <Link href="/About">About Us</Link>
+        {NAVLINKS.map(({path, label}) => (
+          <Link href={path} key={path} onClick={goToHome}>
+            <span className={router.pathname === path ? styles.active : ''}>
+              {path === '/' ? 'Home' : label}
+            </span>
+          </Link>
+        ))}
       </div>
     </div>
   );

@@ -23,9 +23,9 @@ const ContactUs = () => {
             /> */}
             <h1 className={styles.mainheading}>Brandsmashers Tech</h1>
           </div> 
-          <h1>
+          <h2 style={styles.h2}>
             Work With Only The <br></br>Top Pre-vetted <span className={styles.highlight}>Tech Talent</span>
-          </h1>
+          </h2>
           <h4 className={styles.paragraph}>Top talent is just a click away</h4>
           <button className={styles.bookButton}>Book a Call Now</button>
         </div>
@@ -44,9 +44,7 @@ const ContactUs = () => {
         </div>
 
         <div className={styles.trustedBy}>
-          <p className={styles.paragraph}>Top Devs, Trusted by The Best in Business</p>
           <ContactSlider/>
-          
         </div>
 
       </div>  
