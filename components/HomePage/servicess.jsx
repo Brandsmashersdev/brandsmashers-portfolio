@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../src/styles/Hero/Service.module.css';
-import {services} from '../../data/services'; // Notice the correct import name
+import { services } from '../../data/services';
+import Image from 'next/image'; // Import the Image component
 
 const Services = () => {
   return (
@@ -10,12 +11,14 @@ const Services = () => {
         <div className={styles.servicesGrid}>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceBox}>
-              <img
-                src={service.icon} // Corrected to service.icon
+              <Image
+                src={service.icon} // Use Image instead of img
                 alt={service.title} // Corrected to service.title
                 className={styles.serviceIcon}
+                width={100} // Set appropriate width
+                height={100} // Set appropriate height
               />
-              <p>{service.title}</p> {/* Corrected to service.title */}
+              <p>{service.title}</p>
             </div>
           ))}
         </div>

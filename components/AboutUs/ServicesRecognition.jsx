@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '@/styles/AboutUs/ServiceRecognition.module.css';
 import { recognitions, services } from '../../data/AboutServices';
 
@@ -9,10 +10,12 @@ const RecognitionAndServices = () => {
         <h2>Recognition</h2>
         <div className={styles.recognitionLogos}>
           {recognitions.map((recognition, index) => (
-            <img
+            <Image
               key={index}
               src={recognition.src}
               alt={recognition.alt}
+              width={100}  // Adjust width as needed
+              height={100} // Adjust height as needed
               className={styles.recognitionLogo}
             />
           ))}
@@ -24,9 +27,11 @@ const RecognitionAndServices = () => {
         <div className={styles.servicesGrid}>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceBox}>
-              <img
+              <Image
                 src={service.icon}
                 alt={service.title}
+                width={100}  // Adjust width as needed
+                height={100} // Adjust height as needed
                 className={styles.serviceIcon}
               />
               <p>{service.title}</p>

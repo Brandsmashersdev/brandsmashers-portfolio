@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../../src/styles/Hero/Card.module.css'; 
+import Image from 'next/image'; // Import Image component from Next.js
+import styles from '../../src/styles/Hero/Card.module.css';
 
 const personData = [
     {
@@ -7,7 +8,7 @@ const personData = [
         name: "Amit Sharma",
         title: "Backend Developer",
         rate: "80% match",
-        img: "/Hero/img1.png", 
+        img: "/Hero/img1.png",
     },
     {
         id: 2,
@@ -25,7 +26,6 @@ const personData = [
     },
 ];
 
-
 const Card = () => {
     return (
         <div className={styles.cardContainer}>
@@ -36,24 +36,26 @@ const Card = () => {
                     </div>
 
                     <div className={styles.containt}>
-                    <div className={styles.cardImageNameRow}>
-                        <img src={person.img} alt={person.name} className={styles.cardImage} />
+                        <div className={styles.cardImageNameRow}>
+                            {/* Replace img tag with Image component */}
+                            <Image 
+                                src={person.img} 
+                                alt={person.name} 
+                                width={100} 
+                                height={100} 
+                                className={styles.cardImage} 
+                            />
+                        </div>
+                        <div className={styles.title}>
+                            <h3 className={styles.cardName}>{person.name}</h3>
+                            <p className={styles.cardTitle}>{person.title}</p>
+                        </div>
                     </div>
-                    <div className={styles.title}>
-                        <h3 className={styles.cardName}>{person.name}</h3>
-                        <p className={styles.cardTitle}>{person.title}</p>
-                    </div>
-                 </div>
 
-                 <div className={styles.placeholders_container}>
-                    <div
-                      className={`${styles.placeholder} ${styles.placeholder_long}`}
-                    ></div>
-                    <div
-                      className={`${styles.placeholder} ${styles.placeholder_short}`}
-                    ></div>
-                  </div>
-                  
+                    <div className={styles.placeholders_container}>
+                        <div className={`${styles.placeholder} ${styles.placeholder_long}`}></div>
+                        <div className={`${styles.placeholder} ${styles.placeholder_short}`}></div>
+                    </div>
                 </div>
             ))}
         </div>
@@ -61,4 +63,3 @@ const Card = () => {
 };
 
 export default Card;
-

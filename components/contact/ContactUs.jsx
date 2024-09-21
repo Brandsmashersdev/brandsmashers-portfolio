@@ -6,8 +6,6 @@ import googleLogo from '../../public/Hero/googles.png';
 import { GrLinkedin } from "react-icons/gr";
 import ContactSlider from './ContactSlider';
 
-
-
 const ContactUs = () => {
   return (
   <div className={styles.container}>
@@ -52,11 +50,7 @@ const ContactUs = () => {
         </div>
 
       </div>  
-        
-        
       
-   
-
       {/* Right Section */}
       <div className={styles.right}>
         <form className={styles.form}>
@@ -79,7 +73,7 @@ const ContactUs = () => {
           <p>How we can help</p>
           <div className={styles.radioGroup}>
             <label>
-              <input type="radio" name="help" value="I&apos;m Recruiting" required  className={styles.input} />
+              <input type="radio" name="help" value="I&apos;m Recruiting" required className={styles.input} />
               I&apos;m Recruiting
             </label>
             <label>
@@ -114,7 +108,7 @@ const ContactUs = () => {
             <option value="friend">Friend/Colleague</option>
           </select>
 
-          <button type="submit" className={styles.submitButton}>Let's Talk!</button>
+          <button type="submit" className={styles.submitButton}>Let&apos;s Talk!</button>
         </form>
       </div>
     </div>

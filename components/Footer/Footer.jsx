@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
+import Image from 'next/image'; // Import Image component
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from '../../src/styles/Footer.module.css'; 
 
 const Footer = () => {
@@ -8,13 +9,18 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.companyInfo}>
-          <img src="/Logo/BRANDSMASHERS (9).png" alt="Company Logo" className={styles.logo} />
+          <Image 
+            src="/Logo/BRANDSMASHERS (9).png" 
+            alt="Company Logo" 
+            width={200} // Set an appropriate width
+            height={100} // Set an appropriate height
+            className={styles.logo}
+          />
           <p>
           Founded in 2018, Brandsmashers has rapidly expanded its reach with clients across multiple industries. We provide a comprehensive suite of IT services and tailored solutions to businesses worldwide, specialising in over 20 domains.
           </p>
         </div>
         
-
         <div className={styles.offerings}>
           <h4>OFFERINGS</h4>
           <ul>
@@ -55,12 +61,24 @@ const Footer = () => {
 
       <div className={styles.footerBottom}>
         {/* <div className={styles.certifications}>
-          <img src="/cmmi.png" alt="CMMI Certification" className={styles.certificationLogo} />
-          <img src="/microsoft.png" alt="Microsoft Certification" className={styles.certificationLogo} />
+          <Image 
+            src="/cmmi.png" 
+            alt="CMMI Certification" 
+            width={100} 
+            height={50} 
+            className={styles.certificationLogo}
+          />
+          <Image 
+            src="/microsoft.png" 
+            alt="Microsoft Certification" 
+            width={100} 
+            height={50} 
+            className={styles.certificationLogo}
+          />
         </div> */}
 
         <div className={styles.socialLinks}>
-        <Link href="#">
+          <Link href="#">
             <FaFacebookF className={styles.socialIcon} />
           </Link>
           <Link href="#">
@@ -78,7 +96,7 @@ const Footer = () => {
         </div>
 
         <div>
-        <p>&copy; 2003-2024 Brandsmashers All rights reserved.</p>
+          <p>&copy; 2003-2024 Brandsmashers All rights reserved.</p>
         </div>
 
         <div className={styles.legalLinks}>

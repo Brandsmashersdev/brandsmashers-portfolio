@@ -27,13 +27,15 @@ const NumbersSection = () => {
       { threshold: 0.3 } // Adjust threshold as per requirement
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current; // Copy ref to a stable variable
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -45,13 +47,12 @@ const NumbersSection = () => {
           <h3 className={styles.subtitle}>Solution Matrix</h3>
           <h2 className={styles.title}>Proof is in the Numbers</h2>
           <p className={styles.description}>
-          A Reliable Tech Partner Driving Growth and Preparing You for the Future with Innovative Solutions.
+            A Reliable Tech Partner Driving Growth and Preparing You for the Future with Innovative Solutions.
           </p>
           <button className={styles.ctaButton}>Get Started</button>
         </div>
         <div className={styles.rightContent}>
           {/* Stat 1 */}
-          
           {stats.map((stat, index) => (
             <div key={index} className={styles.stat}>
               <h3 className={styles.statNumber}>
