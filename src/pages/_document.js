@@ -3,23 +3,26 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <title>Brandsmashers Technologies</title>
-      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-      <meta
-        name="keywords"
-        content="portfolio, react nextjs portfolio, software company, brandsmashers"
-      />
-      <meta
-        name="description"
-        content="Brandsmashers Technologies - A software Company providing better software solutions"
-      />
-      <meta name="ibthemes" content="ATFN" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-      <link rel="icon" href="favicon.ico" />
-      <Head />
+      <Head>
+        <title>
+          Hire Remote Developers for Your Next Project - "Get Started!"
+        </title>
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta
+          name="keywords"
+          content="portfolio, react nextjs portfolio, software company, brandsmashers, hire remote developers, remote development team, flexible contracts"
+        />
+        <meta
+          name="description"
+          content="Hire pre-vetted remote developers globally on flexible contracts. Get expert talent for your project—hire now and elevate your business!"
+        />
+        <meta name="ibthemes" content="ATFN" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" href="favicon.ico" />
+      </Head>
       <body>
         <Main />
         <NextScript />

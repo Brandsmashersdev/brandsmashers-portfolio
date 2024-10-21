@@ -12,7 +12,11 @@
 
 .topdevTitleHighlight {
   color: #7b61ff;
-  background: linear-gradient(to right, var(--button-color), var(--background-color));
+  background: linear-gradient(
+    to right,
+    var(--button-color),
+    var(--background-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -25,7 +29,7 @@
   margin: 24px;
   font-size: 16px;
   color: #5f5f6c;
-  max-width: 600px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,7 +45,9 @@
   margin-top: 30px;
 }
 
-.row7, .row6, .row5 {
+.row7,
+.row6,
+.row5 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -75,12 +81,12 @@
 .topdevCompanyLogo img {
   max-width: 100%;
   max-height: 56px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 @media (max-width: 1200px) {
   .topdevCompanyLogo {
-    width: 180px; 
+    width: 180px;
     height: 56px;
   }
 }
@@ -96,34 +102,35 @@
 
   .row7 .topdevCompanyLogo,
   .row6 .topdevCompanyLogo,
-  
   .topdevSectionBox {
     padding: 0px 20px;
   }
-  
+
   .topdevCompanyLogos {
     display: flex;
     flex-wrap: wrap; /* Allow logos to wrap to the next line */
     justify-content: center;
     margin-top: 30px;
-}
-  
-  .row7, .row6, .row5 {
+  }
+
+  .row7,
+  .row6,
+  .row5 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
     gap: 10px;
   }
-  
+
   .row7 .topdevCompanyLogo {
     margin: 0 10px;
   }
-  
+
   .row6 .topdevCompanyLogo {
     margin: 0 10px;
   }
-  
+
   .row5 .topdevCompanyLogo {
     margin: 0 5px;
   }
@@ -165,61 +172,57 @@
     height: 56px;
     padding: 10px;
   }
-
 }
-  
 
-  @media (max-width: 1200px) {
-    .topdevCompanyLogo {
-      width: 160px; 
-      height: 56px;
-    }
+@media (max-width: 1200px) {
+  .topdevCompanyLogo {
+    width: 160px;
+    height: 56px;
   }
-  
-  @media (max-width: 768px) {
-    .topdevSection h2 {
-      font-size: 32px;
-    }
-  
-    .topdevSubtitle {
-      font-size: 14px;
-    }
-  
-    .row7 .topdevCompanyLogo,
-    .row6 .topdevCompanyLogo,
-    .row5 .topdevCompanyLogo {
-      margin: 0 5px;
-    }
-  
-    .topdevCompanyLogo {
-      width: 140px;
-      height: 56px;
-      padding: 10px;
-      margin: 5px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .topdevSection h2 {
-      font-size: 24px;
-    }
-  
-    .topdevSubtitle {
-      font-size: 12px;
-    }
-  
-    .row7 .topdevCompanyLogo,
-    .row6 .topdevCompanyLogo,
-    .row5 .topdevCompanyLogo {
-      margin: 0 2px;
-    }
-  
-    .topdevCompanyLogo {
-      width: 120px;
-      height: 56px;
-      padding: 8px;
-      margin: 3px;
-    }
+}
+
+@media (max-width: 768px) {
+  .topdevSection h2 {
+    font-size: 32px;
   }
 
+  .topdevSubtitle {
+    font-size: 14px;
+  }
 
+  .row7 .topdevCompanyLogo,
+  .row6 .topdevCompanyLogo,
+  .row5 .topdevCompanyLogo {
+    margin: 0 5px;
+  }
+
+  .topdevCompanyLogo {
+    width: 140px;
+    height: 56px;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topdevSection h2 {
+    font-size: 24px;
+  }
+
+  .topdevSubtitle {
+    font-size: 12px;
+  }
+
+  .row7 .topdevCompanyLogo,
+  .row6 .topdevCompanyLogo,
+  .row5 .topdevCompanyLogo {
+    margin: 0 2px;
+  }
+
+  .topdevCompanyLogo {
+    width: 120px;
+    height: 56px;
+    padding: 8px;
+    margin: 3px;
+  }
+}
