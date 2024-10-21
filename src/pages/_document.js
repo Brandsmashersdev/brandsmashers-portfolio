@@ -5,7 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>
-          Hire Remote Developers for Your Next Project - "Get Started!"
+          Hire Remote Developers for Your Next Project - &quot;Get
+          Started!&quot;
         </title>
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta

@@ -124,7 +124,7 @@ export default function FAQ() {
           <div className={style.faqContact}>
             <p>Still have questions?</p>
             <a href="#" className={style.faqLink}>
-              Let's talk
+              Let&nbsp;s talk
               <svg
                 viewBox="0 0 24 24"
                 className={style.arrowIcon}
