@@ -100,11 +100,11 @@ const Offer = () => {
         </h2>
       </div>
       <p className={styles.subtitle}>
-        Let Brandsmashers handle the entire hiring process. We guarantee you'll
-        find and onboard the ideal software developers tailored to your business
-        needs. With our expertise, you can easily hire remote developers from
-        India who are skilled, reliable, and aligned with your project goals,
-        ensuring efficient development and smooth delivery.{" "}
+        Let Brandsmashers handle the entire hiring process. We guarantee
+        you&apos;ll find and onboard the ideal software developers tailored to
+        your business needs. With our expertise, you can easily hire remote
+        developers from India who are skilled, reliable, and aligned with your
+        project goals, ensuring efficient development and smooth&nbsp;delivery.{" "}
       </p>
       <div className={styles.tabs}>
         <button
