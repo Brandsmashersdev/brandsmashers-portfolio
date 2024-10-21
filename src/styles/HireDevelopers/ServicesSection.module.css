@@ -1,0 +1,153 @@
+.section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.iconWrapperOrange {
+  background-color: rgba(144, 199, 218, 0.1); /* Updated color */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: #90c7da; /* Changed stroke to fill to apply color */
+}
+
+.card:hover .iconWrapperOrange {
+  background-color: rgba(144, 199, 218, 0.15); /* Updated hover color */
+  transform: scale(1.05);
+}
+
+.title {
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.description {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .card {
+    padding: 30px 24px;
+  }
+  
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 20px;
+  }
+  
+  .iconWrapperOrange {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .description {
+    font-size: 15px;
+  }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 0.6s;
+}

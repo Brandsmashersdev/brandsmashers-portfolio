@@ -13,21 +13,26 @@ import Investors from "../../components/HireDevelopers/Investors";
 import Offer from "../../components/HireDevelopers/Offer"
 import CaseStudies from '../../components/HireDevelopers/caseStudies';
 import TextSlider from '../../components/TextSlider/TextSlider';
+import HiringSteps from '../../components/HireDevelopers/HiringSteps';
+import DeveloperSkills from '../../components/HireDevelopers/DeveloperSkills';
 
-
-
+import ServicesSection from '../../components/HireDevelopers/ServicesSection';
 const HireDevelopers = () => {
   return (
     <>
       <Navbar/>
-      <Hero/>  
+      <Hero/> 
+      <HiringSteps /> 
       <VettingProcess/>
+      <DeveloperSkills />
       <SuperSourcingSolve />
+     
       <TopDev/>
       {/* <Testimonials/> */}
       {/* <Investors/> */}
       <Offer/>
       <CaseStudies/>
+     <ServicesSection/>
       {/* <WhyBrandsmashers/> */}
       {/* <FeatureSection /> */}
       <FaqSection/>
