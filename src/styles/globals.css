@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --padding-small: 10px;
@@ -9,29 +8,24 @@
   --font-size-medium: 1rem;
   --font-size-large: 1.2rem;
 
-
   /* --primary-color: #6EE4FF; */
   --primary-color: #4ba9c8;
-  --button-color:#05edfa;
+  --button-color: #05edfa;
   --background-color: #0b93b2;
   --text-color: white;
   --secondText-color: black;
 
-
-  --gray-light: #F6F6F6;
-  --blue-light: #156BA3;
+  --gray-light: #f6f6f6;
+  --blue-light: #156ba3;
   --padding-technology-page: 2rem 12rem;
-  
-
 }
 /* styles/globals.css */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 * {
   margin: 0px;
@@ -39,10 +33,10 @@ body {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
