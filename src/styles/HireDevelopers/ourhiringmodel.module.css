@@ -1,0 +1,123 @@
+.featurescontainer {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.heading {
+  font-size: 3rem;
+}
+
+.featuresgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Responsive grid */
+@media (min-width: 768px) {
+  .featuresgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .featuresgrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1026px) {
+  .featuresgrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .featuresgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featurecard {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.featurecard:hover {
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.iconwrapper {
+  background-color: #fef3c7; /* bg-yellow-100 */
+  padding: 0.75rem; /* p-3 */
+  border-radius: 9999px; /* rounded-full */
+}
+
+.featureicon {
+  width: 1.5rem; /* w-6 */
+  height: 1.5rem; /* h-6 */
+  color: #facc15; /* text-yellow-400 */
+}
+
+.featuretitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.featuredescription {
+  max-height: 80px;
+  overflow-y: auto;
+  color: #4b5563;
+  line-height: 1.625;
+  scrollbar-width: none;
+}
+
+.featuredescription::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hover effects */
+.featurecard:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Additional styles for better visual hierarchy */
+.featurescontainer {
+  position: relative;
+  z-index: 1;
+}
+
+.featurecard {
+  transition: all 0.3s ease;
+}
+
+.iconwrapper {
+  transition: background-color 0.3s ease;
+}
+
+.featurecard:hover .iconwrapper {
+  background-color: #fde68a; /* Slightly darker yellow on hover */
+}
+
+/* Optional: Add some animation to icons */
+.featureicon {
+  transition: transform 0.3s ease;
+}
+
+.featurecard:hover .featureicon {
+  transform: scale(1.1);
+}

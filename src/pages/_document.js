@@ -22,11 +22,43 @@ export default function Document() {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta
+          name="google-site-verification"
+          content="2hAR9DU3-eREhL1FL8HY2GvOeohHhzdnNtG6m86qciM"
+        />
         <link rel="icon" href="favicon.ico" />
       </Head>
       <body>
         <Main />
         <NextScript />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            "name": "Brandsmashers Tech",
+            "url": "https://www.brandsmashers.com/",
+            "logo": "https://www.brandsmashers.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBrandsmashersLogo.00f5f78e.png&w=64&q=75",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "7000863918",
+              "contactType": "technical support",
+              "contactOption": "TollFree",
+              "areaServed": "IN",
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.instagram.com/brandsmashers_technologies/",
+              "https://in.linkedin.com/company/brandsmashers-tech-pvt-ltd"
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "15"
+            }
+          }
+          `}
+        </script>
       </body>
     </Html>
   );

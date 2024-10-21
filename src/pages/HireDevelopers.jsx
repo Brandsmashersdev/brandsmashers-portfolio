@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Hero from "../../components/HireDeveloperHero/HeroSection";
 import Footer from "../../components/Footer/Footer";
 import VettingProcess from "../../components/HireDevelopers/VettingProcess";
@@ -14,10 +15,20 @@ import Offer from "../../components/HireDevelopers/Offer";
 import CaseStudies from "../../components/HireDevelopers/caseStudies";
 import TextSlider from "../../components/TextSlider/TextSlider";
 import IntroductionComp from "../../components/HireDevelopers/IntroductionComp";
+import OurHiringModel from "../../components/HireDevelopers/OurHiringModel";
 
 const HireDevelopers = () => {
   return (
     <>
+      <Head>
+        <title>
+          Hire Remote Developers for Your Next Project - Get Started!
+        </title>
+        <meta
+          name="description"
+          content="Hire pre-vetted remote developers globally on flexible contracts. Get expert talent for your project—hire now and elevate your business!"
+        />
+      </Head>
       <Navbar />
       <Hero />
       <IntroductionComp />
@@ -27,8 +38,10 @@ const HireDevelopers = () => {
       {/* <Testimonials/> */}
       {/* <Investors/> */}
       <Offer />
+      <OurHiringModel />
       <CaseStudies />
-      {/* <WhyBrandsmashers/> */}
+
+      {/* <WhyBrandsmashers /> */}
       {/* <FeatureSection /> */}
       <FaqSection />
       <Footer />

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Footer from "../../components/Footer/Footer";
 import Investors from "../../components/HireDevelopers/Investors";
 import Achieved from "../../components/HomePage/Achieved";
@@ -14,23 +15,30 @@ import TextSlider from "../../components/TextSlider/TextSlider";
 // import Services from "../../components/HomePage/servicess"
 
 const HomeSection = () => {
-    return (
-       <div>
-        <Navbar/>
-        <Homepages/>
-        <NumbersSection/>
-        <Services/>
-        {/* <Verified/> */}
-        <TechExpert/>
-        {/* <AchiedCardSlider/>
+  <Head>
+    <title>Software Development Company In India - Brandsmashers Tech</title>
+    <meta
+      name="Home Page"
+      content="Scale your business with the best and most affordable custom software development companies in India. Get Your Tailored Solution Now! "
+    />
+  </Head>;
+  return (
+    <div>
+      <Navbar />
+      <Homepages />
+      <NumbersSection />
+      <Services />
+      {/* <Verified/> */}
+      <TechExpert />
+      {/* <AchiedCardSlider/>
         <OurPartners/> */}
-        <Investors/>
-        {/* <AchiedCardSlider/> */}
-        {/* <OurPartners/> */}
-        <Faq/>
-        <Footer/>
-        <TextSlider/>
-       </div>
-    )
-}
+      <Investors />
+      {/* <AchiedCardSlider/> */}
+      {/* <OurPartners/> */}
+      <Faq />
+      <Footer />
+      <TextSlider />
+    </div>
+  );
+};
 export default HomeSection;
