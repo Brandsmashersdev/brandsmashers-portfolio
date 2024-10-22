@@ -17,6 +17,9 @@ const investors = [
     {
         logo: "/topDevs/amazon.png"
     },
+    {
+        logo:"/topDevs/bsmith.png"
+    },
 ];
 
 export default investors;

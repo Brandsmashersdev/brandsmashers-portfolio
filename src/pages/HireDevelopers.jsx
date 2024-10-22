@@ -17,6 +17,8 @@ import TextSlider from "../../components/TextSlider/TextSlider";
 import IntroductionComp from "../../components/HireDevelopers/IntroductionComp";
 import OurHiringModel from "../../components/HireDevelopers/OurHiringModel";
 
+import HiringSteps from "../../components/HireDevelopers/HiringSteps";
+import DeveloperSkills from "../../components/HireDevelopers/DeveloperSkills";
 const HireDevelopers = () => {
   return (
     <>
@@ -31,8 +33,11 @@ const HireDevelopers = () => {
       </Head>
       <Navbar />
       <Hero />
+
       <IntroductionComp />
+      <HiringSteps />
       <VettingProcess />
+      <DeveloperSkills />
       <SuperSourcingSolve />
       <TopDev />
       {/* <Testimonials/> */}
