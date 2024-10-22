@@ -103,7 +103,7 @@ const Footer = () => {
     <footer className={style.footerContainer}>
       <div className={style.firstsection}>
         <div className={style.signupSection}>
-          <h2>Don't Miss Out</h2>
+          <h2>Don&apos;t Miss Out</h2>
           <p>
             Sign up for the latest beauty news, product samples, and coupons
           </p>
