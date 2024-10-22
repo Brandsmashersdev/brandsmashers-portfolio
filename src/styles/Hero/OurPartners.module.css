@@ -13,6 +13,7 @@
 .cardGrid {
   display: flex;
   justify-content: center;
+  width: 100%;
   /* Space between cards */
   flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
   margin-top: 30px;
@@ -32,7 +33,9 @@
   max-width: 250px; /* Limit the card width */
 }
 
-.stars, .starsg, .starsG {
+.stars,
+.starsg,
+.starsG {
   margin-top: 0px;
   font-size: 20px;
   color: #ffc107;
