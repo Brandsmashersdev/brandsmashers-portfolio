@@ -36,8 +36,8 @@ const TopDevSection = () => {
         business, we offer customized solutions to meet your customized need and
         ensure that you can scale and innovate at pace.
       </p>
-      <div className={styles.topdevSectionBox}>
-        <div className={styles.topdevCompanyLogos} style={{ display: "flex" , alignItems: "center"}}>
+      {/* <div className={styles.topdevSectionBox}>
+        <div className={styles.topdevCompanyLogos}>
           <div className={styles.row7}>
             {companies.slice(0, 6).map((company, index) => (
               <div key={index} className={styles.topdevCompanyLogo}>
@@ -80,7 +80,7 @@ const TopDevSection = () => {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
