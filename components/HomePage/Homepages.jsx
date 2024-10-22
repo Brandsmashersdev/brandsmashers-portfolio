@@ -1,14 +1,12 @@
-
-
 // components/HeroSection.js
-import { FaArrowRight } from 'react-icons/fa';
-import styles from '../../src/styles/Hero/Homepages.module.css';
-import Image from 'next/image';
-import Slider from 'react-slick';
-import mobileAppImage from '../../public/Hero/AIMarketing.png'; // Add appropriate image paths
-import uiUxImage from '../../public/Hero/AIMarketing.png';
-import customSoftwareImage from '../../public/Hero/AIMarketing.png';
-import mlImage from '../../public/Hero/AIMarketing.png';
+import { FaArrowRight } from "react-icons/fa";
+import styles from "../../src/styles/Hero/Homepages.module.css";
+import Image from "next/image";
+import Slider from "react-slick";
+import mobileAppImage from "../../public/Hero/AIMarketing.png"; // Add appropriate image paths
+import uiUxImage from "../../public/Hero/AIMarketing.png";
+import customSoftwareImage from "../../public/Hero/AIMarketing.png";
+import mlImage from "../../public/Hero/AIMarketing.png";
 
 const HeroSection = () => {
   // Slider settings
@@ -39,22 +37,23 @@ const HeroSection = () => {
       </video>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Expert <span className={styles.gradient}>Developers,</span><br />
-          <span className={styles.highlight}>Streamlined <span className={styles.gradient}>Solutions</span></span> <br />
-          
+          Expert <span className={styles.gradient}>Developers,</span>
+          <br />
+          <span className={styles.highlight}>
+            Streamlined <span className={styles.gradient}>Solutions</span>
+          </span>{" "}
+          <br />
         </h1>
         <p className={styles.description}>
-        All in One Place with Brandsmashers Tech.
+          All in One Place with Brandsmashers Tech.
         </p>
         <button className={styles.ctaButton}>
           Consult with Us
           <FaArrowRight className={styles.arrowIcon} />
         </button>
       </div>
-      
     </section>
   );
 };
 
 export default HeroSection;
-

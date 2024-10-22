@@ -42,3 +42,8 @@ const HomeSection = () => {
   );
 };
 export default HomeSection;
+export function generateMetaData({ params }) {
+  return {
+    title: "home",
+  };
+}
