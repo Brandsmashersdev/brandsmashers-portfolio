@@ -14,14 +14,18 @@ import Offer from "../../components/HireDevelopers/Offer";
 import CaseStudies from "../../components/HireDevelopers/caseStudies";
 import TextSlider from "../../components/TextSlider/TextSlider";
 import IntroductionComp from "../../components/HireDevelopers/IntroductionComp";
-
+import HiringSteps from "../../components/HireDevelopers/HiringSteps";
+import DeveloperSkills from "../../components/HireDevelopers/DeveloperSkills";
 const HireDevelopers = () => {
   return (
     <>
       <Navbar />
       <Hero />
+     
       <IntroductionComp />
+      <HiringSteps/>
       <VettingProcess />
+      <DeveloperSkills />
       <SuperSourcingSolve />
       <TopDev />
       {/* <Testimonials/> */}

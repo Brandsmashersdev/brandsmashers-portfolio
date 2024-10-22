@@ -18,6 +18,7 @@ const TopDevSection = () => {
     "airbnb",
     "swiggy",
     "github",
+    "bsmith",
   ];
 
   return (
@@ -36,7 +37,7 @@ const TopDevSection = () => {
         ensure that you can scale and innovate at pace.
       </p>
       <div className={styles.topdevSectionBox}>
-        <div className={styles.topdevCompanyLogos}>
+        <div className={styles.topdevCompanyLogos} style={{ display: "flex" , alignItems: "center"}}>
           <div className={styles.row7}>
             {companies.slice(0, 6).map((company, index) => (
               <div key={index} className={styles.topdevCompanyLogo}>

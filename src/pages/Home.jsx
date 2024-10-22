@@ -11,15 +11,18 @@ import TechExpert from "../../components/HomePage/TechExpert";
 import Verified from "../../components/HomePage/Verified";
 import Navbar from "../../components/Navbar/Navbar";
 import TextSlider from "../../components/TextSlider/TextSlider";
+import ServiceFeatures from "../../components/HomePage/ServiceFeatures";
 // import Services from "../../components/HomePage/servicess"
-
+import SoftwareIntroComp from "../../components/HomePage/SoftwareIntroComp";
 const HomeSection = () => {
     return (
        <div>
         <Navbar/>
         <Homepages/>
         <NumbersSection/>
-        <Services/>
+        <SoftwareIntroComp/>
+        <ServiceFeatures/>
+        {/* <Services/> */}
         {/* <Verified/> */}
         <TechExpert/>
         {/* <AchiedCardSlider/>
