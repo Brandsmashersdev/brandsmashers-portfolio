@@ -31,57 +31,84 @@
 import React from "react";
 import styles from "../../src/styles/Hero/Service.module.css";
 import {
-  Clock,
-  Box,
-  Briefcase,
-  Asterisk,
-  Lightbulb,
+  BrainCircuit,
+  LayoutTemplate,
+  ShoppingCart,
+  TabletSmartphone,
+  Component,
   Settings,
+  Activity,
+  UserRoundCog,
+  Airplay,
 } from "lucide-react";
 
 const ServiceFeatures = () => {
   const features = [
     {
-      icon: <Clock className={styles.icon} />,
-      title: "Top Talent",
+      icon: <BrainCircuit className={styles.icon} />,
+      title: "Custom Software Development",
       description:
-        " We provide only the best. Some of our developers remain among the best in the market, with experience in many fields as well as emerging technologies.",
+        "We also develop custom software to improve your organisational processes thus improving productivity and efficiency.",
     },
     {
-      icon: <Box className={styles.icon} />,
-      title: "Flexible Engagement Models",
+      icon: <LayoutTemplate className={styles.icon} />,
+      title: "Web Development",
       description:
-        " Whether you require our team for a one-off project or to join your ongoing project that requires remote developers, we can adapt to your situation.",
+        "Being one of the best web design company in Bhopal, while designing our products, we lay extensive focus on speed, responsiveness and user interactivity.",
     },
     {
-      icon: <Briefcase className={styles.icon} />,
-      title: "Seamless Integration",
+      icon: <ShoppingCart className={styles.icon} />,
+      title: "E-Commerce Solutions",
       description:
-        " We maintain constant communication with our developers, ensuring they integrate as part of your internal team.",
+        "Our configurable eCommerce solutions help increase your revenues – whether starting from a new store or redesign existing one.",
     },
     {
-      icon: <Asterisk className={styles.icon} />,
-      title: "Proven Expertise",
+      icon: <TabletSmartphone className={styles.icon} />,
+      title: "Mobile App Development",
       description:
-        " Our developers possess experience in more than twenty domains, equipping them to manage complex development projects and achieve success at every stage.",
+        "We create stable iOS and Android applications with a comprehensive list of natural and appealing UX/UI design.",
     },
     {
-      icon: <Lightbulb className={styles.icon} />,
-      title: "Cost-Effective Solutions",
+      icon: <Component className={styles.icon} />,
+      title: "UI/UX Design",
       description:
-        "We offer IT staff augmentation services to give you a pool of talented and skilled staff without the burden of hiring full-time staff for your organization thus giving you the flexibility needed to scale your team.",
+        "Our designers build interfaces simplifying the way a user is able to interact with the digital product with ease and without strain.",
     },
     {
       icon: <Settings className={styles.icon} />,
-      title: "Rapid Deployment",
+      title: "Product Development",
       description:
-        " We are aware of schedules, of projects. The team that we are deploying is flexible and hence can start contributing to your development needs as soon as possible.",
+        "From idea generation to market entry, we develop effective competitors &apos; products employing innovative technology and current tendencies.",
+    },
+    {
+      icon: <Activity className={styles.icon} />,
+      title: "Digital Marketing",
+      description:
+        "Our SEO, social media and content creation services increase brand visibility and website ranking on the search engines.",
+    },
+    {
+      icon: <UserRoundCog className={styles.icon} />,
+      title: "Staff Augmentation",
+      description:
+        "Find experienced IT professionals promptly and ramp up your team – that will allow you to complete the project as soon as possible without lowering the desired quality.",
+    },
+    {
+      icon: <Airplay className={styles.icon} />,
+      title: "Desktop App Development",
+      description:
+        "We build effective and safe desktop applications for your business to solve your industry’s distinct requirements and sustain their stability and functionality in the long run.",
     },
   ];
 
   return (
     <section className={styles.container}>
-      <h2>Our Services</h2>
+      <h3>What We Do</h3>
+      <p style={{ marginBottom: "2rem" }}>
+        IT services that top the market offering a unique and excellent solution
+        for business throughout all sectors. Being an experienced software
+        development company, our solutions are designed to assist companies to
+        be successful in present day marketplace.
+      </p>
       <div className={styles.featuresGrid}>
         {features.map((feature, index) => (
           <div key={index} className={styles.featureCard}>

@@ -12,6 +12,7 @@ import TechExpert from "../../components/HomePage/TechExpert";
 import Verified from "../../components/HomePage/Verified";
 import Navbar from "../../components/Navbar/Navbar";
 import TextSlider from "../../components/TextSlider/TextSlider";
+import IndustryGrid from "../../components/HomePage/IndustryGrid";
 // import Services from "../../components/HomePage/servicess"
 
 const HomeSection = () => {
@@ -34,7 +35,8 @@ const HomeSection = () => {
         <OurPartners/> */}
       <Investors />
       {/* <AchiedCardSlider/> */}
-      {/* <OurPartners/> */}
+      {/* <OurPartners /> */}
+      <IndustryGrid />
       <Faq />
       <Footer />
       <TextSlider />
