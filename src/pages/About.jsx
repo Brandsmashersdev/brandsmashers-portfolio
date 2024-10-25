@@ -9,7 +9,7 @@ import WhyBrandsmashers from "../../components/AboutUs/WhyBrandsmashers";
 import OurValues from "../../components/AboutUs/OurValues";
 import Footer from "../../components/Footer/Footer";
 import TextSlider from "../../components/TextSlider/TextSlider";
-import Map from "../../components/AboutUs/map";
+// import Map from "../../components/AboutUs/Map";
 const About = () => {
   return (
     <>
