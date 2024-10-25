@@ -46,7 +46,7 @@ const Faq = () => {
       id: 7,
       question: " What technologies do your developers specialize in?",
       answer:
-        "Our developers at Brandsmashers Tech specialize in a wide array of technologies, including React, Vue.js, Node.js, Java, React Native, and AWS. This diverse skill set allows us to offer innovative solutions tailored to your business needs. Whether you're looking for a custom-built application or need to improve your existing systems, our expertise as a leading software development company ensures you get the best technical solutions.",
+        "Our developers at Brandsmashers Tech specialize in a wide array of technologies, including React, Vue.js, Node.js, Java, React Native, and AWS. This diverse skill set allows us to offer innovative solutions tailored to your business needs. Whether youre looking for a custom-built application or need to improve your existing systems, our expertise as a leading software development company ensures you get the best technical solutions.",
     },
   ];
   const [activeId, setActiveId] = useState(null);
