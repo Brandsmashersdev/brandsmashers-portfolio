@@ -96,74 +96,69 @@
 
 // export default Footer;
 import React from "react";
-import style from "../../src/styles/Footer.module.css";
-
+import style from "@/styles/Footer.module.css";
+import Link from "next/link";
+import { LuLinkedin } from "react-icons/lu";
+import { LuFacebook } from "react-icons/lu";
+import { SiYoutubekids } from "react-icons/si";
+import { FaSquareInstagram } from "react-icons/fa6";
+import Image from "next/image";
+import logo from "../../public/Hero/logoBrandsmashers.png";
 const Footer = () => {
   return (
     <footer className={style.footerContainer}>
       <div className={style.firstsection}>
         <div className={style.signupSection}>
-          <h2>Don&apos;t Miss Out</h2>
-          <p>
-            Sign up for the latest beauty news, product samples, and coupons
-          </p>
+          <Image src={logo} alt={"footer logo"} width={150} />
 
-          <div className={style.formGroup}>
-            <div className={style.inputGroup}>
-              <input
-                type="email"
-                placeholder="Enter Your Email Address"
-                className={style.input}
-              />
-            </div>
-            <div className={style.inputGroup}>
-              <input
-                type="text"
-                placeholder="Enter your Name"
-                className={style.input}
-              />
-            </div>
-          </div>
-          <div className={style.inputGroup}>
-            <textarea
-              name=""
-              placeholder="Enter your Massage"
-              rows={5}
-              cols={50}
-              id=""
-              className={style.input}
-            >
-              Enter your Massage
-            </textarea>
-          </div>
-
-          <button className={style.signupBtn}>Book A Call</button>
+          <h2>About us</h2>
 
           <p className={style.legalText}>
-            This site is intended for US consumers. By signing up, you
-            understand and agree that your data will be collected and used
-            subject to our US Privacy Policy and Terms of Use.
+            Founded in 2018, Brandsmashers has quickly grown into a trusted name
+            in the world of software development and staff augmentation. We
+            specialize in delivering tailor-made software solutions that drive
+            business success and help companies scale their operations with
+            top-tier talent. By combining technical expertise with innovative
+            solutions, we help our clients navigate the complexities of digital
+            transformation with ease.
           </p>
 
           <div className={style.socialIcons}>
-            <a href="#" className={style.socialIcon} aria-label="LinkedIn">
-              in
-            </a>
-            <a href="#" className={style.socialIcon} aria-label="Facebook">
-              fb
-            </a>
-            <a href="#" className={style.socialIcon} aria-label="Twitter">
-              tw
-            </a>
-            <a href="#" className={style.socialIcon} aria-label="Tumblr">
-              tu
-            </a>
-            <a href="#" className={style.socialIcon} aria-label="YouTube">
-              yt
-            </a>
-            <a href="#" className={style.socialIcon} aria-label="Pinterest">
-              pi
-            </a>
+            <Link
+              href="https://in.linkedin.com/company/brandsmashers-tech-pvt-ltd"
+              className={style.socialIcon}
+              aria-label="LinkedIn"
+            >
+              <LuLinkedin />
+            </Link>
+            <Link
+              href="https://www.facebook.com/brandsamsherstechnologies"
+              className={style.socialIcon}
+              aria-label="Facebook"
+            >
+              <LuFacebook />
+            </Link>
+            <Link
+              href="https://clutch.co/profile/brandsmashers-tech"
+              className={style.socialIcon}
+              aria-label="clutch"
+            >
+              cl
+            </Link>
+            <Link
+              href="https://youtube.com/@Brandsmashers"
+              className={style.socialIcon}
+              aria-label="YouTube"
+            >
+              <SiYoutubekids />
+            </Link>
+            <Link
+              href="https://www.instagram.com/brandsmashers_technologies/"
+              className={style.socialIcon}
+              aria-label="instagram"
+            >
+              <FaSquareInstagram />
+            </Link>
           </div>
         </div>
 
@@ -172,27 +167,56 @@ const Footer = () => {
             <h3>COMPANY</h3>
             <ul>
               <li>
-                <a href="#">About</a>
+                <Link href="/Home">Home</Link>
               </li>
               <li>
-                <a href="#">Services</a>
+                <Link href="/About">About</Link>
+              </li>
+              <li>
+                <Link href="/Services">Services</Link>
+              </li>
+              <li>
+                <Link href="/contactus">Contact Us</Link>
               </li>
             </ul>
           </div>
 
           <div className={style.footerColumn}>
-            <h3>CUSTOMER SERVICE</h3>
-            <ul>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div className={style.footerColumn}>
             <h3>MORE TO EXPLORE</h3>
             <ul>
               <li>
-                <a href="#">Tools and Consultations</a>
+                <Link href="Services#webdesign">Web design</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="Services#desktopWebDevelopment">
+                  Desktop app development
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="Services#mobileAppDevelopment">
+                  Mobile app development
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="Services#uiux">UI/UX</Link>
+              </li>
+              <li>
+                <Link href="Services#aiml">AI/ML</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="Services#datadriven">Data Drive</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="Services#digitalMarketing">Digital marketing</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="Services#beyondBrowser">Beyond the browser</Link>
               </li>
             </ul>
           </div>

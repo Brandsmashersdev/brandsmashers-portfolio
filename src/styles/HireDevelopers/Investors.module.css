@@ -1,73 +1,74 @@
 /* src/Investors.css */
-.investors_section{
-    margin: 50px;
+.investors_section {
 }
 
-.ivestors_title{
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 52px;
-    gap: 12px;
-    flex-wrap: nowrap; /* Prevents the text from wrapping */
-    white-space: nowrap;
+.ivestors_title {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  gap: 12px;
+  flex-wrap: nowrap; /* Prevents the text from wrapping */
+  white-space: nowrap;
 }
 
-.highlight{
-    color: #7b61ff;
-  background: linear-gradient(to right, var(--button-color), var(--background-color));
+.highlight {
+  color: #7b61ff;
+  background: linear-gradient(
+    to right,
+    var(--button-color),
+    var(--background-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .slider_container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .slider_item {
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .profile_pic {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: auto;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .company_logo {
-    width: 60%;
-    height: auto;
-    margin: auto;
-    margin-top: 10px;
-    object-fit: contain; /* Ensures logos maintain aspect ratio */
+  width: 60%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+  object-fit: contain; /* Ensures logos maintain aspect ratio */
 }
 
-
-
 @media (max-width: 1200px) {
-    .ivestors_title {
-        font-size: 42px; /* Adjust for medium screens */
-    }
+  .ivestors_title {
+    font-size: 42px; /* Adjust for medium screens */
+  }
 }
 
 @media (max-width: 768px) {
-    .ivestors_title {
-        font-size: 36px; /* Adjust for tablets */
-    }
+  .ivestors_title {
+    font-size: 36px; /* Adjust for tablets */
+  }
 }
 
 @media (max-width: 480px) {
-    .ivestors_title {
-        font-size: 28px; /* Adjust for mobile screens */
-    }
+  .ivestors_title {
+    font-size: 28px; /* Adjust for mobile screens */
+  }
 }

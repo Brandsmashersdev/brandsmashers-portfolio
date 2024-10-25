@@ -1,41 +1,47 @@
-import Image from 'next/image';
-import react from '../../public/Service/react.png';
-import ios from '../../public/Service/ios.png';
-import android from '../../public/Service/android.png';
-import hybrid from '../../public/Service/hybrid.png';
-import crossp from '../../public/Service/crossplateform.png';
-import styles from '../../src/styles/Service/Browser.module.css';
-import QABoxbrowser from './QABoxbrowser';
+import Image from "next/image";
+import react from "../../public/Service/react.png";
+import ios from "../../public/Service/ios.png";
+import android from "../../public/Service/android.png";
+import hybrid from "../../public/Service/hybrid.png";
+import crossp from "../../public/Service/crossplateform.png";
+import styles from "../../src/styles/Service/Browser.module.css";
+import QABoxbrowser from "./QABoxbrowser";
 
 const Browser = () => {
-    return(
-
-      <div className={styles.container}>
+  return (
+    <div className={styles.container} id="beyondBrowser">
       {/* Header Section */}
-   <section className={styles.headerSection}>
-      <div className={styles.leftSection}>
-         
+      <section className={styles.headerSection}>
+        <div className={styles.leftSection}>
           <video autoPlay loop muted className={styles.backgroundVideo}>
-           <source src="/video/browser.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
+            <source src="/video/browser.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
 
           <div className={styles.qabox}>
-               <QABoxbrowser/>
+            <QABoxbrowser />
           </div>
         </div>
-       
-       {/* right section */}
+
+        {/* right section */}
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
-            <h1>Beyond the Browser</h1>
-            <h4>Innovate with applications and technologies that stand out</h4>
+            <h2>Beyond the Browser</h2>
+            <h4>Innovate with Applications and Technologies That Stand Out!</h4>
             <p>
-            At Brandsmashers, we transcend conventional web solutions to offer groundbreaking digital
-            experiences. Our services encompass the development of advanced applications and the 
-            integration of innovative technologies, enhancing user interaction and optimising processes. 
-            We specialise in crafting engaging and impactful digital solutions that elevate your brand and
-             ensure a standout presence in the digital landscape.
+              At Brandsmashers our focus is shifted from simple website
+              solutions to creating unique digital experiences that redefine
+              your brand. Some of our services include creating new applications
+              and incorporating new technologies that would help improve the
+              interaction and effectiveness of processes. Being a
+              technology-savvy company, we are focused on providing the best
+              digital experiences to solve your business problems effectively.
+              We are determined to make your brand shine and receive more
+              attention among the numerous Internet users. Using up-to-date
+              techniques, we ensure you capture the consumer&apos;s attention,
+              evoke their emotions, and produce measurable outcomes. We at
+              Brandsmashers are ready to bring your idea to life and help you
+              become an unbeatable force on the online stage!
             </p>
           </div>
 
@@ -88,11 +94,8 @@ const Browser = () => {
             </div>
           </div>
         </div>
-       
-      
       </section>
     </div>
-
-    )
-}
+  );
+};
 export default Browser;

@@ -41,6 +41,7 @@ import {
   UserRoundCog,
   Airplay,
 } from "lucide-react";
+import Link from "next/link";
 
 const ServiceFeatures = () => {
   const features = [
@@ -102,7 +103,7 @@ const ServiceFeatures = () => {
 
   return (
     <section className={styles.container}>
-      <h3>What We Do</h3>
+      <h2 style={{ fontSize: "3rem", marginBottom: "2rem" }}>What We Do</h2>
       <p style={{ marginBottom: "2rem" }}>
         IT services that top the market offering a unique and excellent solution
         for business throughout all sectors. Being an experienced software
@@ -111,11 +112,17 @@ const ServiceFeatures = () => {
       </p>
       <div className={styles.featuresGrid}>
         {features.map((feature, index) => (
-          <div key={index} className={styles.featureCard}>
-            <div className={styles.iconContainer}>{feature.icon}</div>
-            <h3 className={styles.title}>{feature.title}</h3>
-            <p className={styles.description}>{feature.description}</p>
-          </div>
+          <Link
+            href="Services#serviceHero"
+            style={{ textDecoration: "none" }}
+            key={index}
+          >
+            <div key={index} className={styles.featureCard}>
+              <div className={styles.iconContainer}>{feature.icon}</div>
+              <h3 className={styles.title}>{feature.title}</h3>
+              <p className={styles.description}>{feature.description}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </section>

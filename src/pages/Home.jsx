@@ -13,6 +13,11 @@ import Verified from "../../components/HomePage/Verified";
 import Navbar from "../../components/Navbar/Navbar";
 import TextSlider from "../../components/TextSlider/TextSlider";
 import IndustryGrid from "../../components/HomePage/IndustryGrid";
+import OurVision from "../../components/HomePage/OurVision";
+import WhyBrandSmashers from "../../components/HomePage/WhyBrandSmashers";
+import TechShowcase from "../../components/HomePage/TechShowcase";
+import BrandsmashersIntro from "../../components/HomePage/BrandsmashersIntro";
+
 // import Services from "../../components/HomePage/servicess"
 
 const HomeSection = () => {
@@ -28,15 +33,20 @@ const HomeSection = () => {
       <Navbar />
       <Homepages />
       <NumbersSection />
+      <BrandsmashersIntro />
       <Services />
       {/* <Verified/> */}
       <TechExpert />
       {/* <AchiedCardSlider/>
         <OurPartners/> */}
       <Investors />
+      <TechShowcase />
       {/* <AchiedCardSlider/> */}
       {/* <OurPartners /> */}
       <IndustryGrid />
+
+      <OurVision />
+      <WhyBrandSmashers />
       <Faq />
       <Footer />
       <TextSlider />

@@ -1,8 +1,14 @@
 import styles from "../../src/styles/Hero/TechExpert.module.css";
 import Image from "next/image";
 import discussion from "../../public/Hero/discussion.jpeg";
+import { useRouter } from "next/router";
 
 const TechExpert = () => {
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/contactus`);
+  };
   return (
     <section className={styles.numbersSection}>
       <div className={styles.container}>
@@ -30,7 +36,13 @@ const TechExpert = () => {
           </div>
 
           <div className={styles.letstalk}>
-            <button className={styles.ctaButton}>Let&apos;s Talk</button>{" "}
+            <button
+              className={styles.ctaButton}
+              onClick={() => handleCardClick()}
+              style={{ cursor: "pointer" }}
+            >
+              Let&apos;s Talk
+            </button>{" "}
             {/* Escaped single quote */}
           </div>
         </div>

@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-import CountUp from 'react-countup';
-import styles from '../../src/styles/Hero/NumberSection.module.css';
+import React, { useEffect, useRef, useState } from "react";
+import CountUp from "react-countup";
+import styles from "../../src/styles/Hero/NumberSection.module.css";
+import { useRouter } from "next/router";
 
 const NumbersSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +12,7 @@ const NumbersSection = () => {
     { value: 6, suffix: "+", label: "Years of Expertise" },
     { value: 95, suffix: "+", label: "Timely Deliveries" },
     { value: 20, suffix: "+", label: "Markets Worldwide" },
-    { value: 50, suffix: "+", label: "Global Brands" }
+    { value: 50, suffix: "+", label: "Global Brands" },
   ];
 
   // Intersection Observer to track visibility
@@ -39,6 +40,11 @@ const NumbersSection = () => {
       }
     };
   }, []);
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/contactus`);
+  };
 
   return (
     <section ref={sectionRef} className={styles.numbersSection}>
@@ -47,9 +53,16 @@ const NumbersSection = () => {
           <h3 className={styles.subtitle}>Solution Matrix</h3>
           <h2 className={styles.title}>Proof is in the Numbers</h2>
           <p className={styles.description}>
-            A Reliable Tech Partner Driving Growth and Preparing You for the Future with Innovative Solutions.
+            A Reliable Tech Partner Driving Growth and Preparing You for the
+            Future with Innovative Solutions.
           </p>
-          <button className={styles.ctaButton}>Get Started</button>
+          <button
+            className={styles.ctaButton}
+            onClick={() => handleCardClick()}
+            style={{ cursor: "pointer" }}
+          >
+            Get Started
+          </button>
         </div>
         <div className={styles.rightContent}>
           {/* Stat 1 */}
@@ -57,11 +70,11 @@ const NumbersSection = () => {
             <div key={index} className={styles.stat}>
               <h3 className={styles.statNumber}>
                 {isVisible && (
-                  <CountUp 
-                    start={0} 
-                    end={stat.value} 
-                    duration={4.5} 
-                    suffix={stat.suffix ? stat.suffix : ""} 
+                  <CountUp
+                    start={0}
+                    end={stat.value}
+                    duration={4.5}
+                    suffix={stat.suffix ? stat.suffix : ""}
                   />
                 )}
               </h3>

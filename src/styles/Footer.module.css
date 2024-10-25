@@ -222,7 +222,7 @@
   flex: 2;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem 0;
 }
 
 .footerColumn {
@@ -290,9 +290,14 @@
 @media (max-width: 768px) {
   .footerLinks {
     flex-direction: row; /* Stack footer links on smaller screens */
+    margin: 0 0;
+  }
+  .footerColumn ul li {
+    font-size: 5px;
   }
   .firstsection {
     flex-direction: column;
+    gap: 0;
   }
   .signupSection {
     margin-bottom: 20px; /* Add margin for spacing */

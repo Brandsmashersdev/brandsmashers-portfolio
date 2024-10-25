@@ -1,90 +1,88 @@
 .container {
-    background-image: url('/Technologies/Technologies.jpeg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center; 
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+  background-image: url("/Technologies/Technologies.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-    min-height: 80vh; 
-    padding: 2rem; 
-    text-align: center; 
-    color: white; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  color: white;
 }
 
-.belowContainer{   
-    padding: var(--padding-technology-page);
-    font-size: 1.3rem;
+.belowContainer {
+  padding: var(--padding-technology-page);
+  font-size: 1.3rem;
 }
 
 .paragraphSpacing {
-    line-height: 1.4; 
+  line-height: 1.4;
 }
 
-.horizontalLine{
-    height: 2px;
-    margin: 2rem 12rem;
-    background-color: var(--gray-light);
+.horizontalLine {
+  height: 2px;
+  margin: 2rem 12rem;
+  background-color: var(--gray-light);
 }
 
-
-.technologiesHeading{
-    font-size: 4vmax; 
-    font-weight: 900;
+.technologiesHeading {
+  font-size: 4vmax;
+  font-weight: 900;
 }
-.technologiesHeadingSlogan{
-    font-size: 1.5rem;
-}
-
-.technologiesName{
-    font-size: 2rem;
-    padding: var(--padding-technology-page);
+.technologiesHeadingSlogan {
+  font-size: 1.5rem;
 }
 
-.technologiesContent{
-    font-size: 1.3rem;
-    padding: 0rem 12rem;
+.technologiesName {
+  font-size: 2rem;
+  padding: var(--padding-technology-page);
 }
 
-.buttonsSpacing{
-    display: flex;
-    gap: 10px;
+.technologiesContent {
+  font-size: 1.3rem;
+  padding: 0rem 12rem;
+}
+
+.buttonsSpacing {
+  display: flex;
+  gap: 10px;
 }
 
 .buttonBlue {
-    background-color: white; 
-    color: var(--blue-light); 
-    border: 1px solid var(--blue-light); 
-    padding: 5px 5px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    margin: 2rem 0.2rem;
-    transition: background-color 0.3s, transform 0.3s;
+  background-color: white;
+  color: var(--blue-light);
+  border: 1px solid var(--blue-light);
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 2rem 0.2rem;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .buttonBlue:hover {
-    background-color: var(--blue-light); 
-    color: white;
-    transform: scale(1.1);
+  background-color: var(--blue-light);
+  color: white;
+  transform: scale(1.1);
 }
 
-.technologiesLogo{
-    width: auto;        
-    height: auto;       
-    max-width: 70px;       
+.technologiesLogo {
+  width: auto;
+  height: auto;
+  max-width: 70px;
 }
 
-.logosSpacing{
-    display: flex;
-    gap : 20px;
-    padding : 2rem;
+.logosSpacing {
+  display: flex;
+  gap: 20px;
+  padding: 2rem;
 }
 
-.technologyContentBackground{
-    background-color: var(--gray-light);
+.technologyContentBackground {
+  background-color: var(--gray-light);
 }
-
