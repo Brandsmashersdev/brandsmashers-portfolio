@@ -1,39 +1,33 @@
-/* Base styles for the navbar */
 .navContainer {
   width: 100%;
-  background-color: transparent; 
-  color: white;
-  position: fixed; 
+  background-color: transparent;
+  color: black;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  padding: 0.75rem 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Navbar when scrolled */
 .navScrolled {
-  background-color: white; /* Background color when scrolled */
+  background-color: white;
   color: #000;
-  }
+}
 
-
-/* Ensure text inside the navbar inherits the color */
 .navScrolled .navLinks a,
 .navScrolled .brandName,
 .navScrolled .toggleButton {
-  color:black; 
+  color: black;
 }
 
-
-/* Navbar Row */
 .navRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0; 
+  padding: 0;
 }
 
-/* Logo and Brand Name */
 .logo {
   display: flex;
   align-items: center;
@@ -44,23 +38,22 @@
   margin-left: 15px;
   font-weight: bold;
   font-size: 1.3rem;
-  color: white;
+  color: black;
 }
 
-/* Navigation Links for Desktop */
 .navLinks {
   margin-left: 150px;
   display: flex;
   flex-grow: 1;
   gap: 12px;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .navLinks a {
   margin-left: 20px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: 600;
   transition: color 0.1s;
@@ -72,24 +65,21 @@
 
 .navLinks span.active,
 .sidebarMenu span.active {
-  color: var(--button-color); /* Change this to the color you want for active links */
-  font-weight: bold; /* Optionally, make it bold */
+  color: var(--button-color);
+  font-weight: bold;
 }
 
-/* Action Buttons */
 .navButtons {
   display: flex;
   align-items: center;
 }
 
-/* Hamburger Icon */
 .hamburger {
   display: none;
   cursor: pointer;
   font-size: 24px;
 }
 
-/* Sidebar Menu for Mobile */
 .sidebarMenu {
   position: fixed;
   top: 0;
@@ -119,10 +109,9 @@
 }
 
 .sidebarMenu a:hover {
-  color: #6EE4FF;
+  color: #6ee4ff;
 }
 
-/* Media Queries for Responsiveness */
 @media (min-width: 1024px) {
   .navRow {
     margin-left: 15px;
@@ -183,40 +172,35 @@
   }
 }
 
-/* Base Styles for Animated Button */
 .animatedButton {
-  text-decoration: none; 
-  /* display: flex; */
+  text-decoration: none;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 1.2rem; /* Base padding */
+  padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 10px;
   font-size: 1rem;
   color: white;
   cursor: pointer;
-  margin: 0 30px; /* Margin left and right */
-  background: var(--primary-color); /* Blue and purple mix */
+  margin: 0 30px;
+  background: var(--primary-color);
   background-size: 200% 200%;
   animation: gradientAnimation 4s ease infinite;
   transition: transform 0.3s ease;
 }
 
-/* Hover effect */
 .animatedButton:hover {
-  transform: scale(1.05); /* Increase size on hover */
+  transform: scale(1.05);
   background: var(--background-color);
 }
 
-/* Icon style */
 .icon {
-  margin-right: 0.5rem; /* Space between icon and text */
+  margin-right: 0.5rem;
   font-size: 1.5rem;
 }
 
-/* Keyframes for gradient animation */
 @keyframes gradientAnimation {
-  0% {
+  /* 0% {
     background-position: 0% 50%;
   }
   50% {
@@ -224,39 +208,31 @@
   }
   100% {
     background-position: 0% 50%;
-  }
+  } */
 }
 
-/* Responsive Styles */
-
-/* For medium-sized devices */
 @media (max-width: 1200px) {
   .animatedButton {
-    padding: 0.5rem 1rem; /* Adjust padding */
-    font-size: 0.9rem; /* Slightly smaller font size */
-   
-    width: auto; /* Allow button to resize */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    width: auto;
   }
 }
 
-/* For small-sized devices */
 @media (max-width: 768px) {
   .animatedButton {
-    padding: 0.4rem 0.8rem; /* Reduce padding for smaller screens */
-    font-size: 0.8rem; /* Smaller font size */
-    /* Margin for spacing and center alignment */
-    width: auto; /* Allow button to resize */
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    width: auto;
   }
 }
 
-/* For extra small-sized devices */
 @media (max-width: 480px) {
   .animatedButton {
-    padding: 0.4rem 0.6rem; /* Minimal padding for very small screens */
-    font-size: 0.7rem; /* Smaller font size */
-    /* Center and space out */
-    position: static; /* Use static to keep the button in the flow */
-    transform: translateX(0); /* Remove horizontal transform */
-    width: auto; /* Adjust width */
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+    position: static;
+    transform: translateX(0);
+    width: auto;
   }
 }

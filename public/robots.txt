@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap:https://www.brandsmashers.com/sitemap.xml

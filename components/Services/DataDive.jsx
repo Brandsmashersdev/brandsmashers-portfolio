@@ -1,39 +1,40 @@
-import Image from 'next/image';
-import react from '../../public/Service/react.png';
-import ios from '../../public/Service/ios.png';
-import android from '../../public/Service/android.png';
-import hybrid from '../../public/Service/hybrid.png';
-import crossp from '../../public/Service/crossplateform.png';
-import datasecurity from '../../public/Service/datasecurity.png';
-import styles from '../../src/styles/Service/MobileApp.module.css';
-import QABoxdata from './QABoxdata';
+import Image from "next/image";
+import react from "../../public/Service/react.png";
+import ios from "../../public/Service/ios.png";
+import android from "../../public/Service/android.png";
+import hybrid from "../../public/Service/hybrid.png";
+import crossp from "../../public/Service/crossplateform.png";
+import datasecurity from "../../public/Service/datasecurity.png";
+import styles from "../../src/styles/Service/MobileApp.module.css";
+import QABoxdata from "./QABoxdata";
 
 const DataDive = () => {
-    return(
-
-      <div className={styles.container}>
+  return (
+    <div className={styles.container} id="datadriven">
       {/* Header Section */}
-     <section className={styles.headerSection}>
-      <div className={styles.leftSection}>
-         <video autoPlay loop muted className={styles.backgroundVideo}>
-           <source src="/video/datadive.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
+      <section className={styles.headerSection}>
+        <div className={styles.leftSection}>
+          <video autoPlay loop muted className={styles.backgroundVideo}>
+            <source src="/video/datadive.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
           <div className={styles.qabox}>
-               <QABoxdata/>
+            <QABoxdata />
           </div>
         </div>
-       
-       {/* right section */}
+
+        {/* right section */}
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
             <h1>Data Dive</h1>
             <h4>Transform data into valuable insights with expert analysis</h4>
             <p>
-            Explore the full potential of your data with our specialised data science development services.
-           At Brandsmashers, we are focused on turning raw data into valuable insights that inform 
-           strategic decisions and boost your business. From initial data gathering to sophisticated
-            analytics, our expert team delivers solutions that enhance the value and impact of your data.
+              Explore the full potential of your data with our specialised data
+              science development services. At Brandsmashers, we are focused on
+              turning raw data into valuable insights that inform strategic
+              decisions and boost your business. From initial data gathering to
+              sophisticated analytics, our expert team delivers solutions that
+              enhance the value and impact of your data.
             </p>
           </div>
 
@@ -86,11 +87,8 @@ const DataDive = () => {
             </div>
           </div>
         </div>
-       
-      
       </section>
     </div>
-
-    )
-}
-export default  DataDive;
+  );
+};
+export default DataDive;

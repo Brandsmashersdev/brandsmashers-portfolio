@@ -3,10 +3,8 @@ import { FaArrowRight } from "react-icons/fa";
 import styles from "../../src/styles/Hero/Homepages.module.css";
 import Image from "next/image";
 import Slider from "react-slick";
-import mobileAppImage from "../../public/Hero/AIMarketing.png"; // Add appropriate image paths
-import uiUxImage from "../../public/Hero/AIMarketing.png";
-import customSoftwareImage from "../../public/Hero/AIMarketing.png";
-import mlImage from "../../public/Hero/AIMarketing.png";
+import { useRouter } from "next/router";
+import Contactus from "@/pages/contactus";
 
 const HeroSection = () => {
   // Slider settings
@@ -28,6 +26,11 @@ const HeroSection = () => {
       },
     ],
   };
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/contactus`);
+  };
 
   return (
     <section className={styles.heroSection}>
@@ -47,7 +50,11 @@ const HeroSection = () => {
         <p className={styles.description}>
           All in One Place with Brandsmashers Tech.
         </p>
-        <button className={styles.ctaButton}>
+        <button
+          className={styles.ctaButton}
+          onClick={() => handleCardClick()}
+          style={{ cursor: "pointer" }}
+        >
           Consult with Us
           <FaArrowRight className={styles.arrowIcon} />
         </button>

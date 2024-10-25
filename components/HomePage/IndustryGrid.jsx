@@ -176,6 +176,7 @@
 // components/Industries.jsx
 import React from "react";
 import styles from "@/styles/Hero/industrygrid.module.css";
+import { useRouter } from "next/router";
 
 const IndustryGrid = () => {
   const industries = [
@@ -308,6 +309,11 @@ const IndustryGrid = () => {
       ),
     },
   ];
+  const router = useRouter();
+
+  const handleCardClick = (techName) => {
+    router.push(`/Technologies#industry`);
+  };
 
   return (
     <div className={styles.container}>
@@ -323,7 +329,12 @@ const IndustryGrid = () => {
 
       <div className={styles.grid}>
         {industries.map((industry) => (
-          <div key={industry.id} className={styles.card}>
+          <div
+            key={industry.id}
+            className={styles.card}
+            onClick={() => handleCardClick(industry.name)}
+            style={{ cursor: "pointer" }}
+          >
             <div className={styles.iconWrapper}>{industry.icon}</div>
             <h3 className={styles.industryName}>{industry.name}</h3>
           </div>

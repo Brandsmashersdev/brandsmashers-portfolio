@@ -1,119 +1,125 @@
-.SupersolveContainer{
-    padding:30px;
-
+.SupersolveContainer {
+  margin-top: 5rem;
+  width: 100%;
+  height: 80vh;
 }
 
-.SupersolveBox{
- 
-    background: linear-gradient(90deg, var(--button-color) 22.31%, var(--background-color)100%);
-    position: relative;
-    color: white;
-    /* padding: 60px 30px; */
-    padding: 48px;
-    border-radius: 24px;
-    text-align: center;
-    margin: 20px auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;    
-    width:65%;
-    height:40%;
+.SupersolveBox {
+  margin: auto;
+  padding: 5%;
+  background: linear-gradient(
+    var(--button-color) 22.31%,
+    var(--background-color) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  color: white;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 70vh;
+}
+
+.SupersolveBox h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+}
+
+.SupersolveBox p {
+  line-height: 35px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.superSolvebutton {
+  padding: 15px 33px;
+  background-color: #fff;
+  color: var(--secondText-color);
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* .SupersolveBox::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 800px;
+  left: -20px;
+  top: 0;
+  border-radius: 390px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.18) 6.76%,
+    rgba(255, 255, 255, 0) 82.08%
+  );
+  transform: rotate(45deg);
+  z-index: 1;
+} */
+
+/* .SupersolveBox::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 800px;
+  right: 139px;
+  top: -486px;
+  border-radius: 390px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.18) 6.76%,
+    rgba(255, 255, 255, 0) 82.08%
+  );
+  transform: rotate(306deg);
+  z-index: 1;
+} */
+.superSolvebutton:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .SupersolveBox {
+    width: 80%;
+    gap: 0.2rem;
   }
 
-  
   .SupersolveBox h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-  
+    font-size: 1.3rem;
   }
-  
+
   .SupersolveBox p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    font-weight:600;
- 
+    font-size: 0.9rem;
+    line-height: 22px;
   }
-  
-  .superSolvebutton{
-    padding: 20px 33px;
-    background-color: #fff;
-    color: var(--secondText-color);
-    font-weight:bold;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
+
+  .superSolvebutton {
+    padding: 12px 25px;
+    font-size: 0.9rem;
   }
-  
-
-
-  .SupersolveBox::before {
-    content: '';
-    position: absolute;
-    width: 420px;
-    height: 800px;
-    left: -20px;
-    top: 0;
-    border-radius: 390px;
-    background: linear-gradient(100deg, rgba(255, 255, 255, 0.18) 6.76%, rgba(255, 255, 255, 0.00) 82.08%);
-    transform: rotate(45deg);
-    z-index: 1; 
-}
-
-.SupersolveBox::after {
-    content: '';
-    position: absolute;
-    width: 420px;
-    height: 800px;
-    right: 139px;
-    top: -486px;
-    border-radius: 390px;
-    background: linear-gradient(100deg, rgba(255, 255, 255, 0.18) 6.76%, rgba(255, 255, 255, 0.00) 82.08%);
-    transform: rotate(306deg);
-    z-index: 1; 
-}
-  .superSolvebutton:hover {
-    background-color: #f0f0f0;
-  }
-  
-  @media (max-width: 768px) {
-    .SupersolveBox {
-        width: 85%;
-        height:20%;
-        padding: 50px 20px;
-    }
-
-    .SupersolveBox h2 {
-        font-size: 1.3rem;
-    }
-
-    .SupersolveBox p {
-        font-size: 0.9rem;
-    }
-
-    .superSolvebutton {
-        padding: 12px 25px;
-        font-size: 0.9rem;
-    }
 }
 
 @media (max-width: 480px) {
-    .SupersolveBox {
-        width: 85%;
-        padding: 35px 30px;
-        height:20%;
-    }
+  .SupersolveBox {
+    width: 90%;
+  }
 
-    .SupersolveBox h2 {
-        font-size: 0.92rem;
-    }
+  .SupersolveBox h2 {
+    font-size: 0.92rem;
+  }
 
-    .SupersolveBox p {
-        font-size: 0.7rem;
-    }
+  .SupersolveBox p {
+    font-size: 0.6rem;
+  }
 
-    .superSolvebutton {
-        padding: 10px 20px;
-        font-size: 0.8rem;
-    }
+  .superSolvebutton {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
 }

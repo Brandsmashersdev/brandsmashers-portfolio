@@ -39,12 +39,12 @@ const HireDevelopers = () => {
       <VettingProcess />
       <DeveloperSkills />
       <SuperSourcingSolve />
-      <TopDev />
+      {/* <TopDev /> */}
       {/* <Testimonials/> */}
       {/* <Investors/> */}
       <Offer />
       <OurHiringModel />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
 
       {/* <WhyBrandsmashers /> */}
       {/* <FeatureSection /> */}

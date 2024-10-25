@@ -1,0 +1,103 @@
+.whybrandcurb {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.banner {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background-color: #156ba3;
+  color: white;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.brandname {
+  color: #0d9488;
+  border-bottom: 2px solid #0d9488;
+}
+
+.subtitle {
+  color: #4b5563;
+}
+
+.featuresgrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .featuresgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featurecard {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.featurecard:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cardcontent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconwrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.iconwrapper.cyan {
+  background-color: #ecfeff;
+}
+
+.iconwrapper.orange {
+  background-color: #ffedd5;
+}
+
+.iconwrapper.yellow {
+  background-color: #fef9c3;
+}
+
+.featuretitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featuredescription {
+  color: #4b5563;
+  line-height: 1.625;
+}

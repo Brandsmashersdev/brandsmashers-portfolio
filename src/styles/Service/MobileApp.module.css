@@ -1,6 +1,6 @@
 /* Main Container */
 .container {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
   padding: 20px;
   background: linear-gradient(135deg, #e9edf1, var(--primary-color));
@@ -19,7 +19,8 @@
   width: 100%;
 }
 
-.rightSection, .leftSection {
+.rightSection,
+.leftSection {
   flex: 1;
   padding: 20px;
 }
@@ -29,14 +30,21 @@
   max-width: 600px;
 }
 
-.headerContent h1 {
-  font-size: 2.5rem;
-  color: #0f0b87;
+.heading {
+  font-size: 2.5rem !important;
+  color: #0f0b87 !important;
   margin-bottom: 10px;
+}
+.description {
+  height: 300px;
+  overflow-y: auto;
+}
+.description::-webkit-scrollbar {
+  display: none;
 }
 
 .headerContent h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -70,10 +78,11 @@
   font-size: 1rem;
 }
 
-.rightSection, .leftSection {
+.rightSection,
+.leftSection {
   width: 48%;
 }
-.img{
+.img {
   border-radius: 10px;
   margin-left: 30px;
 }
@@ -86,10 +95,10 @@
   height: 450px;
   border-radius: 10px;
   /* height: auto; */
-  object-fit: cover; 
+  object-fit: cover;
 }
-.qabox{
-  margin-top:-120px;
+.qabox {
+  margin-top: -120px;
   transform: scaleX(1);
   margin-left: 50px;
   margin-right: 100px;
@@ -113,7 +122,8 @@
     padding: 10px; /* Adjust padding for mobile */
   }
 
-  .rightSection, .leftSection {
+  .rightSection,
+  .leftSection {
     width: 100%; /* Full width for mobile */
     padding: 10px 0; /* Adjust padding for mobile */
     display: block; /* Ensure sections are block elements */
@@ -143,7 +153,6 @@
   .techIcons {
     justify-content: center; /* Center icons for mobile */
     flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
-    
   }
 
   .techItem {
@@ -166,12 +175,10 @@
     border-radius: 10px;
     margin: 20px 0; /* Add margin for spacing */
   }
-  .qabox{
-    margin-top:0px;
+  .qabox {
+    margin-top: 0px;
     transform: scaleX(1);
     margin-left: 0px;
     margin-right: 0px;
-  
   }
 }
-
