@@ -1,71 +1,113 @@
 .valuesSection {
-    padding: 60px 20px;
-    background-color: #fff;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.valueCard {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.valuesHeading {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.valueTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.valueDescription {
+  font-size: 1.5rem;
+  color: #000000d6;
+  margin-top: 10px;
+}
+
+.valuesContent {
+  text-align: left;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
     text-align: center;
   }
-  
-  .heading {
-    font-size: 3rem;
-    color: #2c3e50;
-    margin-bottom: 40px;
-    text-align: left;
-  }
-  
+
   .valuesGrid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 40px;
-  }
-  
-  .valueCard {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    /* background-color: #fff; */
-    border-radius: 8px;
-    
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  }
-
-  .valuesHeading{
-    display: flex;
+    grid-template-columns: 1fr;
     gap: 20px;
-    /* margin: 20px; */
+  }
 
+  .valueCard {
+    padding: 1rem;
   }
-  
-  .icon {
-    width: 40%;
-    height: 40px;
-    /* margin-bottom: 20px; */
-  }
-  
+
   .valueTitle {
-    font-size: 2rem;
-    color: #2c3e50;
-    /* margin-bottom: 10px; */
+    font-size: 1.75rem;
   }
-  
+
   .valueDescription {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .valuesSection {
+    padding: 40px 10px;
+  }
+
+  .heading {
     font-size: 1.5rem;
-    color: #000000d6;
-    margin-top: 10px;
-  }
-  
-
-  .valuesContent{
-    text-align: left;
+    margin-bottom: 30px;
   }
 
-
-  .stars {
-    margin-top: 0px;
-    font-size: 20px;
-    color: #ffc107; /* Gold color for stars */
-    background-color: #ffc107;
+  .valuesGrid {
+    grid-template-columns: 1fr;
   }
+
+  .valueCard {
+    padding: 0.75rem;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .valueTitle {
+    font-size: 1.5rem;
+  }
+
+  .valueDescription {
+    font-size: 0.9rem;
+  }
+}

@@ -1,39 +1,77 @@
 .engagmentHeading {
-    /* padding: 2rem; */
-    line-height: 1.8;
-    text-align: left;
-    margin: 0 10%;
-    /* width: 75%; */
-    /* background-color: antiquewhite; */
-  }
-  
-  .engagmentHeading h1{
-    margin-bottom: 1.5rem;
-    font-size: 3rem;   
+  line-height: 1.8;
+  text-align: left;
+  margin: 0 10%;
+}
+
+.engagmentHeading h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.engagmentHeading p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.engagementStats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  width: 45%;
+  text-align: left;
+}
+
+.stat p {
+  margin: 8px;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .engagmentHeading {
+    margin: 5% 5%;
   }
 
-  .engagmentHeading p{
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;   
+  .engagmentHeading h1 {
+    font-size: 1.5rem;
   }
-  
-  .engagementStats {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+  .engagmentHeading p {
+    font-size: 1rem;
   }
-  
+
   .stat {
-    flex: 1;
-    margin: 1rem;
-    padding: 1rem;
-    /* border-left: 4px solid #007bff; */
-    background: #f9f9f9;
-    /* width: 40%; */
-    text-align: left;
+    width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .engagmentHeading {
+    margin-top: 5rem;
+    padding: 2rem 1rem;
   }
 
-  .stat p{
-    margin: 8px;
+  .engagmentHeading h1 {
+    line-height: 35px;
+    font-size: 1.5rem;
   }
-  
+
+  .engagmentHeading p {
+    font-size: 0.9rem;
+  }
+
+  .stat {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    flex-direction: column;
+  }
+}

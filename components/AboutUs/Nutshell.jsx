@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import CountUp from 'react-countup';
-import styles from '@/styles/AboutUs/Nutshell.module.css';
+import React, { useEffect, useRef, useState } from "react";
+import CountUp from "react-countup";
+import styles from "@/styles/AboutUs/Nutshell.module.css";
 
 const AboutUs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +14,7 @@ const AboutUs = () => {
     { value: 1800, suffix: "+", label: "Completed Projects" },
     { value: 5, label: "Offices" },
     { value: 90, suffix: "%", label: "Customer Retention" },
-    { value: 22, suffix: "+", label: "Industries Served" }
+    { value: 22, suffix: "+", label: "Industries Served" },
   ];
 
   useEffect(() => {
@@ -25,11 +25,11 @@ const AboutUs = () => {
         const entry = entries[0];
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Stop observing once visible
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.3 // Adjust this threshold according to your needs
+        threshold: 0.3,
       }
     );
 
@@ -52,11 +52,11 @@ const AboutUs = () => {
           <div key={index} className={styles.metricBox}>
             <h3 className={styles.metricValue}>
               {isVisible && (
-                <CountUp 
-                  start={0} 
-                  end={metric.value} 
-                  duration={4.5} 
-                  suffix={metric.suffix ? metric.suffix : ""} 
+                <CountUp
+                  start={0}
+                  end={metric.value}
+                  duration={4.5}
+                  suffix={metric.suffix ? metric.suffix : ""}
                 />
               )}
             </h3>

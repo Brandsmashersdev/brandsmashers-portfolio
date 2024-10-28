@@ -75,11 +75,55 @@
 .featureDescription::-webkit-scrollbar {
   display: none;
 }
+
+/* Tablet view (768px and below) */
 @media screen and (max-width: 768px) {
   .featuresGrid {
     flex-direction: column;
   }
   .featureCard {
     width: 80% !important;
+    height: 300px;
+  }
+}
+
+/* Mobile view (480px and below) */
+@media screen and (max-width: 480px) {
+  .featuresSection {
+    padding: 2rem 0;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .featuresGrid {
+    gap: 10px;
+  }
+
+  .featureCard {
+    padding: 15px;
+    width: 90% !important;
+    height: 200px;
+    font-size: 0.9rem;
+    overflow-y: auto;
+  }
+
+  .featureTitle {
+    font-size: 1rem;
+  }
+
+  .featureDescription {
+    font-size: 0.9rem;
+    height: auto;
+    overflow-y: auto;
   }
 }
