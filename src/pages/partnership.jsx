@@ -2,7 +2,7 @@
 
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
-import Partnership from '../../components/partnership/Partnership';
+import Partnership from '../../components/Partnership/Partnership';
 
  const partnership = () => {
     return(
