@@ -1,100 +1,4 @@
-// import React from 'react';
-// import Link from 'next/link';
-// import Image from 'next/image';
-// import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
-// import style from '../../src/style/Footer.module.css';
 
-// const Footer = () => {
-//   return (
-//     <footer className={style.footer}>
-//       <div className={style.container}>
-//         <div className={style.companyInfo}>
-//           <Image
-//             src="/Logo/BRANDSMASHERS (9).png"
-//             alt="Company Logo"
-//             width={200}
-//             height={100}
-//             className={style.logo}
-//           />
-//           <p>
-//           Founded in 2018, Brandsmashers has rapidly expanded its reach with clients across multiple industries. We provide a comprehensive suite of IT services and tailored solutions to businesses worldwide, specialising in over 20 domains.
-//           </p>
-//         </div>
-
-//         <div className={style.offerings}>
-//           <h4>OFFERINGS</h4>
-//           <ul>
-//             <li>Product Prototyping</li>
-//             <li>Design Engineering</li>
-//             <li>Software Development</li>
-//             <li>Web Application Development</li>
-//             <li>Mobile App Development</li>
-//             <li>Front End Development</li>
-//             <li>Microsoft Development</li>
-//             <li>Remote Teams</li>
-//             <li>Data Engineering</li>
-//             <li>Cloud & Infrastructure</li>
-//             <li>Cybersecurity</li>
-//           </ul>
-//         </div>
-
-//         <div className={style.company}>
-//           <h4>COMPANY</h4>
-//           <ul>
-//             <li>About Us</li>
-//             <li>Our Team</li>
-//             <li>Alliances</li>
-//             <li>Celebrations</li>
-//             <li>Awards</li>
-//             <li>CSR</li>
-//             <li>Career</li>
-//           </ul>
-//         </div>
-
-//         <div className={style.locations}>
-//           <h4>GLOBAL LOCATIONS</h4>
-//           <p>INDIA</p>
-//           <p>Madhya Pradesh:</p>
-//           <p>Floor 2, JAP Tower, Govindpura, Raisen Road, Bhopal - 462023</p>
-//         </div>
-//       </div>
-
-//       <div className={style.footerBottom}>
-
-//         <div className={style.socialLinks}>
-//           <Link href="#">
-//             <FaFacebookF className={style.socialIcon} />
-//           </Link>
-//           <Link href="#">
-//             <FaLinkedinIn className={style.socialIcon} />
-//           </Link>
-//           <Link href="#">
-//             <FaTwitter className={style.socialIcon} />
-//           </Link>
-
-//           <Link href="#">
-//             <FaInstagram className={style.socialIcon} />
-//           </Link>
-//         </div>
-
-//         <div>
-//           <p>&copy; 2003-2024 Brandsmashers All rights reserved.</p>
-//         </div>
-
-//         <div className={style.legalLinks}>
-//           <p>
-//             <Link href="#">Privacy Policy</Link> |
-//             <Link href="#">Terms of Use</Link> |
-
-//             <Link href="#">Sitemap</Link>
-//           </p>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 import React from "react";
 import style from "@/styles/Footer.module.css";
 import Link from "next/link";
@@ -177,6 +81,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/contactus">Contact Us</Link>
+              </li>
+              <li>
+                <Link href="/partnership">Our Partners</Link>
               </li>
             </ul>
           </div>
