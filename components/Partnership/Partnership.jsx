@@ -25,14 +25,14 @@ const Partnership = ()  => {
 
         <div className={styles.text}>
           <h2 className={styles.heading}>Visual Consistency Builds Trust</h2>
-          <p className={styles.paragraph}>Think of visiting a site where every page looks like it's a different designer's artwork. Without consistent branding 
+          <p className={styles.paragraph}>Think of visiting a site where every page looks like it&s a different designer&apos;s artwork. Without consistent branding 
             through color, typography, and placement, visitors will disconnect, and that disconnection is often synonymous with a 
             distrust of your brand. We have dealt with similar problems hundreds of times. Using Blacksmith, we realigned the users 
             of this company for a smoother process, which ultimately led to increased conversions. click here to learn more about how 
             to maintain that visual cohesion.</p>
 
             <h2 className={styles.heading} >Consistency of behavior in performing something enhances usability.</h2>
-            <p className={styles.paragraph}>Consistent navigation, buttons, and layouts aren't just nice to have; they make the user comfortable as they work their 
+            <p className={styles.paragraph}>Consistent navigation, buttons, and layouts aren&apos;t just nice to have; they make the user comfortable as they work their 
               way through your site. This predictability means fewer distractions and a sharper focus on your content. Recently, 
               Brandsmashers implemented design changes for a client where predictable CTA placements led to better engagement rates. 
               We believe the number one solution to boost usability is a consistent design approach. </p>
@@ -47,4 +47,4 @@ const Partnership = ()  => {
     </div>
   );
 }
-export default Partnership ;g
+export default Partnership ;
