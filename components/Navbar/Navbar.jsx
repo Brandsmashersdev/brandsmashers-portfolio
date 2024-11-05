@@ -6,6 +6,7 @@ import Link from "next/link";
 import AnimatedButton from "../HireDeveloperHero/AnimationButton";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRouter } from "next/router";
+// import logo from '../../public/Logo/logo.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
