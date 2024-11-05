@@ -1,0 +1,104 @@
+.blogcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.articlesgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .articlesgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.articlecard {
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.articlecard:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.imagecontainer {
+}
+
+.articleimage {
+}
+
+.articletag {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.articlecontent {
+  padding: 1.5rem;
+}
+
+.articlemeta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.metaseparator {
+  color: #666;
+}
+
+.articletitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.articletitle:hover {
+  color: #2563eb;
+}
+
+.articledescription {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Optional: Add animation for card hover effect */
+@keyframes cardHover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.articlecard:hover {
+  animation: cardHover 0.3s ease forwards;
+}
+
+/* Add smooth transitions for interactive elements */
+.articlecard,
+.articletitle,
+.articletag {
+  transition: all 0.3s ease;
+}
+
+/* Improve accessibility with focus states */
+.articlecard:focus-within {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
