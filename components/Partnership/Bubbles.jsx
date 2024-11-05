@@ -20,7 +20,7 @@ const  Bubbles = () => {
 
         <div className={styles.logoBubble}>
           <div className={styles.purpleLogo}>
-          <Image src={logo} alt="Another Logo" width={100}/>
+          <Image src={logo} alt="brandsmashers Logo" className={styles.logo} width={150}/>
           </div>
         </div>
       </div>
