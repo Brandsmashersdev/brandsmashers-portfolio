@@ -31,11 +31,10 @@ const Partnership = () => {
         <div className={styles.containtText}>
          
           <h1 className={styles.mainHeading}>
-            The Importance of Credibility through
-            {!isMobile && <br />}
-            Website Design
+            The Importance of Credibility through{!isMobile && <br />} Website
+            Design
           </h1>
-          
+
           <p className={styles.paragraph}>
             When users visit your website, a seamless, cohesive experience can
             make all the difference in keeping them engaged. At Brandsmashers,
