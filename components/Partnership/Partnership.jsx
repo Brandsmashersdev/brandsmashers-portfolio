@@ -4,6 +4,7 @@ import logo from "../../public/Logo/logo.png";
 import Image from "next/image";
 import { MdOutlineDateRange } from "react-icons/md";
 import Bubbles from "./Bubbles";
+import Link from "next/link";
 
 const Partnership = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,9 +38,9 @@ const Partnership = () => {
 
           <p className={styles.paragraph}>
             When users visit your website, a seamless, cohesive experience can
-            make all the difference in keeping them engaged. At Brandsmashers,
-            we understand the power of consistency in web design. We have
-            partnered with Blacksmith Agency to help businesses create a
+            make all the difference in keeping them engaged. At <Link href="/HireDevelopers" className={styles.link}>  Brandsmashers, </Link>
+             we understand the power of consistency in web design. We have
+            partnered with <Link href="https://headspur.it/partnershipwithblacksmith.html" className={styles.link}>  Blacksmith Agency   </Link>to help businesses create a
             visually unified online presence. It is more than aesthetics; this
             is about building trust and making sure your visitors do not get
             confused or lost in exploring your site.
@@ -55,8 +56,10 @@ const Partnership = () => {
             and that disconnection is often synonymous with a distrust of your
             brand. We have dealt with similar problems hundreds of times. Using
             Blacksmith, we realigned the users of this company for a smoother
-            process, which ultimately led to increased conversions. click here
-            to learn more about how to maintain that visual cohesion.
+            process, which ultimately led to increased conversions. 
+            <Link href="https://blacksmith.agency/adobe-commerce-magento-development" className={styles.link}>  click here
+            to learn more   </Link>
+            about how to maintain that visual cohesion.
           </p>
 
           <h2 className={styles.heading}>
@@ -68,9 +71,12 @@ const Partnership = () => {
             your site. This predictability means fewer distractions and a
             sharper focus on your content. Recently, Brandsmashers implemented
             design changes for a client where predictable CTA placements led to
-            better engagement rates. We believe the number one solution to boost
+            better engagement rates. We believe the
+            <Link href="https://blacksmith.agency/custom-web-design-services" className={styles.link}>  number one solution  </Link>
+            to boost
             usability is a consistent design approach.{" "}
           </p>
+          
 
           <p className={styles.paragraph}>
             Consistency gives a professional look, helps build trust with your
