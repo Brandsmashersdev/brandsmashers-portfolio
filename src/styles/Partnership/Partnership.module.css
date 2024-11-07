@@ -93,3 +93,13 @@
       padding: 20px; 
   }
 }
+
+.link {
+  color: blue; /* Change the link color to blue */
+ text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+g
