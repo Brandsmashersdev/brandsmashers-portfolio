@@ -40,7 +40,7 @@ const Partnership = () => {
             When users visit your website, a seamless, cohesive experience can
             make all the difference in keeping them engaged. At <Link href="/HireDevelopers" className={styles.link}>  Brandsmashers, </Link>
              we understand the power of consistency in web design. We have
-            partnered with <Link href="https://headspur.it/partnershipwithblacksmith.html" className={styles.link}>  Blacksmith Agency   </Link>to help businesses create a
+            partnered with <Link href="https://blacksmith.agency/" className={styles.link}>  Blacksmith Agency   </Link>to help businesses create a
             visually unified online presence. It is more than aesthetics; this
             is about building trust and making sure your visitors do not get
             confused or lost in exploring your site.
