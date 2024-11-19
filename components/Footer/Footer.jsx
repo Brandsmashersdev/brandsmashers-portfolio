@@ -133,7 +133,7 @@ const Footer = () => {
       <div className={style.bottomFooter}>
         <div className={style.bottomFooterLinks}>
           <a href="#">SITE MAP</a>
-          <a href="#">PRIVACY</a>
+          <a href="/privacy">PRIVACY</a>
           <a href="#">TERMS</a>
         </div>
         <div className={style.copyright}>
