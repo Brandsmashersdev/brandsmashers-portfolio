@@ -132,15 +132,15 @@ const Footer = () => {
 
       <div className={style.bottomFooter}>
         <div className={style.bottomFooterLinks}>
-          <a href="#">SITE MAP</a>
-          <a href="/privacy">PRIVACY</a>
-          <a href="#">TERMS</a>
+          <Link href="#">SITE MAP</Link>
+          <Link href="/privacy">PRIVACY</Link>
+          <Link href="#">TERMS</Link>
         </div>
         <div className={style.copyright}>
           © 2018 Brandsmashers Tech -
-          <a href="#" className={style.backToTop}>
+          <Link href="#" className={style.backToTop}>
             BACK TO TOP ↑
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
