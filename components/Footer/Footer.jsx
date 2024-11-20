@@ -136,8 +136,9 @@ const Footer = () => {
           <Link href="/privacy">PRIVACY</Link>
           <Link href="#">TERMS</Link>
         </div>
-        <div className={style.copyright}>
-          © 2018 Brandsmashers Tech -
+
+         <div className={style.copyright}>
+           © 2018 Brandsmashers Tech 
           <Link href="#" className={style.backToTop}>
             BACK TO TOP ↑
           </Link>
