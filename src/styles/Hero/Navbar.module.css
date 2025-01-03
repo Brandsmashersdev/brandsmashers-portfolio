@@ -191,7 +191,7 @@
   background-size: 200% 200%;
   animation: gradientAnimation 4s ease infinite;
   transition: transform 0.3s ease;
-  background:  #6ee4ff;
+  background:   #4ba9c8;
 }
 
 .animatedButton:hover {

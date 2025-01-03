@@ -142,6 +142,8 @@
   background-color: black;
   color: white;
   padding: 40px 50px;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
 }
 .firstsection {
   display: flex;
@@ -156,13 +158,14 @@
 }
 
 .signupSection h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .signupSection p {
   color: #999;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .formGroup {
@@ -205,16 +208,68 @@
 }
 
 .socialIcon {
-  width: 35px;
-  height: 35px;
-  border: 1px solid white;
+  width: 40px; 
+  height: 40px;
+  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-decoration: none;
+  font-size: 20px; 
+  transition: transform 0.4s ease, background-color 0.3s ease;
 }
+.socialIcon[href*="linkedin"] {
+  background-color: #0077b5; 
+  color: white;
+}
+
+.socialIcon[href*="facebook"] {
+  background-color: #1877f2; 
+  color: white;
+}
+
+.socialIcon[href*="youtube"] {
+  background-color: #ff0000; 
+  color: white;
+}
+
+.socialIcon[href*="instagram"] {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.socialIcon[href*="clutch"] {
+  background-color: #f47e20; 
+  color: white;
+}
+
+/* Hover effects */
+.socialIcon:hover {
+  transform: translateY(-5px); 
+  filter: brightness(1.2); 
+}
+
+.socialIcon:hover[href*="linkedin"] {
+  background-color: #005983; 
+}
+
+.socialIcon:hover[href*="facebook"] {
+  background-color: #145db2; /* Slightly darker Facebook blue on hover */
+}
+
+.socialIcon:hover[href*="youtube"] {
+  background-color: #cc0000; /* Slightly darker YouTube red on hover */
+}
+
+.socialIcon:hover[href*="instagram"] {
+  background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888, #f09433); /* Change gradient direction */
+}
+
+.socialIcon:hover[href*="clutch"] {
+  background-color: #d2691e; /* Slightly darker Clutch orange on hover */
+}
+
 
 .footerLinks {
   display: flex;

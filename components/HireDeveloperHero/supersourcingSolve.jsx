@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/HireDevelopers/supersourcingSolve.module.css";
+import Link from 'next/link';
 
 const SuperSourcingSolve = () => {
   return (
@@ -15,7 +16,9 @@ const SuperSourcingSolve = () => {
           business, we offer customized solutions to meet your customized need
           and ensure that you can scale and innovate at pace.
         </p>
+        <Link href="/contactus">
         <button className={styles.superSolvebutton}>Call Us Today</button>
+        </Link>
       </div>
     </div>
   );
