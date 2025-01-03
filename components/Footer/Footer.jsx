@@ -1,4 +1,3 @@
-
 import React from "react";
 import style from "@/styles/Footer.module.css";
 import Link from "next/link";
@@ -8,15 +7,14 @@ import { SiYoutubekids } from "react-icons/si";
 import { FaSquareInstagram } from "react-icons/fa6";
 import Image from "next/image";
 import logo from "../../public/Hero/logoBrandsmashers.png";
+
 const Footer = () => {
   return (
     <footer className={style.footerContainer}>
       <div className={style.firstsection}>
         <div className={style.signupSection}>
-          <Image src={logo} alt={"footer logo"} width={150} />
-
+          {/* <Image src={logo} alt={"footer logo"} width={150} /> */}
           <h2>About us</h2>
-
           <p className={style.legalText}>
             Founded in 2018, Brandsmashers has quickly grown into a trusted name
             in the world of software development and staff augmentation. We
@@ -26,12 +24,13 @@ const Footer = () => {
             solutions, we help our clients navigate the complexities of digital
             transformation with ease.
           </p>
-
           <div className={style.socialIcons}>
             <Link
               href="https://in.linkedin.com/company/brandsmashers-tech-pvt-ltd"
               className={style.socialIcon}
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <LuLinkedin />
             </Link>
@@ -39,6 +38,8 @@ const Footer = () => {
               href="https://www.facebook.com/brandsamsherstechnologies"
               className={style.socialIcon}
               aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <LuFacebook />
             </Link>
@@ -46,6 +47,8 @@ const Footer = () => {
               href="https://clutch.co/profile/brandsmashers-tech"
               className={style.socialIcon}
               aria-label="clutch"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               cl
             </Link>
@@ -53,6 +56,8 @@ const Footer = () => {
               href="https://youtube.com/@Brandsmashers"
               className={style.socialIcon}
               aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <SiYoutubekids />
             </Link>
@@ -60,6 +65,8 @@ const Footer = () => {
               href="https://www.instagram.com/brandsmashers_technologies/"
               className={style.socialIcon}
               aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaSquareInstagram />
             </Link>
@@ -87,7 +94,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className={style.footerColumn}>
             <h3>MORE TO EXPLORE</h3>
             <ul>
@@ -137,8 +143,8 @@ const Footer = () => {
           <Link href="#">TERMS</Link>
         </div>
 
-         <div className={style.copyright}>
-           © 2018 Brandsmashers Tech 
+        <div className={style.copyright}>
+          © 2018 Brandsmashers Tech 
           <Link href="#" className={style.backToTop}>
             BACK TO TOP ↑
           </Link>

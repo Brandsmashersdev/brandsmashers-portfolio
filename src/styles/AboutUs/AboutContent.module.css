@@ -1,7 +1,7 @@
 .aboutContent {
   padding: 2rem;
   line-height: 1.8;
-  text-align: left;
+  text-align: center;
   margin: 0 10%;
   width: 75%;
 }
@@ -25,11 +25,12 @@
   border-left: 4px solid #007bff;
   background: #f9f9f9;
   width: 45%;
-  text-align: left;
+  text-align: center;
 }
 
 .stat p {
   margin: 8px;
+  text-align: center;
 }
 
 /* Tablet and smaller screens */

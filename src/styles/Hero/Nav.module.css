@@ -133,6 +133,7 @@
 
   .navButtons .animatedButton {
     padding: 8px 16px;
+    color: var(--button-color);
   }
 }
 

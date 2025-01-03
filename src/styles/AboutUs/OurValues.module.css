@@ -13,7 +13,8 @@
   font-size: 3rem;
   color: #2c3e50;
   margin-bottom: 40px;
-  text-align: left;
+  text-align: center;
+  font-family: "Roboto";
 }
 
 .valuesGrid {
@@ -32,6 +33,7 @@
 .valuesHeading {
   display: flex;
   gap: 20px;
+  font-family: "Roboto";
 }
 
 .icon {
