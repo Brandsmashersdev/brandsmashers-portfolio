@@ -3,6 +3,9 @@ import styles from "@/styles/Technologies/TechnologiesCard.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaMobileScreenButton } from "react-icons/fa6";
+import { FaBug } from "react-icons/fa";
+import { FaInfinity } from "react-icons/fa";
 import {
   FaLock,
   FaLaptopCode,
@@ -26,32 +29,32 @@ const TechnologiesCard = () => {
         "Creating engaging and intuitive user interfaces with modern web technologies like React.js, Angular, and Vue.js, ensuring a seamless user experience.",
     },
     {
-      icon: <FaLaptopCode size={40} />,
+      icon: <FaMobileScreenButton size= {40} />,
       title: "Mobile",
       description:
         "Developing high-performance mobile applications for iOS and Android, delivering seamless user experiences with cross-platform compatibility.",
     },
     {
-      icon: <FaUsers size={40} />,
+      icon: <FaDatabase size={40} />,
       title: "Database",
       description:
         "Managing and optimizing data storage solutions, from SQL to NoSQL databases, ensuring secure, efficient, and scalable data handling.",
     },
     {
-      icon: <FaDatabase size={40} />,
+      icon: <FaBug  size={40} />,
       title: "Testing",
       description:
         "Ensuring software reliability and performance through automated and manual testing strategies, detecting bugs early to improve quality and user experience.",
     },
 
     {
-      icon: <FaDatabase size={40} />,
+      icon: <FaInfinity size={40} />,
       title: "Cloud & DevOps",
       description:
         "Leveraging cloud computing to provide scalable solutions and integrating DevOps for faster development cycles, continuous integration, and seamless deployments.",
     },
     {
-      icon: <FaDatabase size={40} />,
+      icon: <FaUsers size={40} />,
       title: "Others",
       description:
         "Utilizing a wide range of technologies including AI, machine learning, blockchain, IoT, and more to deliver innovative, future-proof solutions tailored to client needs.",
