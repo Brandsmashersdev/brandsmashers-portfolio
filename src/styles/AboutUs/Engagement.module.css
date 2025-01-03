@@ -1,12 +1,13 @@
 .engagmentHeading {
   line-height: 1.8;
-  text-align: left;
+  text-align: center;
   margin: 0 10%;
 }
 
 .engagmentHeading h1 {
   margin-bottom: 1.5rem;
   font-size: 3rem;
+  font-family: "Roboto";
 }
 
 .engagmentHeading p {
@@ -27,11 +28,12 @@
   padding: 1rem;
   background: #f9f9f9;
   width: 45%;
-  text-align: left;
+  text-align: center;
 }
 
 .stat p {
   margin: 8px;
+  text-align: center;
 }
 
 /* Tablet and smaller screens */
