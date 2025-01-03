@@ -6,7 +6,7 @@ const FeatureCard = ({ title, description, icon: Icon }) => (
   <div className={style.featurecard}>
     <h3 className={style.featuretitle}>{title}</h3>
     <div className={style.iconwrapper}>
-      <Icon className={style.featureicon} />
+      <Icon className={style.featureicon}  size={36}/>
     </div>
 
     <p className={style.featuredescription}>{description}</p>
