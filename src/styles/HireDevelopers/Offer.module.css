@@ -2,6 +2,7 @@
     width: 100%;
     text-align: center;
     margin-top: 20px;
+
   }
   
   .heading {
@@ -13,11 +14,13 @@
   .offerbtn{
     color: rgba(29, 36, 52, 0.52);
     border-radius: 40px;
-    padding: 6px 16px !important;
+    padding: 7px 17px !important;
     border: 1px solid rgba(29, 36, 52, 0.12);
     /* margin-bottom: 20px; */
     text-transform: uppercase;
     width: fit-content;
+    /* font-size: 18px; */
+    /* background-color:var(--gray-light); */
 
   }
 
@@ -39,6 +42,8 @@
     color: #6b7280; /* Assuming a grey shade for the subtitle */
     margin-bottom: 40px;
     margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 30px;
   }
   
   .tabs {
@@ -50,7 +55,7 @@
   
   .tab {
     background: none;
-    border: none;
+    border: none;                
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
@@ -77,7 +82,7 @@
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
   }
   
-  .cardsContainer {
+  .cardsContainer {    
     /* display: flex;
     justify-content: center;
     gap: 20px;

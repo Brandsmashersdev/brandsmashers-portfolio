@@ -17,6 +17,8 @@
   gap: 1.5rem;
 }
 
+
+
 /* Responsive grid */
 @media (min-width: 768px) {
   .featuresgrid {
@@ -61,15 +63,20 @@
 }
 
 .iconwrapper {
-  background-color: #fef3c7; /* bg-yellow-100 */
-  padding: 0.75rem; /* p-3 */
-  border-radius: 9999px; /* rounded-full */
+  /* background-color: #4ba9c8 ; */
+  border-radius: 50%; 
+  padding: 0.75rem; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #6ee4ff;
 }
 
 .featureicon {
-  width: 1.5rem; /* w-6 */
-  height: 1.5rem; /* h-6 */
-  color: #facc15; /* text-yellow-400 */
+  width: 30px; 
+  height: 30px; 
+  /* color: #6ee4ff;*/
+  color: #4ba9c8;
 }
 
 .featuretitle {

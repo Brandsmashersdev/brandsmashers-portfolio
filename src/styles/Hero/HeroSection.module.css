@@ -70,6 +70,7 @@
   border-radius: 50px;
   font-size: 1.2vmax;
   cursor: pointer;
+  text-decoration: none !important;
   /* width: 200px;
   height: 50px; */
   padding: 0.7rem 2vmax;
@@ -90,8 +91,15 @@
 .contactButton {
   border: 1px solid var(--background-color);
   color: white;
+  text-decoration: none !important;
   background: var(--primary-color);
   font-weight: 600;
+  display: inline-block;
+}
+
+.contactButton {
+  text-decoration: none !important;
+  /* background-color: antiquewhite; */
 }
 
 .contactButton:hover {
@@ -181,6 +189,7 @@
   .hireButton,
   .contactButton {
     font-size: 1.6vmax;
+    text-decoration: none;
   }
 
   .imageContainer {
@@ -218,6 +227,7 @@
   .contactButton {
     width: 180px; /* Smaller width for very small screens */
     /* Smaller height for very small screens */
+    text-decoration: none;
   }
 }
 
@@ -233,8 +243,10 @@
 
   .hireButton,
   .contactButton {
-    width: 150px; /* Adjust for extra-small screens */
+    width: 150px;
     /* Adjust for extra-small screens */
+    /* Adjust for extra-small screens */
+    text-decoration: none;
   }
 }
 
