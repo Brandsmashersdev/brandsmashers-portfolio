@@ -70,6 +70,24 @@ const DigitalMarketing = () => {
                 <Image src={iot} alt="IoT" />
                 <p>IoT</p>
               </div>
+
+              {/* Duplicate items for smooth scrolling */}
+              <div className={styles.techItem}>
+                <Image src={machineLearning} alt="Machine Learning" />
+                <p>Machine Learning</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={blockchain} alt="Blockchain" />
+                <p>Blockchain</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={ai} alt="AI" />
+                <p>AI</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={iot} alt="IoT" />
+                <p>IoT</p>
+              </div>
             </div>
           </div>
         </div>

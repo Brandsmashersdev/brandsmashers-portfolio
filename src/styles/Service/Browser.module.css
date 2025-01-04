@@ -34,11 +34,14 @@
   font-size: 2.5rem !important;
   color: #0f0b87;
   margin-bottom: 10px;
+  margin-top: 70px;
 }
 
 .headerContent h4 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  margin-top: 19px;
+  line-height: 1.5;
 }
 .headerContent p {
   font-size: 1.1rem !important;
@@ -46,6 +49,7 @@
   margin-bottom: 0px;
   height: 300px !important;
   overflow-y: auto;
+  text-align: justify;
 }
 
 .headerContent p::-webkit-scrollbar {
@@ -115,7 +119,7 @@
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (min-width: 319px) and (max-width:798px)  {
   .headerSection {
     flex-direction: column; /* Stack content vertically */
     margin: 0; /* Remove the large margin for mobile */

@@ -34,6 +34,7 @@
   font-size: 2.5rem !important;
   color: #0f0b87 !important;
   margin-bottom: 10px;
+  margin-top: 60px;
 }
 .description {
   height: 300px;
@@ -46,11 +47,14 @@
 .headerContent h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  margin-top: 19px;
+  line-height: 1.5;
 }
 
 .headerContent p {
   font-size: 1.1rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .techIcons {
@@ -91,10 +95,9 @@
   animation: scroll 15s linear infinite;
 }
 .backgroundVideo {
-  width: 100%;
-  height: 450px;
+  width: 88%;
+  height: 537px;
   border-radius: 10px;
-  /* height: auto; */
   object-fit: cover;
 }
 .qabox {
@@ -115,7 +118,7 @@
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (min-width: 319px) and (max-width:798px) {
   .headerSection {
     flex-direction: column; /* Stack content vertically */
     margin: 0; /* Remove the large margin for mobile */
@@ -171,7 +174,7 @@
   /* Image Styling for Mobile */
   .img {
     width: 320px;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
     margin: 20px 0; /* Add margin for spacing */
   }

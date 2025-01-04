@@ -5,9 +5,7 @@ const QABoxdigital = () => {
   return (
     <div className={styles.qaContainer}>
       <p className={styles.paragraph}>
-      We leverage AI and ML to enhance operational efficiency by automating and streamlining 
-      your business processes. 
-      Our solutions provide deep insights into customer behaviors, enabling more informed decision-making.
+      Brandsmashers, the Best Digital Marketing Agency in Bhopal, offers tailored strategies through SEO, Social Media Management, and Content Marketing. We optimize results by evolving strategies, ensuring business growth and differentiation in a competitive market
       </p>
     </div>
   );

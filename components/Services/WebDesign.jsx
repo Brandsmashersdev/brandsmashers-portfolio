@@ -24,44 +24,44 @@ const WebDesign = () => {
               convert.
             </h4>
             <p className={styles.description}>
-              We&apos;re a digital agency that offers you more than ordinary web
-              development – we give you Infinitely Cutting-Edge experiences.
-              Being the first web development company in Bhopal, we utilize more
-              than ten years of experience in such technologies as Next.js and
-              React.js to develop efficient websites. If it is question of a
-              small scale solution or if it is question of a large scale, high
-              performance application our depth of technical knowledge makes it
-              certain that we get the job done right. We are specialized in
-              responsive web design, progressive web apps, and complex user
-              interfaces – everything with an emphasis on innovation and
-              quality. In the same manner, we ensue that we get in touch with
-              these trends so that your business is placed at the vanguard of
-              any advancements in the social media marketing strategies. When
-              you become our client, you are also betting on a solution that is
-              going to be relevant in the present and in the years to come. Get
-              your vision into existent with Brandsmashers – the best web
-              development company in Bhopal, known for offering web development
-              services that are contemporary.
+            At Brandsmashers, the Best Web Development Company in Bhopal, we create scalable, performance-focused websites with modular code adaptable to any device. We specialize in Custom Web Development, Responsive Web Design, and CMS like WordPress and Shopify. Our services include eCommerce Development, API Integrations, caching, CDN, and database optimization. We ensure security with SSL certificates and regular audits. Partner with us to bring your digital vision to life and drive long-term business growth
             </p>
           </div>
 
           {/* Emerging Tech Icons Section */}
-          <div className={styles.techIcons}>
-            <div className={styles.slider}>
-              <div className={styles.techItem}>
-                <Image src={ui} alt="Blockchain" />
-                <p>UI-UX</p>
+            <div className={styles.techIcons}>
+              <div className={styles.slider}>
+                <div className={styles.techItem}>
+                  <Image src={ui} alt="Blockchain" />
+                  <p>UI-UX</p>
+                </div>
+                <div className={styles.techItem}>
+                  <Image src={webl} alt="AI" />
+                  <p>Web language</p>
+                </div>
+                <div className={styles.techItem}>
+                  <Image src={sd} alt="IoT" />
+                  <p>Software Development</p>
+                </div>
+                <div className={styles.techItem}>
+                  <Image src={ai} alt="AI" />
+                  <p>AI</p>
+                </div>
+                {/* Duplicate items for smooth scrolling */}
+                <div className={styles.techItem}>
+                <Image src={dataS} alt="Blockchain" />
+                <p>Data Sync</p>
               </div>
               <div className={styles.techItem}>
-                <Image src={webl} alt="AI" />
-                <p>Web language</p>
+                <Image src={ai} alt="AI" />
+                <p>AI</p>
               </div>
               <div className={styles.techItem}>
                 <Image src={sd} alt="IoT" />
-                <p>Seoftware Development</p>
+                <p>Software Development</p>
               </div>
 
-              {/* Duplicate items for smooth scrolling */}
+  {/* Duplicate items for smooth scrolling */}
 
               <div className={styles.techItem}>
                 <Image src={dataS} alt="Blockchain" />
@@ -73,10 +73,42 @@ const WebDesign = () => {
               </div>
               <div className={styles.techItem}>
                 <Image src={sd} alt="IoT" />
-                <p>Seoftware Development</p>
+                <p>Software Development</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={dataS} alt="Blockchain" />
+                <p>Data Sync</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={ai} alt="AI" />
+                <p>AI</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={sd} alt="IoT" />
+                <p>Software Development</p>
+              </div>
+                <div className={styles.techItem}>
+                  <Image src={dataS} alt="Blockchain" />
+                  <p>Data Sync</p>
+                </div>
+
+                <div className={styles.techItem}>
+                  <Image src={ai} alt="AI" />
+                  <p>AI</p>
+                </div>
+                <div className={styles.techItem}>
+                  <Image src={sd} alt="IoT" />
+                  <p>Software Development</p>
+                </div>
+                <div className={styles.techItem}>
+                  <Image src={ui} alt="Blockchain" />
+                  <p>UI-UX</p>
+                </div>
+
+
+                
               </div>
             </div>
-          </div>
         </div>
 
         {/* Right Section */}

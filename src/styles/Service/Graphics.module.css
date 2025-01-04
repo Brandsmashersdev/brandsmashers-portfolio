@@ -30,11 +30,14 @@
   font-size: 2.5rem;
   color: #156ba3;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .headerContent h4 {
   font-size: 1.2rem;
   margin-bottom: 5px;
+  margin-top: 19px;
+  line-height: 1.5;
 }
 
 .headerContent p {
@@ -43,6 +46,7 @@
   margin-bottom: 0px;
   height: 300px !important;
   overflow-y: auto;
+  text-align: justify;
 }
 
 .headerContent p::-webkit-scrollbar {
@@ -53,18 +57,21 @@
 .techIcons {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
+  width: 100%;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .techItem {
   text-align: center;
-  margin: 0 10px; /* Space between tech items */
+  margin: 0 30px; /* Space between tech items */
 }
 
 .techItem img {
   width: 50px;
   height: 50px;
+  margin-top: 20px;
 }
 
 .techItem p {
@@ -72,26 +79,36 @@
   font-size: 1rem;
 }
 
-.imageContainer {
+.rightSection,
+.leftSection {
+  width: 48%;
+}
+
+/* .imageContainer {
   width: 0%;
   border-radius: 10px;
   max-width: 400px;
-}
+} */
 .img {
   border-radius: 10px;
+  margin-left: 30px;
 }
-.backgroundVideo {
+.slider{
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+ .backgroundVideo {
   width: 100%;
   height: 450px;
   border-radius: 10px;
   /* height: auto; */
   object-fit: cover;
-}
+} 
 .qabox {
   margin-top: -150px;
   transform: scaleX(1);
-  margin-left: 100px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 
 /* Animation for scrolling tech icons */
@@ -106,11 +123,11 @@
 
 .slider {
   display: flex;
-  animation: scroll 10s linear infinite;
-}
+  animation: scroll 15s linear infinite;
+} 
 
 /* Media Query for Tablets and Smaller Screens */
-@media (max-width: 768px) {
+@media (min-width: 319px)and (max-width:798px)  {
   .container {
     font-family: "Arial", sans-serif;
     color: #333;
