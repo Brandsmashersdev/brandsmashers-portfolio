@@ -9,11 +9,25 @@ import Image from "next/image";
 import logo from "../../public/Hero/logoBrandsmashers.png";
 
 const Footer = () => {
+  
+  const handleBackToTop = () => {
+  
+    if (document.body.scrollTop !== undefined) {
+      document.body.scrollTop = 0;
+    } else if (document.documentElement.scrollTop !== undefined) {
+      document.documentElement.scrollTop = 0;
+    }
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className={style.footerContainer}>
       <div className={style.firstsection}>
         <div className={style.signupSection}>
-          {/* <Image src={logo} alt={"footer logo"} width={150} /> */}
           <h2>About us</h2>
           <p className={style.legalText}>
             Founded in 2018, Brandsmashers has quickly grown into a trusted name
@@ -101,34 +115,28 @@ const Footer = () => {
                 <Link href="Services#webdesign">Web design</Link>
               </li>
               <li>
-                {" "}
                 <Link href="Services#desktopWebDevelopment">
                   Desktop app development
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link href="Services#mobileAppDevelopment">
                   Mobile app development
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link href="Services#uiux">UI/UX</Link>
               </li>
               <li>
                 <Link href="Services#aiml">AI/ML</Link>
               </li>
               <li>
-                {" "}
                 <Link href="Services#datadriven">Data Drive</Link>
               </li>
               <li>
-                {" "}
                 <Link href="Services#digitalMarketing">Digital marketing</Link>
               </li>
               <li>
-                {" "}
                 <Link href="Services#beyondBrowser">Beyond the browser</Link>
               </li>
             </ul>
@@ -144,10 +152,13 @@ const Footer = () => {
         </div>
 
         <div className={style.copyright}>
-          © 2018 Brandsmashers Tech 
-          <Link href="#" className={style.backToTop}>
+          © 2018 Brandsmashers Tech
+          <button
+            onClick={handleBackToTop}
+            className={style.backToTop}
+          >
             BACK TO TOP ↑
-          </Link>
+          </button>
         </div>
       </div>
     </footer>
