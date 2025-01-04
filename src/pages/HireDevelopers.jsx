@@ -46,7 +46,7 @@ const HireDevelopers = () => {
       <OurHiringModel />
       {/* <CaseStudies /> */}
 
-      {/* <WhyBrandsmashers /> */}
+      {/* <WhyBrandsmashers / > */}
       {/* <FeatureSection /> */}
       <FaqSection />
       <Footer />

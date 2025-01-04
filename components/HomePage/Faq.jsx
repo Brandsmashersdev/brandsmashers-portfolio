@@ -63,7 +63,7 @@ const Faq = () => {
           <div className={style.faqContact}>
             <p>Still have questions?</p>
             <a href="#" className={style.faqLink}>
-              Let ;s talk
+              Let&apos;s talk
               <svg
                 viewBox="0 0 24 24"
                 className={style.arrowIcon}

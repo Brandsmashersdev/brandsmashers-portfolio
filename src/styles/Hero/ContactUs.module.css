@@ -105,29 +105,45 @@
 .right {
   background-color: #f9f9f9;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
 }
 
 .input {
   padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius:10px;
   font-size: 1rem;
 }
 .input1 {
   padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
 }
+.input:focus,
+.input1:focus{
+  border: 3px solid #4ba9c8;
+  outline: none;
+}
 
+.select:focus{
+  border: 3px solid #4ba9c8;
+  outline: none;
+}
 .radioGroup {
   display: flex;
   gap: 30px;
@@ -135,13 +151,42 @@
 
 .radioGroup label {
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  margin-right: 20px; 
+  font-size: 14px;
+  
 }
+
+.massage{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.successMessage {
+  color: green;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 
 .select {
   padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
+}
+.fullcontainer{
+  background-color: #c1cfdc;
 }
 
 .submitButton {
