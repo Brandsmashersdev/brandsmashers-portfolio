@@ -29,7 +29,7 @@ const DataDive = () => {
           <h2 className={styles.heading}>Data Dive </h2>
           <h4>Transform data into valuable insights with expert analysis</h4>
             <p>
-            Unlock the full potential of your data with Brandsmashers' specialized Data Science Development Services. We are dedicated to transforming raw data into actionable insights that drive strategic decisions and accelerate business growth.
+            Unlock the full potential of your data with Brandsmashers&apos; specialized Data Science Development Services. We are dedicated to transforming raw data into actionable insights that drive strategic decisions and accelerate business growth.
 Our services encompass every stage of the data lifecycle, from meticulous data collection to advanced analytics and visualization. Our team of skilled professionals leverages cutting-edge tools and techniques to deliver tailored solutions that maximize the value of your data.
 Whether you need predictive analytics, machine learning models, or business intelligence dashboards, we ensure that your data becomes a powerful asset for your organization. By uncovering hidden patterns and trends, we empower you to make informed decisions, optimize processes, and stay ahead of the competition.
 
