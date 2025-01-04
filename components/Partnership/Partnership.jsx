@@ -25,7 +25,7 @@ const Partnership = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id ="partners">
       <main className={styles.mainContent}>
         <Bubbles />
 

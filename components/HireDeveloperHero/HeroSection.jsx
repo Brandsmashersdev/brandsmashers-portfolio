@@ -4,7 +4,7 @@ import styles from "../../src/styles/Hero/HeroSection.module.css";
 
 const HeroSection = () => {
   return (
-    <div className={styles.heroSection}>
+    <div className={styles.heroSection} id = "hiredevelopers">
       <video autoPlay loop muted className={styles.backgroundVideo}>
         <source src="/HireDevelopers.mp4" type="video/mp4" />
         Your browser does not support the video tag.
