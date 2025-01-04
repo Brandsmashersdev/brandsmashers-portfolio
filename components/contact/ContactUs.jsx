@@ -219,7 +219,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contact-us">
       {/* Left Section */}
       <div className={styles.left}>
         <div className={styles.header}>

@@ -6,7 +6,6 @@ import Link from "next/link";
 import AnimatedButton from "../HireDeveloperHero/AnimationButton";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRouter } from "next/router";
-// import logo from '../../public/Logo/logo.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,39 +16,51 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const goToHome = () => {
-    setIsOpen(false);
-    router.push("/");
-  };
-
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setScrolled(false);
-    } else {
       setScrolled(true);
+    } else {
+      setScrolled(false);
     }
   };
 
   useEffect(() => {
-    document.body.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual"; // Disable automatic scroll restoration
+    }
+
+    const handleRouteChange = () => {
+      window.scrollTo(0, 0); // Always scroll to top
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   const NAVLINKS = [
-    { path: "/HireDevelopers", label: "Hire Developers" },
-    { path: "/Services", label: "Services" },
-    { path: "/Technologies", label: "Technologies" },
-    { path: "/Blog", label: "Blogs" },
-    { path: "/About", label: "About Us" },
+    { path: "/HireDevelopers#hiredevelopers", label: "HIRE DEVELOPERS" },
+    { path: "/Services#serviceHero", label: "SERVICES" },
+    { path: "/Technologies#Technologies", label: "TECHNOLOGIES" },
+    { path: "/Blog#blogs", label: "BLOGS" },
+    { path: "/About#about-us", label: "ABOUT US" },
   ];
 
   return (
-    <div
-      className={`${styles.navContainer} ${scrolled ? styles.navScrolled : ""}`}
-    >
+    <div className={`${styles.navContainer} ${scrolled ? styles.navScrolled : ""}`}>
       <div className={styles.navRow}>
         <div className={styles.logo}>
           <Link href={"/"}>
-            {" "}
             <Image
               src={logo}
               alt="brandsmashers Logo"
@@ -58,7 +69,6 @@ const Navbar = () => {
               width={80}
             />
           </Link>
-
           <div className={styles.brandName}></div>
         </div>
 
@@ -69,7 +79,10 @@ const Navbar = () => {
         <div className={styles.navLinks}>
           {NAVLINKS.map(({ path, label }) => (
             <Link href={path} key={path}>
-              <span className={router.pathname === path ? styles.active : ""}>
+              <span
+                className={router.pathname === path ? styles.active : ""}
+                onClick={() => setIsOpen(false)}
+              >
                 {path === "/" ? "Home" : label}
               </span>
             </Link>
@@ -89,8 +102,11 @@ const Navbar = () => {
         </div>
 
         {NAVLINKS.map(({ path, label }) => (
-          <Link href={path} key={path} onClick={goToHome}>
-            <span className={router.pathname === path ? styles.active : ""}>
+          <Link href={path} key={path}>
+            <span
+              className={router.pathname === path ? styles.active : ""}
+              onClick={() => setIsOpen(false)}
+            >
               {path === "/" ? "Home" : label}
             </span>
           </Link>
