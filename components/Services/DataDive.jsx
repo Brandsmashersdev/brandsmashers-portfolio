@@ -26,15 +26,13 @@ const DataDive = () => {
         {/* right section */}
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
-            <h1>Data Dive</h1>
-            <h4>Transform data into valuable insights with expert analysis</h4>
+          <h2 className={styles.heading}>Data Dive </h2>
+          <h4>Transform data into valuable insights with expert analysis</h4>
             <p>
-              Explore the full potential of your data with our specialised data
-              science development services. At Brandsmashers, we are focused on
-              turning raw data into valuable insights that inform strategic
-              decisions and boost your business. From initial data gathering to
-              sophisticated analytics, our expert team delivers solutions that
-              enhance the value and impact of your data.
+            Unlock the full potential of your data with Brandsmashers&apos; specialized Data Science Development Services. We are dedicated to transforming raw data into actionable insights that drive strategic decisions and accelerate business growth.
+Our services encompass every stage of the data lifecycle, from meticulous data collection to advanced analytics and visualization. Our team of skilled professionals leverages cutting-edge tools and techniques to deliver tailored solutions that maximize the value of your data.
+Whether you need predictive analytics, machine learning models, or business intelligence dashboards, we ensure that your data becomes a powerful asset for your organization. By uncovering hidden patterns and trends, we empower you to make informed decisions, optimize processes, and stay ahead of the competition.
+
             </p>
           </div>
 

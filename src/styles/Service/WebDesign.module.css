@@ -63,12 +63,15 @@
 .headerContent h4 {
   font-size: 1.2rem;
   margin-bottom: 5px;
+  margin-top: 19px;
+  line-height: 1.5;
 }
 
 .headerContent p {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 0px;
+  text-align: justify;
 }
 .description {
   height: 300px;
@@ -79,42 +82,62 @@
 }
 
 /* Technology Icons */
+
+
 .techIcons {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
   overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .techItem {
   text-align: center;
-  margin: 0 10px; /* Space between tech items */
+  margin: 0 30px; /* Space between tech items */
 }
 
 .techItem img {
   width: 50px;
   height: 50px;
+  margin-top: 20px;
 }
 
 .techItem p {
   margin-top: 10px;
   font-size: 1rem;
 }
+.rightSection,
+.leftSection {
+  width: 48%;
+}
 
-.imageContainer {
+/* .imageContainer {
   width: 0%;
   border-radius: 10px;
   max-width: 400px;
-}
+} */
 .img {
   border-radius: 10px;
+  margin-left: 30px;
   /* opacity: 0.5; 50% transparency */
 }
+.slider{
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+.backgroundVideo {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 .qabox {
-  margin-top: 350px;
+  margin-top: -150px;
   transform: scaleX(1);
-  margin-left: 150px;
-  margin-right: 0px;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 
 /* Animation for scrolling tech icons */
@@ -123,18 +146,19 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-40%);
+    transform: translateX(-50% ); /* Scroll halfway (to end of first set) */
   }
 }
 
 .slider {
   display: flex;
-  animation: scroll 10s linear infinite;
+
+  animation: scroll 20s infinite linear;
 }
 
 /* Media Query for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-  .container {
+@media (min-width:319px) and (max-width: 800px) {
+   .container {
     font-family: "Arial", sans-serif;
     color: #333;
     padding: 10px; /* Apply equal padding on all sides for mobile */
@@ -187,7 +211,8 @@
 
   /* Technology Icons */
   .techIcons {
-    display: flex;
+    /* display: flex;  
+    width: 30%;             */
     justify-content: center; /* Center icons for mobile */
     flex-wrap: wrap; /* Allow wrapping of icons on smaller screens */
     margin-top: 20px; /* Adjust margin for mobile */

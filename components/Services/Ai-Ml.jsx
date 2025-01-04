@@ -18,24 +18,10 @@ const AiMl = () => {
               Leverage advanced AI and ML for actionable insights and innovation
             </h4>
             <p className={styles.description}>
-              Leverage Advanced AI and ML for Actionable Insights and
-              Innovation! The Brandsmashers team prides itself in the ability to
-              offer innovative AI and ML solutions that can make a measurable
-              distinctive change in your enterprise. Our services primarily
-              include developing, implementing, and maintaining a number of AI
-              and machine learning operational solutions to governmental
-              organizations with the aim of predicting customer trends and
-              improving resource management efficiency. We also back our core
-              specialization in Machine Learning with a value proposition that
-              drives tangible results for businesses. This is done to accumulate
-              the advancement of the latest technologies in your business hence
-              the cutting edge in today’s complexion digital world.
-              <br />
-              Select Brandsmashers when you’re in the need for professional
-              AI/ML services, so you obtain the most significant benefits and
-              enable model development. Please let us assist you in leveraging
-              the enhanced technologies to support your business and even
-              achieve your strategic goals!
+            Leverage Advanced AI and ML for Actionable Insights and Innovation! The Brandsmashers team offers innovative AI and ML solutions that create measurable change in your enterprise. We specialize in developing, implementing,
+             and maintaining AI and machine learning solutions for government organizations, focusing on predicting customer trends and improving resource management.
+              Our core expertise in Machine Learning drives tangible results for businesses, incorporating the latest technologies to keep you ahead in today’s digital world. 
+              Choose Brandsmashers for professional AI/ML services and let us help you achieve your strategic goals with enhanced technologies.
             </p>
           </div>
 
@@ -58,6 +44,26 @@ const AiMl = () => {
                 <Image src={iot} alt="IoT" />
                 <p>IoT</p>
               </div>
+
+
+{/* Duplicate items for smooth scrolling */}
+<div className={styles.techItem}>
+                <Image src={machineLearning} alt="Machine Learning" />
+                <p>Machine Learning</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={blockchain} alt="Blockchain" />
+                <p>Blockchain</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={ai} alt="AI" />
+                <p>AI</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={iot} alt="IoT" />
+                <p>IoT</p>
+              </div>
+              
 
               {/* Duplicate items for smooth scrolling */}
               <div className={styles.techItem}>

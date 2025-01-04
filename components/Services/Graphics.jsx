@@ -22,25 +22,7 @@ const WebDesign = () => {
               App Development Services
             </h4>
             <p className={styles.description}>
-              Brandsmashers is here to provide you with a set of powerful and
-              unique desktop applications that correspond to your requirements.
-              To be a leader in the most sought-after services – Best Desktop
-              App Development Services in Bhopal – we use technologies and tools
-              to make the apps perform at optimal levels while merging
-              streamlined functionality with an intuitive, user interface.
-              Regardless of whether you require a multiplatform app or an
-              up-to-date enterprise utility app, our skillful developers
-              guarantee a productivity-oriented desktop app, with safety
-              measures integrated and simplicity for the end-users. Our main
-              emphasis is placed on the conception and development of
-              easy-to-navigate and effective applications that satisfy the
-              necessities of your company and boost the performance of your
-              workers. We engage with you until the final phases of development
-              to ensure the desktop app that is created for you is optimal in
-              each aspect, currently and in the future. Hire Brandsmashers to
-              level up your business through creative and functional desktop
-              applications that will surely make you stand out from the other
-              competitors in the contemporary society.
+            Brandsmashers delivers tailored desktop applications designed to meet your specific needs. As a leader in Desktop App Development Services in Bhopal, we use advanced technologies to create high-performance apps with intuitive interfaces. Whether for multiplatform solutions or modern enterprise utilities, our developers ensure productivity-focused apps with robust security and user-friendly features. We prioritize creating effective, easy-to-navigate applications that enhance business operations and employee performance. Collaborating with you throughout the process, we ensure the final product meets both current and future needs. Choose Brandsmashers for innovative desktop applications that set you apart in today’s competitive market
             </p>
           </div>
 
@@ -65,6 +47,24 @@ const WebDesign = () => {
               </div>
 
               {/* Duplicate items for smooth scrolling */}
+
+              <div className={styles.techItem}>
+                <Image src={machineLearning} alt="Machine Learning" />
+                <p>Machine Learning</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={blockchain} alt="Blockchain" />
+                <p>Blockchain</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={ai} alt="AI" />
+                <p>AI</p>
+              </div>
+              <div className={styles.techItem}>
+                <Image src={iot} alt="IoT" />
+                <p>IoT</p>
+              </div>
+              
               <div className={styles.techItem}>
                 <Image src={machineLearning} alt="Machine Learning" />
                 <p>Machine Learning</p>
