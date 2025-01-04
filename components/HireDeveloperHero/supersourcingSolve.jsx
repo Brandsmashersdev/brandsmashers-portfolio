@@ -16,12 +16,12 @@ const SuperSourcingSolve = () => {
           business, we offer customized solutions to meet your customized need
           and ensure that you can scale and innovate at pace.
         </p>
-        <Link href="/contactus">
+        <Link href="/contactus#contact-us">
         <button className={styles.superSolvebutton}>Call Us Today</button>
         </Link>
       </div>
     </div>
   );
 };
-
+10255
 export default SuperSourcingSolve;
