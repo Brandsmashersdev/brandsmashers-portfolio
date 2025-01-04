@@ -8,20 +8,18 @@ export default async function handler(req, res) {
     console.log("===========>", req.body)
     const { name, email, phone, help, skills, referral } = req.body;
 
-    // Set up Nodemailer transport
     const transporter = nodemailer.createTransport({
-      host: 'smtp.ethereal.email',
-      port: 587, // Use Gmail or any other email service
+      host: 'smtp.gmail.com',
+      port: 587, 
       auth: {
-        user: 'raina.bergnaum@ethereal.email', // Your email address
-        pass: 'jpmQPAhnytNCZJs2ae', // Your email password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, 
       },
     });
 
-    // Email content
     const mailOptions = {
-      from: email, // Sender's email
-      to: 'raina.bergnaum@ethereal.email', // Recipient email
+      from: email, 
+      to: process.env.EMAIL_USER, 
       subject: "Contact Us Form Submission",
       html: `
         <h3>New Contact Form Submission</h3>
@@ -34,11 +32,9 @@ export default async function handler(req, res) {
       `,
     };
 
-    // Save the data to Excel file
     const workbook = new ExcelJS.Workbook();
     const worksheet = workbook.addWorksheet("Form Submissions");
 
-    // Define columns
     worksheet.columns = [
       { header: "Name", key: "name", width: 30 },
       { header: "Email", key: "email", width: 30 },
@@ -48,7 +44,6 @@ export default async function handler(req, res) {
       { header: "Referral", key: "referral", width: 30 },
     ];
 
-    // Add a row with form data
     worksheet.addRow({
       name,
       email,
@@ -59,14 +54,9 @@ export default async function handler(req, res) {
     });
 
     const filePath = path.join(process.cwd(), "public", "form-submissions.xlsx");
-
-    // Write the Excel file to disk
     try {
       await workbook.xlsx.writeFile(filePath);
-
-      // Send the email
       await transporter.sendMail(mailOptions);
-
       res.status(200).json({ message: "Form submitted successfully!" });
     } catch (error) {
       console.error("Error processing form:", error);
