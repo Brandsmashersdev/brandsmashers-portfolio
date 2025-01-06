@@ -163,6 +163,8 @@
     color: #333;
     padding: 10px; /* Apply equal padding on all sides for mobile */
     box-sizing: border-box;
+    margin-left: -18px;
+    margin-right: 131px;
   }
 
   /* Header Section */
@@ -251,7 +253,7 @@
   .qabox {
     margin-top: 0px;
     transform: scaleX(1);
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 50px;
+    margin-right: 131px;
   }
 }

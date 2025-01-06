@@ -8,6 +8,8 @@
     font-family: 'Arial', sans-serif; /* Font style */
     line-height: 1.6; /* Line spacing */
     margin-top: 56px;
+    margin-right: 65px;
+    text-align: center;
   }
   
   .paragraph{
