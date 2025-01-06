@@ -4,12 +4,13 @@ import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Navbar/Nav";
 import Navbar from "../../components/Navbar/Navbar";
 import TextSlider from "../../components/TextSlider/TextSlider";
+import styles from "../../src/styles/Hero/ContactUs.module.css";
 
 
 const Contactus = () => {
     return (
         
-        <div>
+        <div  className={styles.fullcontainer}>
       {/* <Nav/> */}
         <Navbar/>
         <ContactUs/>

@@ -17,6 +17,7 @@ import OurVision from "../../components/HomePage/OurVision";
 import WhyBrandSmashers from "../../components/HomePage/WhyBrandSmashers";
 import TechShowcase from "../../components/HomePage/TechShowcase";
 import BrandsmashersIntro from "../../components/HomePage/BrandsmashersIntro";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Services from "../../components/HomePage/servicess"
 

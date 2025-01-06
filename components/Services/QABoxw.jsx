@@ -5,9 +5,7 @@ const QABoxw = () => {
   return (
     <div className={styles.qaContainer}>
       <p className={styles.paragraph}>
-      Brandsmashers Tech delivered top-tier QA testing services, helping the client rapidly
-      identify and fix bugs in their digital ecosystem. We not only optimized their 
-      technology-driven workflows but also enhanced overall productivity.
+      Brandsmashers, the Best Web Development Company in Bhopal, creates scalable, secure, and user-focused web solutions. From custom websites to eCommerce platforms, we optimize performance, enhance security, and align with your business goals to drive growth.
       </p>
     </div>
   );

@@ -255,11 +255,11 @@
 }
 
 .socialIcon:hover[href*="facebook"] {
-  background-color: #145db2; /* Slightly darker Facebook blue on hover */
+  background-color: #145db2;
 }
 
 .socialIcon:hover[href*="youtube"] {
-  background-color: #cc0000; /* Slightly darker YouTube red on hover */
+  background-color: #cc0000;
 }
 
 .socialIcon:hover[href*="instagram"] {
@@ -267,7 +267,7 @@
 }
 
 .socialIcon:hover[href*="clutch"] {
-  background-color: #d2691e; /* Slightly darker Clutch orange on hover */
+  background-color: #d2691e;
 }
 
 
@@ -303,6 +303,17 @@
   text-decoration: none;
   font-size: 14px;
 }
+.footerColumn ul li a:hover {
+  color: #05edfa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footerColumn ul li a:hover {
+  color: #05edfa;
+  text-decoration: none;
+  font-size: 14px;
+}
 
 .bottomFooter {
   border-top: 1px solid #333;
@@ -325,26 +336,32 @@
 }
 
 .backToTop {
-  color: white;
-  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: 11px; 
+  padding: 0; 
+  margin-left: 12px;
 }
 
-/* Media Queries for Responsiveness */
+
+
 @media (min-width: 768px) {
   .firstsection {
-    flex-direction: row; /* Switch back to row layout on larger screens */
-    justify-content: space-between; /* Space out sections */
+    flex-direction: row; 
+    justify-content: space-between; 
   }
 
   .footerLinks {
-    flex-direction: row; /* Stack footer links on top of each other */
-    align-items: flex-start; /* Align items to the start */
+    flex-direction: row; 
+    align-items: flex-start; 
   }
 }
 
 @media (max-width: 768px) {
   .footerLinks {
-    flex-direction: row; /* Stack footer links on smaller screens */
+    flex-direction: row; 
     margin: 0 0;
   }
   .footerColumn ul li {
@@ -355,6 +372,6 @@
     gap: 0;
   }
   .signupSection {
-    margin-bottom: 20px; /* Add margin for spacing */
+    margin-bottom: 20px; 
   }
 }

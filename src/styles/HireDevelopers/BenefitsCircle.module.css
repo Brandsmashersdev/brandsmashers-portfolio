@@ -1,0 +1,299 @@
+.circleContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e1e5;
+}
+.circleContainer1 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.redCircle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #4ba9c8;
+    border-radius: 50%;
+    
+}
+
+.shrunkCircle {
+    width: 300px;
+    height: 300px;
+    transform: translateX(-100px);
+}
+
+.centerCircle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* z-index: 10; */
+   
+}
+
+.benefitItem {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 220px;
+    transform: translate(-50%, -50%);
+}
+
+.trapezium {
+    position: relative;
+    width: 150px; 
+    height: 130px; 
+    /* background-color: rgb(255, 255, 255); */
+    /* border: 1px solid #000; */
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+    /* clip-path: polygon(-10% 0, 105% 0%, 76% 148%, 22% 98%,-3% 10%); */
+    /* clip-path: polygon(30% 30, 105% 0%, 76% 150%, 22% 100%,-0% 5%); */
+    clip-path: polygon(50% 0, 100% 0, 94% 36%, 86% 67%, 80% 90%, 50% 87%, 20% 90%, 13% 67%, 6% 35%, 0 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 60px; 
+    border-bottom-right-radius: 95px;
+    border-bottom-left-radius: 95px;
+    background-color:#4ba9c8;
+    transition: background-color 0.3s ease;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.iconCircle {
+    width: 40px; 
+    height: 40px; 
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; 
+}
+
+.trapezium:hover {
+    background-color: #05edfa; /* Change this to your desired hover color */
+    /* transform: scale(1.1);  */
+}
+
+
+
+.icon {
+    font-size: 1.8rem;
+}
+
+.text {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1;
+    word-wrap: break-word;
+}
+
+/* Positioning for items in a circular layout */
+.item0 { transform: rotate(0deg) translate(0, -200px) rotate(0deg); }
+.item1 { transform: rotate(36deg) translate(0, -200px) rotate(-0deg); }
+.item2 { transform: rotate(72deg) translate(0, -200px) rotate(-0deg); }
+.item3 { transform: rotate(108deg) translate(0, -200px) rotate(-0deg); }
+.item4 { transform: rotate(144deg) translate(0, -200px) rotate(-0deg); }
+.item5 { transform: rotate(180deg) translate(0, -200px) rotate(-0deg); }
+.item6 { transform: rotate(216deg) translate(0, -200px) rotate(-0deg); }
+.item7 { transform: rotate(252deg) translate(0, -200px) rotate(-0deg); }
+.item8 { transform: rotate(288deg) translate(0, -200px) rotate(-0deg); }
+.item9 { transform: rotate(324deg) translate(0, -200px) rotate(-0deg); }
+
+
+.item0 .iconCircle { transform: rotate(0deg); }
+.item1 .iconCircle { transform: rotate(-36deg); }
+.item2 .iconCircle { transform: rotate(-72deg); }
+.item3 .iconCircle { transform: rotate(-108deg); }
+.item4 .iconCircle { transform: rotate(-144deg); }
+.item5 .iconCircle { transform: rotate(-180deg); }
+.item6 .iconCircle { transform: rotate(-216deg); }
+.item7 .iconCircle { transform: rotate(-252deg); }
+.item8 .iconCircle { transform: rotate(-288deg); }
+.item9 .iconCircle { transform: rotate(-324deg); }
+/* ip-path: polygon(0 0, 100% 0%, 80% 100%, 20% 100%); */ 
+
+.shrunkCircle {
+    width: 100%;  /* Original width when sidebar is closed */
+    height: 700px;
+    transform: translateX(0);  /* Reset to center */
+    transition: all 0.5s ease; /* Smooth transition */
+  }
+  
+  .detailsSidebar {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  }
+  
+  .showSidebar {
+    width: 40%;
+    padding: 20px;
+    transition: width 0.5s ease;
+  }
+  .detailsSidebarContent {
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute; /* To position it relative to the sidebar */
+    top: 10px; /* Space at the top */
+    right: 15px; /* Space from the right */
+    background: none; /* No background color */
+    border: none; /* Remove borders */
+    font-size: 2rem; /* Large size for "X" */
+    font-weight: bold; /* Make "X" bold */
+    color: black; /* Default color */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  .closeButton:hover {
+    color: #ff0000; /* Red color on hover */
+    transition: color 0.3s ease-in-out;
+  }
+  .closeButton {
+    z-index: 10; /* Ensure it's on top of other elements */
+  }
+  .detailsSidebar {
+    height: 100%; /* Ensure full height so the button remains visible */
+  }
+  .highlighted {
+    /* background-color:; */
+    color: white;
+  }
+  
+  .detailsSidebar {
+    width: 0;
+    background-color: white;
+    overflow: hidden;
+    padding: 0;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .showSidebar {
+    width: 40%;
+    padding: 20px;
+  }
+  
+  .benefitDetails h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .benefitDetails p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .iconCircle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+  }
+
+
+  @media (max-width: 950px) {
+    .circleContainer {
+      flex-direction: column; 
+      justify-content: center; 
+      height: auto; 
+    }
+    .circleContainer1 {
+      width: 350px;
+      height: 350px;
+    }
+    .centerCircle {
+      width: 130px;
+      height: 130px;
+      font-size: 1.1rem;
+    }
+    .detailsSidebar {
+      width: 90%;
+      margin-top: 100px; /* Add spacing between the circle and text */
+      padding: 15px;
+    }
+  }
+  
+  /* Small screens (480px and below) */
+  @media (max-width: 480px) {
+    .circleContainer {
+      display: none; /* Hide the visual (circle) */
+    }
+    .circleContainer1 {
+      flex-direction: column; /* Stack everything vertically */
+      height: auto;
+      padding: 10px;
+    }
+    .detailsSidebar {
+      width: 100%; /* Full width for mobile */
+      padding: 10px;
+    }
+    .benefitItem {
+      position: static; /* Stack items one below another */
+      width: 100%; /* Full width */
+      height: auto; /* Let the height grow naturally */
+      margin-bottom: 10px;
+    }
+    .trapezium {
+      width: 100%; /* Full width trapezium for mobile */
+      padding: 15px;
+      clip-path: none; /* Remove trapezium shape */
+      background-color: rgb(161, 55, 55);
+      border-radius: 5px;
+    }
+    .benefitDetails h3 {
+      font-size: 1.3rem;
+    }
+    .benefitDetails p {
+      font-size: 1rem;
+    }
+  }

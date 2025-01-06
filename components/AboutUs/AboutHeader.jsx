@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const AboutHeader = () => {
   return (
-    <div className={styles.aboutHeader}>
+    <div className={styles.aboutHeader} id ="about-us">
      <Image src="/AboutUs/AboutUs.jpg" alt="About Us Background" className={styles.backgroundImage} layout="fill" objectFit='cover'/>
       <div className={styles.overlay}>
         <h1>ABOUT US</h1>

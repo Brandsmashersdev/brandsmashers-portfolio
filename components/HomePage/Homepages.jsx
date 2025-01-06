@@ -33,7 +33,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className={styles.heroSection}>
+    <section className={styles.heroSection} id="home-page">
       <video autoPlay loop muted className={styles.backgroundVideo}>
         <source src="/Hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.

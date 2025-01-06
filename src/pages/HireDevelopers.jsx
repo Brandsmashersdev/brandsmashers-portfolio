@@ -19,6 +19,7 @@ import OurHiringModel from "../../components/HireDevelopers/OurHiringModel";
 
 import HiringSteps from "../../components/HireDevelopers/HiringSteps";
 import DeveloperSkills from "../../components/HireDevelopers/DeveloperSkills";
+import BenefitsCircle from "../../components/HireDevelopers/BenefitsCircle";
 const HireDevelopers = () => {
   return (
     <>
@@ -36,7 +37,8 @@ const HireDevelopers = () => {
 
       <IntroductionComp />
       <HiringSteps />
-      <VettingProcess />
+      <BenefitsCircle />
+      {/* <VettingProcess /> */}
       <DeveloperSkills />
       <SuperSourcingSolve />
       {/* <TopDev /> */}
@@ -46,7 +48,7 @@ const HireDevelopers = () => {
       <OurHiringModel />
       {/* <CaseStudies /> */}
 
-      {/* <WhyBrandsmashers /> */}
+      {/* <WhyBrandsmashers / > */}
       {/* <FeatureSection /> */}
       <FaqSection />
       <Footer />

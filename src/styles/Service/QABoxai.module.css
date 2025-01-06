@@ -4,9 +4,12 @@
     padding: 20px; /* Padding inside the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     max-width: 600px; /* Limits the width of the box */
-    margin: 20px auto; /* Centers the box horizontally */
+    margin: 20px 40px 40px 4px; /*horizontally */
     font-family: 'Arial', sans-serif; /* Font style */
     line-height: 1.6; /* Line spacing */
+    margin-top: 75px;
+    margin-left: 45px;
+    text-align: center;
   }
   
   .paragraph{

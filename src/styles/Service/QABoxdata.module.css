@@ -7,6 +7,10 @@
     margin: 20px auto; /* Centers the box horizontally */
     font-family: 'Arial', sans-serif; /* Font style */
     line-height: 1.6; /* Line spacing */
+    margin-top: 30px;
+    margin-right: 4px;
+    margin-left: 2px;
+    text-align: center;
   }
   
   .paragraph{
