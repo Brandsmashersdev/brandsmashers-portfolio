@@ -43,7 +43,7 @@ const NumbersSection = () => {
   const router = useRouter();
 
   const handleCardClick = () => {
-    router.push(`/contactus`);
+    router.push(`/contactus#contact-us`);
   };
 
   return (
