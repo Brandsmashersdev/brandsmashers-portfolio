@@ -28,9 +28,9 @@ const HeroSection = () => {
         </p>
 
         <div className={styles.buttons}>
-          <button className={styles.hireButton}>
+          {/* <button className={styles.hireButton}>
             Hire Developers <FaArrowRight className={styles.arrowIcon} />
-          </button>
+          </button> */}
 
           <Link href="/contactus" passHref>
             <button className={styles.contactButton}>Contact Us</button>
