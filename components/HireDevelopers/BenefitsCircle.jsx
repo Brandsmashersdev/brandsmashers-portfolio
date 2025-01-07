@@ -63,6 +63,7 @@ const BenefitsCircle = () => {
 
     </div>
     <div className={styles.benefitDetails}>
+      
       <h3>{benefits[selectedBenefit].label}</h3>
       <p>{benefits[selectedBenefit].description}</p>
     </div>
