@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import style from "@/styles/blog/blogdetailes.module.css";
 import img1 from "../../public/blog/img1.jpg";
+import Image from "next/image";
 
 const BlogDetailes = () => {
   const router = useRouter();
@@ -32,7 +33,7 @@ const BlogDetailes = () => {
     <div className={`${style.schedulingcontainer}`}>
       <div className={`${style.herosection}`}>
         <h1>{article.title}</h1>
-        <img
+        <Image
           src={article.image.src}
           alt={article.alt}
           className={`${style.articleimage}`}

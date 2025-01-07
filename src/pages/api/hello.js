@@ -5,15 +5,14 @@ import fs from "fs";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    console.log("===========>", req.body)
-    const { name, email, phone, help, skills, referral } = req.body;
-
+    
+    const { name, email, phone, help, skills, referral } = req.body
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 587, 
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS, 
+        user: process.env.NEXT_PUBLIC_EMAIL_USER,
+        pass: process.env.NEXT_PUBLIC_EMAIL_PASS, 
       },
     });
 

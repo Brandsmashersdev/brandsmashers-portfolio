@@ -6,9 +6,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e6e1e5;
-}
-.circleContainer1 {
+  }
+  .firstDiv{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f8fa;
+    /* overflow: hidden; */
+    margin-top: 5%;
+  }
+  
+  .circleContainer1 {
     position: relative;
     width: 600px;
     height: 600px;
@@ -16,23 +24,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease;
   }
-.redCircle {
+  
+  .redCircle {
     position: absolute;
     width: 250px;
     height: 250px;
     border: 5px solid #4ba9c8;
     border-radius: 50%;
     
-}
-
-.shrunkCircle {
-    width: 300px;
-    height: 300px;
-    transform: translateX(-100px);
-}
-
-.centerCircle {
+  }
+ 
+  .centerCircle {
     position: absolute;
     width: 200px;
     height: 200px;
@@ -47,9 +51,9 @@
     font-weight: bold;
     /* z-index: 10; */
    
-}
-
-.benefitItem {
+  }
+  
+  .benefitItem {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -57,17 +61,12 @@
     width: 200px;
     height: 220px;
     transform: translate(-50%, -50%);
-}
-
-.trapezium {
+  }
+  
+  .trapezium {
     position: relative;
     width: 150px; 
     height: 130px; 
-    /* background-color: rgb(255, 255, 255); */
-    /* border: 1px solid #000; */
-    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
-    /* clip-path: polygon(-10% 0, 105% 0%, 76% 148%, 22% 98%,-3% 10%); */
-    /* clip-path: polygon(30% 30, 105% 0%, 76% 150%, 22% 100%,-0% 5%); */
     clip-path: polygon(50% 0, 100% 0, 94% 36%, 86% 67%, 80% 90%, 50% 87%, 20% 90%, 13% 67%, 6% 35%, 0 0);
     display: flex;
     flex-direction: column;
@@ -79,70 +78,51 @@
     background-color:#4ba9c8;
     transition: background-color 0.3s ease;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-}
-
-.iconCircle {
-    width: 40px; 
-    height: 40px; 
-    border: 2px solid #000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px; 
-}
-
-.trapezium:hover {
+  }
+  
+  .trapezium:hover {
     background-color: #05edfa; /* Change this to your desired hover color */
     /* transform: scale(1.1);  */
-}
-
-
-
-.icon {
-    font-size: 1.8rem;
-}
-
-.text {
+  }
+  
+  .text {
     font-size: 0.8rem;
     font-weight: normal;
     text-align: center;
     line-height: 1;
     word-wrap: break-word;
-}
-
-/* Positioning for items in a circular layout */
-.item0 { transform: rotate(0deg) translate(0, -200px) rotate(0deg); }
-.item1 { transform: rotate(36deg) translate(0, -200px) rotate(-0deg); }
-.item2 { transform: rotate(72deg) translate(0, -200px) rotate(-0deg); }
-.item3 { transform: rotate(108deg) translate(0, -200px) rotate(-0deg); }
-.item4 { transform: rotate(144deg) translate(0, -200px) rotate(-0deg); }
-.item5 { transform: rotate(180deg) translate(0, -200px) rotate(-0deg); }
-.item6 { transform: rotate(216deg) translate(0, -200px) rotate(-0deg); }
-.item7 { transform: rotate(252deg) translate(0, -200px) rotate(-0deg); }
-.item8 { transform: rotate(288deg) translate(0, -200px) rotate(-0deg); }
-.item9 { transform: rotate(324deg) translate(0, -200px) rotate(-0deg); }
-
-
-.item0 .iconCircle { transform: rotate(0deg); }
-.item1 .iconCircle { transform: rotate(-36deg); }
-.item2 .iconCircle { transform: rotate(-72deg); }
-.item3 .iconCircle { transform: rotate(-108deg); }
-.item4 .iconCircle { transform: rotate(-144deg); }
-.item5 .iconCircle { transform: rotate(-180deg); }
-.item6 .iconCircle { transform: rotate(-216deg); }
-.item7 .iconCircle { transform: rotate(-252deg); }
-.item8 .iconCircle { transform: rotate(-288deg); }
-.item9 .iconCircle { transform: rotate(-324deg); }
-/* ip-path: polygon(0 0, 100% 0%, 80% 100%, 20% 100%); */ 
-
-.shrunkCircle {
-    width: 100%;  /* Original width when sidebar is closed */
+  }
+  
+  /* Positioning for items in a circular layout */
+  .item0 { transform: rotate(0deg) translate(0, -200px) rotate(0deg); }
+  .item1 { transform: rotate(36deg) translate(0, -200px) rotate(-0deg); }
+  .item2 { transform: rotate(72deg) translate(0, -200px) rotate(-0deg); }
+  .item3 { transform: rotate(108deg) translate(0, -200px) rotate(-0deg); }
+  .item4 { transform: rotate(144deg) translate(0, -200px) rotate(-0deg); }
+  .item5 { transform: rotate(180deg) translate(0, -200px) rotate(-0deg); }
+  .item6 { transform: rotate(216deg) translate(0, -200px) rotate(-0deg); }
+  .item7 { transform: rotate(252deg) translate(0, -200px) rotate(-0deg); }
+  .item8 { transform: rotate(288deg) translate(0, -200px) rotate(-0deg); }
+  .item9 { transform: rotate(324deg) translate(0, -200px) rotate(-0deg); }
+  
+  
+  .item0 .iconCircle { transform: rotate(0deg); }
+  .item1 .iconCircle { transform: rotate(-36deg); }
+  .item2 .iconCircle { transform: rotate(-72deg); }
+  .item3 .iconCircle { transform: rotate(-108deg); }
+  .item4 .iconCircle { transform: rotate(-144deg); }
+  .item5 .iconCircle { transform: rotate(-180deg); }
+  .item6 .iconCircle { transform: rotate(-216deg); }
+  .item7 .iconCircle { transform: rotate(-252deg); }
+  .item8 .iconCircle { transform: rotate(-288deg); }
+  .item9 .iconCircle { transform: rotate(-324deg); }
+  
+  
+  .shrunkCircle {
+    width: 100%; 
     height: 700px;
-    transform: translateX(0);  /* Reset to center */
-    transition: all 0.5s ease; /* Smooth transition */
+    transform: translateX(0);  
+    transition: all 0.5s ease; 
   }
   
   .detailsSidebar {
@@ -169,48 +149,66 @@
     border: none; /* Remove borders */
     font-size: 2rem; /* Large size for "X" */
     font-weight: bold; /* Make "X" bold */
-    color: black; /* Default color */
+    color: #4ba9c8; /* Default color */
     cursor: pointer; /* Pointer cursor */
   }
   
   .closeButton:hover {
-    color: #ff0000; /* Red color on hover */
+    color: #05edfa; 
     transition: color 0.3s ease-in-out;
   }
   .closeButton {
     z-index: 10; /* Ensure it's on top of other elements */
   }
   .detailsSidebar {
-    height: 100%; /* Ensure full height so the button remains visible */
+    height: 100%; 
   }
   .highlighted {
-    /* background-color:; */
     color: white;
   }
   
+  
   .detailsSidebar {
     width: 0;
+    min-height: 100%; /* Ensure full height */
     background-color: white;
     overflow: hidden;
     padding: 0;
-    transition: width 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
   
   .showSidebar {
     width: 40%;
-    padding: 20px;
+    padding: 40px 30px;
+    margin: 0;
+
+  }
+  
+  .detailsSidebarContent {
+    position: relative;
+    height: 100%;
+    padding-top: 0px; 
+  }
+  
+  .benefitDetails {
+    height: 100%;
+    overflow-y: auto;
   }
   
   .benefitDetails h3 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
   }
   
   .benefitDetails p {
     font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: #666;
   }
   
   .closeButton {
@@ -224,8 +222,8 @@
   }
   
   .iconCircle {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border: 2px solid white;
     border-radius: 50%;
     display: flex;
@@ -237,63 +235,122 @@
   }
   
   .icon {
-    font-size: 1.8rem;
+    font-size: 1.0rem;
   }
 
-
+  .myspan{
+    color: #5190a8;
+    background: linear-gradient(to right, var(--button-color), var(--background-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Update media queries for better responsiveness */
   @media (max-width: 950px) {
     .circleContainer {
-      flex-direction: column; 
-      justify-content: center; 
-      height: auto; 
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px;
+      gap: 20px; /* Add small gap for spacing */
+      height: auto;
+      min-height: 100%;
     }
+  
     .circleContainer1 {
-      width: 350px;
-      height: 350px;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      transform: none !important; /* Prevent unwanted transformations */
     }
-    .centerCircle {
-      width: 130px;
-      height: 130px;
-      font-size: 1.1rem;
+  
+    .shrunkCircle {
+      transform: none !important;
+      margin: 0 auto;
     }
-    .detailsSidebar {
+  
+    .showSidebar {
       width: 90%;
-      margin-top: 100px; /* Add spacing between the circle and text */
-      padding: 15px;
+      max-width: 500px;
+      margin: 20px auto 0;
+      height: auto;
+    }
+  
+    .detailsSidebar {
+      margin-top:70px;
+      height: auto;
     }
   }
   
-  /* Small screens (480px and below) */
   @media (max-width: 480px) {
     .circleContainer {
-      display: none; /* Hide the visual (circle) */
+      padding: 0px;
     }
+  
     .circleContainer1 {
-      flex-direction: column; /* Stack everything vertically */
-      height: auto;
-      padding: 10px;
+      width: 300px;
+      height: 300px;
     }
-    .detailsSidebar {
-      width: 100%; /* Full width for mobile */
-      padding: 10px;
+  
+    .redCircle {
+      width: 150px;
+      height: 150px;
     }
-    .benefitItem {
-      position: static; /* Stack items one below another */
-      width: 100%; /* Full width */
-      height: auto; /* Let the height grow naturally */
-      margin-bottom: 10px;
-    }
-    .trapezium {
-      width: 100%; /* Full width trapezium for mobile */
-      padding: 15px;
-      clip-path: none; /* Remove trapezium shape */
-      background-color: rgb(161, 55, 55);
-      border-radius: 5px;
-    }
-    .benefitDetails h3 {
-      font-size: 1.3rem;
-    }
-    .benefitDetails p {
+  
+    .centerCircle {
+      width: 120px;
+      height: 120px;
       font-size: 1rem;
     }
+  
+    .benefitItem {
+      scale: 0.6;
+    }
+  
+    .trapezium {
+      width: 120px;
+      height: 100px;
+    }
+  
+    .showSidebar {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Smooth transitions for opening/closing */
+  .shrunkCircle {
+    transition: all 0.3s ease;
+  }
+  
+  /* Reset spacing when sidebar is closed */
+  .circleContainer:not(:has(.showSidebar)) {
+    gap: 0;
+    justify-content: center;
+  }
+  
+  /* Ensure content stays centered when sidebar is closed */
+  .circleContainer1:not(.shrunkCircle) {
+    margin: 0 auto;
+  }
+  
+  /* Fix height and overflow issues */
+  .benefitDetails {
+    padding: 20px 0;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; 
+    margin-top: 20px;
   }

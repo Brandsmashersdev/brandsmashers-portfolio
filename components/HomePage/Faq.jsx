@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import style from "../../src/styles/Hero/Faq.module.css";
+import { Link } from "lucide-react";
 
 const Faq = () => {
   const FAQData = [
@@ -62,7 +63,7 @@ const Faq = () => {
           <h2>Frequently Asked Questions</h2>
           <div className={style.faqContact}>
             <p>Still have questions?</p>
-            <a href="#" className={style.faqLink}>
+            <Link href="/contactus#contact-us" className={style.faqLink}>
               Let&apos;s talk
               <svg
                 viewBox="0 0 24 24"
@@ -73,7 +74,7 @@ const Faq = () => {
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 

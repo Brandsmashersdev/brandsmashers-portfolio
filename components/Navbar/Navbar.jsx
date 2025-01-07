@@ -90,7 +90,7 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navButtons}>
-          <Link href="/contactus">
+          <Link href="/contactus#contactus">
             <button className={styles.animatedButton}>Contact Us</button>
           </Link>
         </div>
@@ -98,7 +98,9 @@ const Navbar = () => {
 
       <div className={`${styles.sidebarMenu} ${isOpen ? styles.showMenu : ""}`}>
         <div className={styles.animatedButtons}>
+          <Link href="/contactus#contact-us">
           <AnimatedButton className={styles.animatedButtonss} />
+          </Link>
         </div>
 
         {NAVLINKS.map(({ path, label }) => (
