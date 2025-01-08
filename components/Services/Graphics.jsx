@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "../../src/styles/Service/Graphics.module.css";
+import styles from "../../src/styles/Service/Ai-Ml.module.css";
 import machineLearning from "../../public/Service/machinLearning.png";
 import blockchain from "../../public/Service/blockchain.png";
 import ai from "../../public/Service/ai.png";
 import iot from "../../public/Service/iot.png";
 // import webdev from '../../public/Service/webdev.png';
 // import graphics from '../../public/Service/graphycs.png';
-import QABox from "./QABoxw";
+// import QABox from "./QABoxw";
 import QABoxg from "./QABoxg";
 
 const WebDesign = () => {

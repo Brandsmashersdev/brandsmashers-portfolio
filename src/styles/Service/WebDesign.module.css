@@ -62,8 +62,8 @@
 
 .headerContent h4 {
   font-size: 1.2rem;
-  margin-bottom: 5px;
-  margin-top: 19px;
+  margin-bottom: 8px;
+  margin-top: 35px;
   line-height: 1.5;
 }
 
@@ -157,14 +157,14 @@
 }
 
 /* Media Query for Tablets and Smaller Screens */
-@media (min-width:319px) and (max-width: 800px) {
+@media (min-width:319px) and (max-width: 800px) {     
    .container {
     font-family: "Arial", sans-serif;
     color: #333;
     padding: 10px; /* Apply equal padding on all sides for mobile */
     box-sizing: border-box;
-    margin-left: -18px;
-    margin-right: 131px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   /* Header Section */
@@ -206,9 +206,12 @@
   }
 
   .headerContent p {
-    font-size: 1rem;
-    line-height: 1.5;
+    /* font-size: 1rem;
+    line-height: 1.5; */
     margin-bottom: 0px;
+    height: 300px !important;
+    overflow-y: auto;
+    text-align: justify;
   }
 
   /* Technology Icons */

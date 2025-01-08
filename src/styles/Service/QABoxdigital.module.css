@@ -1,24 +1,51 @@
 .qaContainer {
-    background-color: white; /* White background similar to the card */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    max-width: 600px; /* Limits the width of the box */
-    margin: 20px auto; /* Centers the box horizontally */
-    font-family: 'Arial', sans-serif; /* Font style */
-    line-height: 1.6; /* Line spacing */
-    margin-top: 75px;
-    margin-left: 45px;
-    text-align: center;
+  background-color: white; /* White background similar to the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 600px; /* Limits the width of the box */
+  margin: 20px auto; /* Centers the box horizontally */
+  font-family: 'Arial', sans-serif; /* Font style */
+  line-height: 1.6; /* Line spacing */
+  margin-top: 40px; /* Adjusted top margin for better mobile appearance */
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 20px; /* Text size */
+  color: #333; /* Text color */
+  padding: 10px;
+}
+
+.strong {
+  color: #0A74DA; /* A slight blue for the highlighted text */
+}
+
+/* Mobile-first styles */
+
+/* For tablets and medium devices */
+@media (min-width: 600px) {
+  .qaContainer {
+      padding: 25px;
+      margin-top: 60px;
   }
-  
-  .paragraph{
-    font-size: 16px; /* Text size */
-    color: #333; /* Text color */
-    padding: 10px;
+
+  .paragraph {
+      font-size: 18px; /* Slightly larger font for tablets */
   }
-  
-  .strong{
-    color: #0A74DA; /* A slight blue for the highlighted text */
+}
+
+/* For larger screens (desktops and laptops) */
+@media (min-width: 1024px) {
+  .qaContainer {
+      max-width: 800px; /* Wider box for larger screens */
+      padding: 40px;
+      margin-top: 80px;
+      margin-left: 45px;
   }
-  
+
+  .paragraph {
+      font-size: 20px; /* Larger font for better readability */
+  }
+}
+

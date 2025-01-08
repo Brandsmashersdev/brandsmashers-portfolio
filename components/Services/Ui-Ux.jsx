@@ -5,8 +5,8 @@ import android from "../../public/Service/android.png";
 import hybrid from "../../public/Service/hybrid.png";
 import crossp from "../../public/Service/crossplateform.png";
 
-import styles from "../../src/styles/Service/Ui-Ux.module.css";
-import QABoxui from "./QABoxui";
+import styles from "../../src/styles/Service/DataDive.module.css";
+import QABoxui from "./QABoxm";
 // import mobileApp from '../../public/Service/mobileApp.png';
 // import Uiux from '../../public/Service/uiux.png';
 
@@ -29,7 +29,7 @@ const UiUXDesign = () => {
         {/* right section */}
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
-            <h1>UI/UX </h1>
+            <h2>UI/UX </h2>
             <h4>Design intuitive interfaces that boost user satisfaction</h4>
             <p className={styles.description}>
             Craft stunning interfaces that enhance user satisfaction and drive success with Brandsmashers! As a leading provider of the Best UI/UX Design Services in Bhopal, we create visually appealing, intuitive, and functional interfaces. By closely collaborating with you, we identify target groups and behaviors, ensuring every touchpoint delivers exceptional usability. From rough concepts to detailed designs, we craft impactful digital interfaces that boost engagement, attract customers, and foster brand growth. Trust Brandsmashers to transform your ideas into designs that resonate with users and elevate your brand.

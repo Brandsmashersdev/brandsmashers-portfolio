@@ -1,25 +1,174 @@
+/* MobileApp.module.css */
+
+/* Main container for the MobileApp section */
 .qaContainer {
-    background-color: white; /* White background similar to the card */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    max-width: 600px; /* Limits the width of the box */
-    margin: 20px 40px 40px 4px; /* Centers the box horizontally */
-    font-family: 'Arial', sans-serif; /* Font style */
-    line-height: 1.6; /* Line spacing */
-    margin-top: 462px;
-    margin-left: 85px;
-    margin-right: -70px;
+  background-color: white; 
+  border-radius: 8px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 600px; 
+  margin: 20px auto; 
+  font-family: 'Arial', sans-serif; 
+  line-height: 1.6; 
+  margin-top: 40px; 
+  text-align: center;
+  width: 100%;
+  margin-right: 200px ;
+  margin-left: 30px;
+}
+
+.paragraph {
+  font-size: 20px; 
+  color: #333; 
+  padding: 10px;
+}
+
+.strong {
+  color: #0A74DA; 
+}
+
+/* Keyframes for slider */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile and Tablet Screens */
+/* Small screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .headerSection {
+    flex-direction: column; /* Stack content vertically */
+    margin: 0; /* Remove large margin for mobile */
+    padding: 10px;
+  }
+
+  .leftSection, .rightSection {
+    width: 100%; /* Full width for mobile */
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 1.8rem; /* Smaller heading for small screens */
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .techIcons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .techItem {
+    margin: 10px 30px;
+  }
+
+  .techItem img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .techItem p {
+    font-size: 0.9rem;
+  }
+
+  .backgroundVideo {
+    height: 300px;
+  }
+
+  .qabox {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+/* Medium screens (max-width: 900px) */
+@media (max-width: 900px) {
+  .headerSection {
+    flex-direction: column; /* Stack content vertically */
+    padding: 15px;
+  }
+
+  .leftSection, .rightSection {
+    width: 100%; /* Full width for tablets */
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+  }
+
+  .techItem img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .backgroundVideo {
+    height: 350px;
+  }
+  .qaContainer {
+    background-color: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 20px auto; 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    margin-top: 40px; 
     text-align: center;
+    width: 100%;
+    /* margin-right: 200px ; */
   }
   
-  .paragraph{
-    font-size: 16px; /* Text size */
-    color: #333; /* Text color */
+  .paragraph {
+    font-size: 20px; 
+    color: #333; 
     padding: 10px;
   }
   
-  .strong{
-    color: #0A74DA; /* A slight blue for the highlighted text */
+  .strong {
+    color: #0A74DA; 
+  }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .qaContainer {
+    background-color: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 20px auto; 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    margin-top: 40px; 
+    text-align: center;
+    width: 100%;
+    /* margin-right: 200px ; */
   }
   
+  .paragraph {
+    font-size: 20px; 
+    color: #333; 
+    padding: 10px;
+  }
+  
+  .strong {
+    color: #0A74DA; 
+  }
+}  
+
+
+
+

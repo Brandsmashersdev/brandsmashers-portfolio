@@ -1,5 +1,5 @@
 
-import styles from '../../src/styles/Service/QABoxbrowser.module.css';
+import styles from '../../src/styles/Service/QABoxui.module.css';
 
 const QABoxbrowser = () => {
   return (

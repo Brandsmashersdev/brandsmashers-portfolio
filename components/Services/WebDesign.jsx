@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../src/styles/Service/WebDesign.module.css";
+import styles from "../../src/styles/Service/Ai-Ml.module.css";
 
 import ai from "../../public/Service/ai.png";
 import webl from "../../public/Service/webl.png";
@@ -9,7 +9,7 @@ import sd from "../../public/Service/sd.png";
 import dataS from "../../public/Service/dataS.png";
 
 import QABox from "./QABoxw";
-import QABoxw from "./QABoxw";
+import QABoxw from "./QABoxm";
 
 const WebDesign = () => {
   return (

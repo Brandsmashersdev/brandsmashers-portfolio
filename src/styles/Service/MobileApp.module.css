@@ -33,8 +33,8 @@
 .heading {
   font-size: 2.5rem !important;
   color: #0f0b87 !important;
-  margin-bottom: 10px;
-  margin-top: 60px;
+  margin-bottom: 185px;
+  margin-top: 9px;
 }
 .description {
   height: 300px;
@@ -46,8 +46,8 @@
 
 .headerContent h4 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  margin-top: 19px;
+  margin-bottom: 15px;
+  margin-top: -139px;
   line-height: 1.5;
 }
 
@@ -118,7 +118,7 @@
 }
 
 /* Media Query for Mobile Devices */
-@media (min-width: 319px) and (max-width:798px) {
+@media (max-width: 600px) {
   .headerSection {
     flex-direction: column; /* Stack content vertically */
     margin: 0; /* Remove the large margin for mobile */
@@ -159,24 +159,23 @@
   }
 
   .techItem {
-    margin: 10px 30px; /* Space out tech items vertically */
+    margin: 10px 30px; 
   }
 
   .techItem img {
-    width: 40px; /* Adjust icon size for mobile */
+    width: 40px; 
     height: 40px;
   }
 
   .techItem p {
-    font-size: 0.9rem; /* Adjust font size for mobile */
+    font-size: 0.9rem; 
   }
 
-  /* Image Styling for Mobile */
   .img {
     width: 320px;
     height: 200px;
     border-radius: 10px;
-    margin: 20px 0; /* Add margin for spacing */
+    margin: 20px 0; 
   }
   .qabox {
     margin-top: 0px;
@@ -185,3 +184,39 @@
     margin-right: 0px;
   }
 }
+@media (max-width: 900px) {
+  .headerSection {
+       
+      margin: 0   ;
+  }
+  .rightSection,
+.leftSection {
+  width: 100%;
+}
+  .headerContent{
+    max-width: 100%;
+  }
+  .headerContent p{
+    height: auto !important;
+  }
+  .backgroundVideo{
+    width: 100% ;
+  }
+  .qacontainer{
+    background-color: white;
+    border-radius: 8px;
+    padding: 17px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin-top: 200px;
+    width: 107%;
+    /* margin-left: 28px; */
+    /* margin-right: -4px; */
+}
+  }
+  
+
+ 
