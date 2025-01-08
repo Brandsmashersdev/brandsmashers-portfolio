@@ -4,7 +4,8 @@ import ios from "../../public/Service/ios.png";
 import android from "../../public/Service/android.png";
 import hybrid from "../../public/Service/hybrid.png";
 import crossp from "../../public/Service/crossplateform.png";
-import styles from "../../src/styles/Service/MobileApp.module.css";
+// import styles from "../../src/styles/Service/MobileApp.module.css";    
+import styles from "../../src/styles/Service/DataDive.module.css"
 // import mobileApp from '../../public/Service/mobileApp.png';
 import QABoxm from "./QABoxm";
 

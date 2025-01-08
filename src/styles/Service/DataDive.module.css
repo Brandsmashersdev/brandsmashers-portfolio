@@ -26,13 +26,14 @@
 
 /* Left Section */
 .headerContent {
-  max-width: 600px;
+  max-width: auto;
+  padding: 0;
 }
 
 .headerContent h2 {
   font-size: 2.5rem;
   color: #0f0b87;
-  margin-bottom: 187px;
+  /* margin-bottom: 187px; */
   margin-top: 40px;
 }
 
@@ -92,6 +93,21 @@
   margin-right: 200px;
 
 }
+.qaContainer {
+  background-color: white; /* White background similar to the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 30px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 99%; /* Limits the width of the box */
+  margin: auto; /* Centers the box horizontally */
+  font-family: 'Arial', sans-serif; /* Font style */
+  line-height: 1.6; /* Line spacing */
+  margin-top: 55px;
+  /* margin-right: 47px; */
+  margin-left: 49px; 
+  text-align: center;
+  width: 99%;
+}
 
 /* Keyframes for slider */
 @keyframes scroll {
@@ -102,9 +118,15 @@
     transform: translateX(-50%);
   }
 }
+.backgroundVideo{
+  width: 88%;
+  height: 537px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 /* Media Query for Mobile Devices */
-@media (min-width: 319px) and (max-width:798px)  {
+@media (max-width: 1120px)  {
   .headerSection {
     flex-direction: column; /* Stack content vertically */
     margin: 0; /* Remove the large margin for mobile */
@@ -112,12 +134,16 @@
   }
 
   .rightSection, .leftSection {
-    width: 100%; /* Full width for mobile */
+    width: 100%; 
     padding: 10px 0; /* Adjust padding for mobile */
     display: block; /* Ensure sections are block elements */
   }
 
   .leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     order: 2; /* Ensure the image section comes after the text */
   }
 
@@ -171,5 +197,40 @@
     margin-right: 0px;
   
   }
-}
+  /* .headerContent {
+    max-width: auto; */
+  }
+
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column-reverse; 
+  }
+  .leftSection{
+    width: 100%;
+  }
+  .headerContent{
+    max-width: 100%;
+  }
+  .headerContent p{
+    height: auto !important;
+  }
+  .backgroundVideo{
+    width: 100%;
+  }
+  .qaContainer {
+    background-color: white; /* White background similar to the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 99%; /* Limits the width of the box */
+    margin: auto; /* Centers the box horizontally */
+    font-family: 'Arial', sans-serif; /* Font style */
+    line-height: 1.6; /* Line spacing */
+    margin-top: 55px;
+    /* margin-right: 47px; */
+    /* margin-left: 1px; */
+    text-align: center;
+  }
+  }
+
 

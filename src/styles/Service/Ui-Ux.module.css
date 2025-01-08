@@ -34,13 +34,13 @@
   font-size: 2.5rem;
   color: #0f0b87;
   margin-bottom: 10px;
-  margin-top: 65px;
+  margin-top: 5px;
 }
 
 .headerContent h4 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-top: 19px;
+  margin-bottom: 15px;
+  margin-top: 22px;
   line-height: 1.5;
 }
 .headerContent p {
@@ -184,3 +184,35 @@
     margin-right: 0px;
   }
 }
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column-reverse; 
+  }
+  .leftSection{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .headerContent{
+    max-width: 100%;
+  }
+  .headerContent p{
+    height: auto !important;
+  }
+  .backgroundVideo{
+    width: 100%;
+  }
+  .qaContainer {
+    background-color: white; /* White background similar to the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 99%; /* Limits the width of the box */
+    margin: auto; /* Centers the box horizontally */
+    font-family: 'Arial', sans-serif; /* Font style */
+    line-height: 1.6; /* Line spacing */
+    margin-top: 55px;
+    /* margin-right: 47px; */
+    /* margin-left: 1px; */
+    text-align: center;
+  }
+  }

@@ -4,8 +4,8 @@ import ios from "../../public/Service/ios.png";
 import android from "../../public/Service/android.png";
 import hybrid from "../../public/Service/hybrid.png";
 import crossp from "../../public/Service/crossplateform.png";
-import styles from "../../src/styles/Service/Browser.module.css";
-import QABoxbrowser from "./QABoxbrowser";
+import styles from "../../src/styles/Service/DataDive.module.css";
+import QABoxbrowser from "./QABoxm";
 
 const Browser = () => {
   return (
@@ -26,7 +26,7 @@ const Browser = () => {
         {/* right section */}
         <div className={styles.rightSection}>
           <div className={styles.headerContent}>
-            <h2>Beyond the Browser</h2>
+            <h2 className={styles.heading}>Beyond the Browser</h2>
             <h4>Innovate with Applications and Technologies That Stand Out!</h4>
             <p>
               At Brandsmashers our focus is shifted from simple website

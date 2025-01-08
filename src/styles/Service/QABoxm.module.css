@@ -1,19 +1,22 @@
 .qaContainer {
     background-color: white; /* White background similar to the card */
     border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
+    padding: 17px; /* Padding inside the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     max-width: 600px; /* Limits the width of the box */
     margin: 20px auto; /* Centers the box horizontally */
     font-family: 'Arial', sans-serif; /* Font style */
     line-height: 1.6; /* Line spacing */
     margin-top: 56px;
-    margin-right: 65px;
+    /* margin-right: 196px; */
     text-align: center;
+    margin-left: 90px;
+    /* margin-left: 5px; */
+    /* margin-right: 37px; */
   }
   
   .paragraph{
-    font-size: 16px; /* Text size */
+    font-size: 20px; /* Text size */
     color: #333; /* Text color */
     padding: 10px;
   }
@@ -21,4 +24,29 @@
   .strong{
     color: #0A74DA; /* A slight blue for the highlighted text */
   }
-  
+/* Tablet and medium devices */
+@media (max-width: 600px) {
+  .qaContainer {
+      padding: 25px;
+      margin-top: 60px;
+  }
+
+  .paragraph {
+      font-size: 18px; /* Slightly larger font for tablets */
+  }
+}
+
+/* Larger screens (desktops and laptops) */
+@media (max-width: 900px) {
+  .qaContainer {
+      max-width: 800px; /* Wider box for larger screens */
+      padding: 40px;
+      margin-top: 80px;
+      margin-right: 50px;
+  }
+
+  .paragraph {
+      font-size: 20px; /* Larger font for better readability */
+  }
+}
+
