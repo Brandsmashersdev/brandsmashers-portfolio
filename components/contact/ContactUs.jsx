@@ -73,8 +73,8 @@ const ContactUs = () => {
             Work With Only The <br />Top Pre-vetted{" "}
             <span className={styles.highlight}>Tech Talent</span>
           </h2>
-          <h4 className={styles.paragraph}>Top talent is just a click away</h4>
-          <button className={styles.bookButton}>Book a Call Now</button>
+          {/* <h4 className={styles.paragraph}>Top talent is just a click away</h4> */}
+          {/* <button className={styles.bookButton}>Book a Call Now</button> */}
         </div>
 
         <div className={styles.companies}>

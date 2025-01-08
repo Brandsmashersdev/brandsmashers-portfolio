@@ -1,423 +1,371 @@
+/* Layout Containers */
+.firstDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f8fa;
+  margin-top: 5%;
+}
+
 .circleContainer {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circleContainer1 {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+/* Circle Components */
+.redCircle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #4ba9c8;
+  border-radius: 50%;
+}
+
+.centerCircle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Benefit Items */
+.benefitItem {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 220px;
+  transform: translate(-50%, -50%);
+}
+
+.trapezium {
+  position: relative;
+  width: 150px;
+  height: 130px;
+  clip-path: polygon(50% 0, 100% 0, 94% 36%, 86% 67%, 80% 90%, 50% 87%, 20% 90%, 13% 67%, 6% 35%, 0 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  border-bottom-right-radius: 95px;
+  border-bottom-left-radius: 95px;
+  background-color: #4ba9c8;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.trapezium:hover {
+  background-color: #05edfa;
+}
+
+/* Icon Styles */
+.iconCircle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 1.0rem;
+}
+
+/* Text Styles */
+.text {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+  word-wrap: break-word;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.myspan {
+  color: #5190a8;
+  background: linear-gradient(to right, var(--button-color), var(--background-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Circular Layout Positioning */
+.item0 { transform: rotate(0deg) translate(0, -200px) rotate(0deg); }
+.item1 { transform: rotate(36deg) translate(0, -200px) rotate(-0deg); }
+.item2 { transform: rotate(72deg) translate(0, -200px) rotate(-0deg); }
+.item3 { transform: rotate(108deg) translate(0, -200px) rotate(-0deg); }
+.item4 { transform: rotate(144deg) translate(0, -200px) rotate(-0deg); }
+.item5 { transform: rotate(180deg) translate(0, -200px) rotate(-0deg); }
+.item6 { transform: rotate(216deg) translate(0, -200px) rotate(-0deg); }
+.item7 { transform: rotate(252deg) translate(0, -200px) rotate(-0deg); }
+.item8 { transform: rotate(288deg) translate(0, -200px) rotate(-0deg); }
+.item9 { transform: rotate(324deg) translate(0, -200px) rotate(-0deg); }
+
+/* Icon Circle Rotations */
+.item0 .iconCircle { transform: rotate(0deg); }
+.item1 .iconCircle { transform: rotate(-36deg); }
+.item2 .iconCircle { transform: rotate(-72deg); }
+.item3 .iconCircle { transform: rotate(-108deg); }
+.item4 .iconCircle { transform: rotate(-144deg); }
+.item5 .iconCircle { transform: rotate(-180deg); }
+.item6 .iconCircle { transform: rotate(-216deg); }
+.item7 .iconCircle { transform: rotate(-252deg); }
+.item8 .iconCircle { transform: rotate(-288deg); }
+.item9 .iconCircle { transform: rotate(-324deg); }
+
+/* Benefit Labels */
+.benefitLabel {
+  position: absolute;
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+  width: 120px;
+  transform: translate(-50%, -50%);
+  color: #333;
+}
+
+/* Benefit Label Positions */
+.item0 .benefitLabel { top: 0px; left: 50%; }
+.item1 .benefitLabel { top: -30px; left: 50%; }
+.item2 .benefitLabel { top: 0px; left: 50%; }
+.item3 .benefitLabel { top: 0px; left: 55%; }
+.item4 .benefitLabel { margin-bottom: 200px; left: 20%; transform: rotate(180deg); }
+.item5 .benefitLabel { margin-bottom: 220px; left: 20%; transform: rotate(180deg); }
+.item6 .benefitLabel { margin-bottom: 230px; left: 20%; transform: rotate(180deg); }
+.item7 .benefitLabel { top: 0px; left: 50%; }
+.item8 .benefitLabel { top: 0px; left: 50%; }
+.item9 .benefitLabel { top: 0px; left: 50%; }
+
+/* Sidebar Styles */
+.detailsSidebar {
+  width: 0;
+  height: 100%;
+  min-height: 100%;
+  background-color: white;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.showSidebar {
+  width: 40%;
+  padding: 40px 30px;
+  margin: 0;
+}
+
+.detailsSidebarContent {
+  position: relative;
+  height: 100%;
+  padding-top: 0px;
+}
+
+/* Benefit Details */
+.benefitDetails {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.benefitDetails h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.benefitDetails p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px;
+  color: #4ba9c8;
+}
+
+.closeButton:hover {
+  color: #05edfa;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Utility Classes */
+.highlighted {
+  color: white;
+}
+
+.shrunkCircle {
+  width: 100%;
+  height: 700px;
+  transform: translateX(0);
+  transition: all 0.6s ease;
+}
+
+/* Reset Classes */
+.circleContainer:not(:has(.showSidebar)) {
+  gap: 0;
+  justify-content: center;
+}
+
+.circleContainer1:not(.shrunkCircle) {
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-width: 950px) {
+  .circleContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 135px;
+    gap: 20px;
+    height: auto;
+    min-height: 100%;
   }
-  .firstDiv{
-    /* position: relative; */
-    width: 100%;
-    height: 100vh;
-    background-color: #f4f8fa;
-    /* overflow: hidden; */
-    margin-top: 5%;
-  }
-  
+
   .circleContainer1 {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;
-  }
-  
-  .redCircle {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border: 5px solid #4ba9c8;
-    border-radius: 50%;
-   
-    
-  }
- 
-  .centerCircle {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* z-index: 10; */
-   
-  }
-  
-  .benefitItem {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 220px;
-    transform: translate(-50%, -50%);
-  }
-  
-  .trapezium {
-    position: relative;
-    width: 150px; 
-    height: 130px; 
-    clip-path: polygon(50% 0, 100% 0, 94% 36%, 86% 67%, 80% 90%, 50% 87%, 20% 90%, 13% 67%, 6% 35%, 0 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    border-radius: 60px; 
-    border-bottom-right-radius: 95px;
-    border-bottom-left-radius: 95px;
-    background-color:#4ba9c8;
-    transition: background-color 0.3s ease;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-  }
-  
-  .trapezium:hover {
-    background-color: #05edfa; /* Change this to your desired hover color */
-    /* transform: scale(1.1);  */
-  }
-  
-  .text {
-    font-size: 0.8rem;
-    font-weight: normal;
-    text-align: center;
-    line-height: 1;
-    word-wrap: break-word;
-  }
-  
-  /* Positioning for items in a circular layout */
-  .item0 { transform: rotate(0deg) translate(0, -200px) rotate(0deg); }
-  .item1 { transform: rotate(36deg) translate(0, -200px) rotate(-0deg); }
-  .item2 { transform: rotate(72deg) translate(0, -200px) rotate(-0deg); }
-  .item3 { transform: rotate(108deg) translate(0, -200px) rotate(-0deg); }
-  .item4 { transform: rotate(144deg) translate(0, -200px) rotate(-0deg); }
-  .item5 { transform: rotate(180deg) translate(0, -200px) rotate(-0deg); }
-  .item6 { transform: rotate(216deg) translate(0, -200px) rotate(-0deg); }
-  .item7 { transform: rotate(252deg) translate(0, -200px) rotate(-0deg); }
-  .item8 { transform: rotate(288deg) translate(0, -200px) rotate(-0deg); }
-  .item9 { transform: rotate(324deg) translate(0, -200px) rotate(-0deg); }
-  
-  
-  .item0 .iconCircle { transform: rotate(0deg); }
-  .item1 .iconCircle { transform: rotate(-36deg); }
-  .item2 .iconCircle { transform: rotate(-72deg); }
-  .item3 .iconCircle { transform: rotate(-108deg); }
-  .item4 .iconCircle { transform: rotate(-144deg); }
-  .item5 .iconCircle { transform: rotate(-180deg); }
-  .item6 .iconCircle { transform: rotate(-216deg); }
-  .item7 .iconCircle { transform: rotate(-252deg); }
-  .item8 .iconCircle { transform: rotate(-288deg); }
-  .item9 .iconCircle { transform: rotate(-324deg); }
-  
-  
-  .shrunkCircle {
-    width: 100%; 
-    height: 700px;
-    transform: translateX(0);  
-    transition: all 0.5s ease; 
-  }
-  
-  .detailsSidebar {
-    width: 0;
-    padding: 0;
-    overflow: hidden;
-    transition: width 0.5s ease;
-  }
-  
-  .showSidebar {
-    width: 40%;
-    padding: 20px;
-    transition: width 0.5s ease;
-  }
-  .detailsSidebarContent {
-    position: relative;
-  }
-  
-  .closeButton {
-    position: absolute; /* To position it relative to the sidebar */
-    top: 10px; /* Space at the top */
-    right: 15px; /* Space from the right */
-    background: none; /* No background color */
-    border: none; /* Remove borders */
-    font-size: 2rem; /* Large size for "X" */
-    font-weight: bold; /* Make "X" bold */
-    color: #4ba9c8; /* Default color */
-    cursor: pointer; /* Pointer cursor */
-  }
-  
-  .closeButton:hover {
-    color: #05edfa; 
-    transition: color 0.3s ease-in-out;
-  }
-  .closeButton {
-    z-index: 10; 
-  }
-  .detailsSidebar {
-    height: 100%; 
-  }
-  .highlighted {
-    color: white;
-  }
-  
-  
-  .detailsSidebar {
-    width: 0;
-    min-height: 100%; 
-    background-color: white;
-    overflow: hidden;
-    padding: 0;
-    transition: all 0.3s ease;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .showSidebar {
-    width: 40%;
-    padding: 40px 30px;
-    margin: 0;
-
-  }
-  
-  .detailsSidebarContent {
-    position: relative;
-    height: 100%;
-    padding-top: 0px; 
-  }
-  
-  .benefitDetails {
-    height: 100%;
-    overflow-y: auto;
-  }
-  
-  .benefitDetails h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .benefitDetails p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  
-  .iconCircle {
-    width: 60px;
-    height: 60px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-  }
-  
-  .icon {
-    font-size: 1.0rem;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    transform: none !important;
   }
 
-  .myspan{
-    color: #5190a8;
-    background: linear-gradient(to right, var(--button-color), var(--background-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  /* Update media queries for better responsiveness */
-  @media (max-width: 950px) {
-    .circleContainer {
-      flex-direction: column;
-      justify-content: center;
-      padding: 135px;
-      gap: 20px; 
-      height: auto;
-      min-height: 100%;
-    }
-  
-    .circleContainer1 {
-      width: 400px;
-      height: 400px;
-      margin: 0 auto;
-      transform: none !important; 
-    }
-  
-    .shrunkCircle {
-      transform: none !important;
-      margin: 0 auto;
-    }
-  
-    .showSidebar {
-      width: 90%;
-      max-width: 500px;
-      margin: 20px auto 0;
-      height: auto;
-    }
-  
-    .detailsSidebar {
-      margin-top:140px;
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .circleContainer {
-      padding: 30px;
-    }
-  
-    .circleContainer1 {
-      width: 300px;
-      height: 300px;
-    }
-  
-    .redCircle {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .centerCircle {
-      width: 120px;
-      height: 120px;
-      font-size: 1rem;
-    }
-  
-    .benefitItem {
-      scale: 0.6;
-    }
-  
-    .trapezium {
-      width: 120px;
-      height: 100px;
-    }
-  
-    .showSidebar {
-      width: 100%;
-      margin-top: 40px;
-    }
-  }
-  
   .shrunkCircle {
-    transition: all 0.3s ease;
-  }
-  
- 
-  .circleContainer:not(:has(.showSidebar)) {
-    gap: 0;
-    justify-content: center;
-  }
-  
-  
-  .circleContainer1:not(.shrunkCircle) {
+    transform: none !important;
     margin: 0 auto;
   }
-  
 
-  .benefitDetails {
-    padding: 20px 0;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
-    padding: 5px;
-    cursor: pointer;
-  }
-  .heading {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px; 
-    margin-top: 20px;
+  .showSidebar {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto 0;
+    height: auto;
   }
 
+  .detailsSidebar {
+    margin-top: 140px;
+    height: auto;
+  }
+}
 
-  .benefitLabel {
-    position: absolute;
-    font-size: 1.0rem;
-    /* font-weight: 500; */
-    font-weight: bold;
-    text-align: center;
-    width: 120px; 
-    transform: translate(-50%, -50%);
-    color: #333;
+@media (max-width: 480px) {
+  .circleContainer {
+    padding: 30px;
+    margin-bottom: 30px;
   }
-  
-  .item0 .benefitLabel {
-    top: 0px; 
-    left: 50%;
+
+  .circleContainer1 {
+    width: 300px;
+    height: 300px;
   }
-  
-  .item1 .benefitLabel {
-    top: -30px;
-    left: 50%;
+
+  .redCircle {
+    width: 150px;
+    height: 150px;
   }
-  
-  .item2 .benefitLabel {
-    top: 0px;
-    left: 50%;
+
+  .centerCircle {
+    width: 120px;
+    height: 120px;
+    font-size: 1rem;
   }
-  
-  .item3 .benefitLabel {
-    top: 0px;
-    left: 55%;
+
+  .benefitItem {
+    scale: 0.6;
   }
-  
-  .item4 .benefitLabel {
-    margin-bottom: 200px;
-    left:20%;
-    transform: rotate(180deg);
+
+  .trapezium {
+    width: 120px;
+    height: 100px;
   }
-  
-  .item5 .benefitLabel {
-    margin-bottom: 220px;
-    left: 20%;
-    transform: rotate(180deg);
+
+  .showSidebar {
+    width: 100%;
+    margin-top: 40px;
   }
-  
-  .item6 .benefitLabel {
-    /* top: 0px; */
-    margin-bottom: 230px;
-    left: 20%;
-    transform: rotate(180deg);
+}
+
+@media (max-width: 300px) {
+  .circleContainer {
+    padding: 30px;
+    margin-bottom: 30px;
   }
-  
-  .item7 .benefitLabel {
-    top: 0px;
-    left: 50%;
+
+  .circleContainer1 {
+    width: 200px;
+    height: 200px;
   }
-  
-  .item8 .benefitLabel {
-    top: 0px;
-    left: 50%;
+
+  .redCircle {
+    width: 100px;
+    height: 100px;
   }
-  
-  .item9 .benefitLabel {
-    top: 0px;
-    left: 50%;
+
+  .centerCircle {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
   }
-  
+
+  .benefitItem {
+    scale: 0.6;
+  }
+
+  .trapezium {
+    width: 100px;
+    height: 80px;
+  }
+
+  .showSidebar {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
