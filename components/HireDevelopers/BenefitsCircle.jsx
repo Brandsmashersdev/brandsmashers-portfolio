@@ -121,14 +121,16 @@ const BenefitsCircle = () => {
                 <div className={styles.iconCircle}>
                   {/* <span className={styles.icon}>{benefit.icon}</span> */}
                   <Image
-                    src={`/${benefit.icon}`} 
+                    src={`/${benefit.icon}`}
                     alt={benefit.label}
-                    width={50} 
-                    height={50} 
+                    width={50}
+                    height={50}
                     className={styles.icon}
                   />
                 </div>
               </div>
+              <spa className={styles.benefitLabel}>{benefit.label}</spa> {/* Add this */}
+
             </div>
           ))}
         </div>
