@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../src/styles/HireDevelopers/BenefitsCircle.module.css";
-import { Moda } from "@mui/material";
+// import { Moda } from "@mui/material";
 import Image from "next/image";
 const BenefitsCircle = () => {
   const benefits = [
@@ -91,12 +91,12 @@ const BenefitsCircle = () => {
 
   return (
     <div
-      style={{ height: "100%", overflow: "auto" }}
+      style={{ height: "100%", overflow: "hidden" }}
       className={styles.firstDiv}
     >
       <h1 className={styles.heading}>
         {" "}
-        <span className={styles.myspan}>Brandsmashers</span>Vetting Process
+        <span className={styles.myspan}>Brandsmashers</span> Vetting Process
       </h1>
       <div className={styles.circleContainer}>
         <div
