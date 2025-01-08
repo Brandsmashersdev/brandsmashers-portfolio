@@ -33,6 +33,7 @@
     height: 250px;
     border: 5px solid #4ba9c8;
     border-radius: 50%;
+   
     
   }
  
@@ -158,7 +159,7 @@
     transition: color 0.3s ease-in-out;
   }
   .closeButton {
-    z-index: 10; /* Ensure it's on top of other elements */
+    z-index: 10; 
   }
   .detailsSidebar {
     height: 100%; 
@@ -170,7 +171,7 @@
   
   .detailsSidebar {
     width: 0;
-    min-height: 100%; /* Ensure full height */
+    min-height: 100%; 
     background-color: white;
     overflow: hidden;
     padding: 0;
@@ -250,8 +251,8 @@
     .circleContainer {
       flex-direction: column;
       justify-content: center;
-      padding: 70px;
-      gap: 20px; /* Add small gap for spacing */
+      padding: 135px;
+      gap: 20px; 
       height: auto;
       min-height: 100%;
     }
@@ -260,7 +261,7 @@
       width: 400px;
       height: 400px;
       margin: 0 auto;
-      transform: none !important; /* Prevent unwanted transformations */
+      transform: none !important; 
     }
   
     .shrunkCircle {
@@ -276,14 +277,14 @@
     }
   
     .detailsSidebar {
-      margin-top:70px;
+      margin-top:140px;
       height: auto;
     }
   }
   
   @media (max-width: 480px) {
     .circleContainer {
-      padding: 0px;
+      padding: 30px;
     }
   
     .circleContainer1 {
@@ -313,27 +314,26 @@
   
     .showSidebar {
       width: 100%;
-      margin-top: 20px;
+      margin-top: 40px;
     }
   }
   
-  /* Smooth transitions for opening/closing */
   .shrunkCircle {
     transition: all 0.3s ease;
   }
   
-  /* Reset spacing when sidebar is closed */
+ 
   .circleContainer:not(:has(.showSidebar)) {
     gap: 0;
     justify-content: center;
   }
   
-  /* Ensure content stays centered when sidebar is closed */
+  
   .circleContainer1:not(.shrunkCircle) {
     margin: 0 auto;
   }
   
-  /* Fix height and overflow issues */
+
   .benefitDetails {
     padding: 20px 0;
   }
@@ -354,3 +354,70 @@
     margin-bottom: 20px; 
     margin-top: 20px;
   }
+
+
+  .benefitLabel {
+    position: absolute;
+    font-size: 1.0rem;
+    /* font-weight: 500; */
+    font-weight: bold;
+    text-align: center;
+    width: 120px; 
+    transform: translate(-50%, -50%);
+    color: #333;
+  }
+  
+  .item0 .benefitLabel {
+    top: 0px; 
+    left: 50%;
+  }
+  
+  .item1 .benefitLabel {
+    top: -30px;
+    left: 50%;
+  }
+  
+  .item2 .benefitLabel {
+    top: 0px;
+    left: 50%;
+  }
+  
+  .item3 .benefitLabel {
+    top: 0px;
+    left: 55%;
+  }
+  
+  .item4 .benefitLabel {
+    margin-bottom: 200px;
+    left:20%;
+    transform: rotate(180deg);
+  }
+  
+  .item5 .benefitLabel {
+    margin-bottom: 220px;
+    left: 20%;
+    transform: rotate(180deg);
+  }
+  
+  .item6 .benefitLabel {
+    /* top: 0px; */
+    margin-bottom: 230px;
+    left: 20%;
+    transform: rotate(180deg);
+  }
+  
+  .item7 .benefitLabel {
+    top: 0px;
+    left: 50%;
+  }
+  
+  .item8 .benefitLabel {
+    top: 0px;
+    left: 50%;
+  }
+  
+  .item9 .benefitLabel {
+    top: 0px;
+    left: 50%;
+  }
+  

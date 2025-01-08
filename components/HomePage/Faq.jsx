@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import style from "../../src/styles/Hero/Faq.module.css";
-import { Link } from "lucide-react";
+import Link  from "next/link";
 
 const Faq = () => {
   const FAQData = [
